@@ -1,0 +1,42 @@
+body {
+    background: url('img/color-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover; /*Used by Safari &amp; Chrome*/
+    -moz-background-size: cover; /* Used by Firefox */
+    -o-background-size: cover; /* Used by Opera */
+    background-size: cover; /* All Modern Browsers */
+}
+
+#main-cover {
+    box: 100%;
+    position: fixed;
+    z-index: -100;
+    left: 0px;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    min-hight: 100%;
+    min-width: 1040px;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    height: 500px;
+}
+
+.main {
+    margin-top: 500px;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+}
+
+/* fonts */
+h1 {
+    color: white;
+}
