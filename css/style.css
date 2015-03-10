@@ -1,0 +1,89 @@
+@import url('http://fonts.googleapis.com/css?family=Zeyada');
+@import url('http://fonts.googleapis.com/css?family=Questrial');
+
+/**
+
+ Color scheme:
+ dark brown/black - #1D1313
+ aqua - #24B694
+ pink - #D22042
+ green - #A3B808
+ blue - #30C4C9
+
+ */
+
+body {
+	background: #6C5B7B url("../img/background.png");
+	font-family: 'Questrial', sans-serif;
+}
+
+p {
+	font-size: 1.5em;
+	text-align: left;
+}
+
+.navbar-inverse {
+	background: #ccc;
+	opacity: 0.4;
+	border: none;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+	color: #1D1313;
+	font-style: none;
+	font-family: 'Questrial', sans-serif;
+	font-size: 1.6em;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover {
+	color: #D22042;
+}
+
+a {
+	color: #D22042;
+	font-style: none;
+}
+
+a:hover {
+	color: #A3B808;
+	text-decoration: none;
+}
+
+.heading-section {
+	vertical-align: middle;
+	margin: 0px auto;
+	max-width: 80%;
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.heading-section h1 {
+	font-size: 8em;
+	font-family: 'Zeyada', serif;
+}
+
+.heading-section p {
+	font-size: 200%;
+}
+
+.content {
+	margin: 0px auto;
+	max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    .heading-section {
+    	padding-top: none;
+		width: 100%;
+    }
+}
