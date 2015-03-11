@@ -1,3 +1,12 @@
+/*
+Theme Name: Zeyada Grey, with some color
+Theme URI: http://www.aashni.me
+Description: Aashni's Portfolio/Design shop layout.
+Version: 1.0.0 
+Author: Aashni
+Author URL: http://www.aashni.me
+*/
+
 @import url('http://fonts.googleapis.com/css?family=Zeyada');
 @import url('http://fonts.googleapis.com/css?family=Questrial');
 
@@ -13,7 +22,7 @@
  */
 
 body {
-	background: #efefef url("http://www.aashni.me/images/background.png");
+	background: #efefef url("http://www.aashni.me/img/background.png");
 	font-family: 'Questrial', sans-serif;
 }
 
@@ -127,12 +136,6 @@ ul.social-media, ul.social-media li{
 
 .push-footer {
 	padding-top: 25px;
-}
-
-.post-divider {
-	color: #24B694;
-	background-color: #24B694;
-	height: 3px;
 }
 
 @media screen and (max-width: 768px) {

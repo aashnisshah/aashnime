@@ -1,0 +1,52 @@
+/****************
+advanced comment styles
+****************/
+ 
+h3#comments,.comment-navigation,.comment-navigation:after,#respond:after,.comment-rss{display:block} 
+ol.commentlist{width:100%} 
+h3#comments,#respond h3{height:25px;text-align:left;background:#4c7faa;color:#fff;padding:5px 0 0 5px} 
+ol.commentlist,li.authorcomment,li.comment,#respond h3,form#commentform,input#submit{margin:0}
+ol.commentlist,ol.commentlist ul,form#commentform{padding:0}  
+ol.commentlist{border-bottom:1px solid #ccc} 
+ol.commentlist ul{margin:0 0 0 20px} 
+li.authorcomment,li.comment,form#commentform textarea,form#commentform input{border:1px solid #ccc}
+li.authorcomment,li.comment{padding:10px 0 0 10px;list-style:none;border-bottom:none} 
+li.even{background:#fff} 
+li.odd{background:#efefef} 
+.authorcomment{background:#deebf9} 
+ul.children ul{margin-left:20px} 
+ul.children li{border-right:none} 
+.vcard img{float:left;background:#c4c4c4} 
+.vcard img,.comment-navigation .newer a,.comment-navigation .older a{padding:5px} 
+.comment-meta,ol.commentlist li small,p.subscribe-to-comments label{position:relative} 
+.comment-meta,ol.commentlist li small{top:10px;left:10px} 
+.comment-text{margin:0 10px 0 0} 
+.reply,.comment-navigation .newer,input#submit{float:right} 
+.reply,.comment-navigation .newer a,.comment-navigation .older a,input#submit{background:#4c7faa} 
+.reply{margin:0 10px 10px 0} 
+a.comment-reply-link,.reply a:link,
+.comment-navigation .newer a,.comment-navigation .older a,input#submit{display:inline-block;text-align:center;cursor:pointer;color:#fff} 
+a.comment-reply-link,.reply a:link{padding:5px 0} a.comment-reply-link,.reply a:link,input#submit{width:70px} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,
+.comment-navigation .older a:hover,input#submit:hover{background:#e7e7e7;text-decoration:none;color:#4c7faa;font-weight:bold} 
+a.comment-reply-link:hover,.reply a:hover,input#submit:hover{width:68px} 
+a.comment-reply-link:hover,.reply a:hover{padding:4px 0} 
+a.comment-reply-link:hover,.reply a:hover,.comment-navigation .newer a:hover,.comment-navigation .older a:hover{border:1px solid #4c7faa} 
+.comment-navigation{margin:10px 0 10px 0} .comment-navigation:after,#respond:after{content:".";height:0;visibility:hidden} 
+.clear{clear:both} 
+.comment-navigation .newer a:hover,.comment-navigation .older a:hover{padding:4px} 
+form#commentform textarea,form#commentform input{padding:2px 3px} 
+form#commentform textarea{width:442px} 
+input#submit{padding:5px 0 !important;border:0 !important} 
+input#submit,p.subscribe-to-comments input{outline:0} 
+input#submit:hover{padding:4px 0 !important;border:1px solid #4c7faa !important} 
+p.subscribe-to-comments{background:url('images/email_32.png') no-repeat} 
+p.subscribe-to-comments,.comment-rss{height:32px;text-indent:42px;padding:5px 0 0 0} 
+p.subscribe-to-comments input{margin:5px 3px 3px 3px !important;border:0} 
+p.subscribe-to-comments label{top:-2px;color:#666} 
+.comment-rss{background:url('images/rss_32.png') no-repeat} 
+ 
+/*comment total stlying*/
+ 
+.comment-total{text-align: center;font-size: 1.5em;color: #fff;}
+.comment-total span{font-size: 2em;color: #800000;}
