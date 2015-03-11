@@ -13,7 +13,9 @@
                     <hr class="post-divider">
                     <div class="post">
                          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                              <span class="metadata"><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?> <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></span>
+                              <span class="metadata"><?php the_time('F jS, Y') ?> by 
+                              <?php the_author_posts_link() ?> | 
+                              <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></span>
                          <div class="entry">
                               <?php the_excerpt(); ?>
                          </div>

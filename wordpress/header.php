@@ -54,13 +54,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-          <li><a href="#">Aashni</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Blogger</a></li>
-          <li><a href="#">Planner</a></li>
-          <li><a href="#">Hacker</a></li>
-          <li><a href="#">Speaker</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="http://aashni.me">Aashni</a></li>
+          <li><a href="http://aashni.me/coming.php">About Me</a></li>
+          <li><a href="http://blog.aashni.me">Blogger</a></li>
+          <li><a href="http://aashni.me/coming.php">Planner</a></li>
+          <li><a href="http://aashni.me/coming.php">Hacker</a></li>
+          <li><a href="http://aashni.me/coming.php">Speaker</a></li>
+          <li><a href="http://aashni.me/coming.php">Contact Me</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
         </div>
