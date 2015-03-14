@@ -12,6 +12,10 @@
                     <div class="content">
                          <?php the_content(); ?>
                     </div>
+
+                    <div class="comments-template">
+                         <?php comments_template(); ?>
+                    </div>
                <?php endwhile; ?>
           <?php else : ?>
                <div class="heading-section inner cover blogpost">
