@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Aashni Shah</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://aashni.me/favicon.ico" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
