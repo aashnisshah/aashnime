@@ -57,7 +57,7 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <li><a href="http://aashni.me">Aashni</a></li>
-          <li><a href="http://aashni.me/coming.php">About Me</a></li>
+          <li><a href="http://aashni.me/about.php">About Me</a></li>
           <li><a href="http://blog.aashni.me">Blogger</a></li>
           <li><a href="http://aashni.me/coming.php">Planner</a></li>
           <li><a href="http://aashni.me/coming.php">Hacker</a></li>
