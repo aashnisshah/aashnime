@@ -36,3 +36,11 @@
 <body>
 
     <?php include 'navigation.php'; ?>
+
+    
+    <!-- Page Content -->
+    <div class="container jumbotron vertical-center transparent">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="heading-section inner cover">
