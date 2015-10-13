@@ -18,7 +18,7 @@
       <li><a href="http://aashni.me/events.php">Events</a></li>
       <li><a href="http://blog.aashni.me">Blog</a></li>
       <li><a href="http://aashni.me/downloads/resume.pdf">Resume</a></li>
-      <li><a href="http://aashni.me/coming.php">Contact Me</a></li>
+      <li><a href="http://aashni.me/contact.php">Contact Me</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
     </div>
