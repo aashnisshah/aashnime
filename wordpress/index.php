@@ -5,10 +5,6 @@
           <div class="heading-section inner cover blogpost">
                <h1>My <strike>rambles</strike> Blog</h1>
 
-               <p>So I caved and will now be posting my blog posts on <a href="https://medium.com/@aashnisshah" target="_blank">Medium</a>. I hope you continue to follow the articles and stories there!</p>
-
-               <center><script async src="https://static.medium.com/embed.js"></script><a class="m-profile" href="https://medium.com/@aashnisshah">Aashni Shah</a></script><center>
-
                <p class="lead">Here are some of my thoughts on the different things I do.</p>
           </div>
 
