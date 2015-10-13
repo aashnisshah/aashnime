@@ -5,6 +5,8 @@
           <div class="heading-section inner cover blogpost">
                <h1>My <strike>rambles</strike> Blog</h1>
 
+               <p>Many of these blog posts shall also be shared on my medium account at <a href="https://medium.com/@aashnisshah" target="_blank">medium.com/@aashnisshah</a>.</p>
+
                <p class="lead">Here are some of my thoughts on the different things I do.</p>
           </div>
 
