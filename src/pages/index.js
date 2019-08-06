@@ -32,11 +32,11 @@ const Header = styled.h1`
 `;
 
 const IndexPage = () => (
-  <MainPage>
-    <Header>Aashni Shah</Header>
-    <HomePageNavigation />
-    <SocialLinks />
-  </MainPage>
+<MainPage>
+  <Header>Aashni Shah</Header>
+  <HomePageNavigation />
+  <SocialLinks />
+</MainPage>
 )
 
 export default IndexPage
