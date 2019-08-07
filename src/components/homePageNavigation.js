@@ -28,7 +28,7 @@ const navigationLinks = [
 const HomePageNav = styled.div`
   margin: 12px 0px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.6em;
   @media(min-width: ${phone}) {
     font-size: 1.2 em;
   }

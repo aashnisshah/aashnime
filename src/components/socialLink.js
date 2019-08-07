@@ -11,6 +11,9 @@ const SocialLinkImage = styled.img`
   width: 48px;
   height: 48px;
   display: inline;
+  :hover {
+    opacity: 0.5;
+  }
   @media(min-width: ${phone}) {
     width: 32px;
     height: 32px;
