@@ -5,6 +5,10 @@ import { phone } from "../utils/breakpoints";
 
 const navigationLinks = [
   {
+    title: "Home",
+    link: "/home"
+  },
+  {
     title: "Work",
     link: "/work"
   },
