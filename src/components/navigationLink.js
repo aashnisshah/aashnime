@@ -1,20 +1,21 @@
-import React from "react"
-import styled from "styled-components"
-import { aquagreen, offblack } from "../utils/colors"
+import React from "react";
+import styled from "styled-components";
+import { aquagreen, offblack } from "../utils/colors";
+import { Link } from "react-router-dom";
 
-const Link = styled.a`
+const StyledLink = styled(Link)`
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 18px;
   color: ${offblack};
   font-family: Roboto;
   :hover {
     color: ${aquagreen};
-    font-syle: italic
+    font-syle: italic;
   }
 `;
 
-const NavigationLink = ({link, title}) => (
-  <Link href={link} alt={title} rel="noopenner noreferrer">{title}</Link>
-)
+const NavigationLink = ({ link, title }) => (
+  <StyledLink to={link}>{title}</StyledLink>
+);
 
-export default NavigationLink
+export default NavigationLink;
