@@ -2,37 +2,9 @@ import React from "react";
 import NavigationLink from "./NavigationLink";
 import styled from "styled-components";
 import { phone } from "../utils/breakpoints";
-
-const navigationLinks = [
-  {
-    title: "Home",
-    link: "/home"
-  },
-  {
-    title: "Work",
-    link: "/work"
-  },
-  {
-    title: "About",
-    link: "/about"
-  },
-  {
-    title: "Speaking",
-    link: "/speaking"
-  },
-  {
-    title: "Press",
-    link: "/press"
-  },
-  {
-    title: "Blog",
-    link: "/blog"
-  },
-  {
-    title: "Contact",
-    link: "/contact"
-  }
-];
+import { NavigationLinks } from "../utils/config";
+import { MyRouter } from "../utils/router";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const HomePageNav = styled.div`
   margin: 12px 0px;
@@ -60,17 +32,20 @@ const NavigationLi = styled.li`
 `;
 
 const Navigation = () => (
-  <HomePageNav>
-    <NavigationUl>
-      {navigationLinks.map(({ title, link }, id) => {
-        return (
-          <NavigationLi key={id}>
-            <NavigationLink link={link} title={title} />
-          </NavigationLi>
-        );
-      })}
-    </NavigationUl>
-  </HomePageNav>
+  <Router>
+    <HomePageNav>
+      <NavigationUl>
+        {NavigationLinks.map(({ title, link }, id) => {
+          return (
+            <NavigationLi key={id}>
+              <NavigationLink link={link} title={title} />
+            </NavigationLi>
+          );
+        })}
+      </NavigationUl>
+    </HomePageNav>
+    <MyRouter />
+  </Router>
 );
 
 export default Navigation;

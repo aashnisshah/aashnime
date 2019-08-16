@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/main.css";
+import { Navigation } from "../components";
 import styled from "styled-components";
 import { phone } from "../utils/breakpoints";
-import { Navigation } from "../components";
 
 const MainDiv = styled.div`
   display: grid;
@@ -13,10 +13,10 @@ const MainDiv = styled.div`
   }
 `;
 
-const IndexPage = () => (
+const PressPage = () => (
   <MainDiv>
     <Navigation />
   </MainDiv>
 );
 
-export default IndexPage;
+export default PressPage;
