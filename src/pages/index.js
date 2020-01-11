@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import blogDate from "../utils/dates"
 
 class BlogIndex extends React.Component {
   render() {
@@ -26,7 +27,15 @@ class BlogIndex extends React.Component {
                     marginBottom: rhythm(1 / 4),
                   }}
                 >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <Link
+                    style={{ boxShadow: `none` }}
+                    to={
+                      "blog/" +
+                      blogDate(node.frontmatter.date) +
+                      "/" +
+                      node.fields.slug
+                    }
+                  >
                     {title}
                   </Link>
                 </h3>
@@ -64,7 +73,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date
             title
             description
           }
