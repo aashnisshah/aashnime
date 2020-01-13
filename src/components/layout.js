@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import footerLinks from "../utils/footerLinks"
 
 const FooterLink = styled.a`
@@ -18,52 +18,28 @@ const FooterItem = styled.li`
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { title, children } = this.props
     let header, footer
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
+    header = (
+      <h3
+        style={{
+          fontFamily: `Zeyada`,
+          marginTop: 0,
+        }}
+      >
+        <Link
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
+            boxShadow: `none`,
+            textDecoration: `none`,
+            color: `inherit`,
           }}
+          to={`/`}
         >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
+          {title}
+        </Link>
+      </h3>
+    )
 
     footer = footerLinks.map(({ link, name }) => {
       return (
