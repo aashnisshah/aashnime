@@ -1,13 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import footerLinks from "../utils/footerLinks"
+
+const FooterLink = styled.a`
+  text-decoration: none;
+  text-align: center;
+  padding-right: 10px;
+  box-shadow: none;
+`
+
+const FooterItem = styled.li`
+  display: inline-block;
+`
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    let header, footer
 
     if (location.pathname === rootPath) {
       header = (
@@ -51,6 +64,17 @@ class Layout extends React.Component {
         </h3>
       )
     }
+
+    footer = footerLinks.map(({ link, name }) => {
+      return (
+        <FooterItem key={name}>
+          <FooterLink href={link} target="_blank" rel="noopener noreferrer">
+            {name}
+          </FooterLink>
+        </FooterItem>
+      )
+    })
+
     return (
       <div
         style={{
@@ -62,11 +86,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <footer>{footer}</footer>
       </div>
     )
   }
