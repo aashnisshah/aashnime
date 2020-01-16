@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Aashni's Rambles`,
+    title: `Aashni's Pensive`,
     author: `Aashni Shah`,
-    description: `My small corner of the world to ramble about tech, women equality, and more.`,
+    description: `My small corner of the world.`,
     siteUrl: `https://aashni.me`,
     social: {
       twitter: `aashnisshah`,
