@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:39:25+00:00
+description: 'AngularJS: An Introduction'
 layout: post
 link: http://blog.aashni.me/2016/08/angularjs-an-introduction/
 slug: angularjs-an-introduction

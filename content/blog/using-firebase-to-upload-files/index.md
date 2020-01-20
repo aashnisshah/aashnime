@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-12 09:26:32+00:00
+description: Using Firebase to Upload Files
 layout: post
 link: http://blog.aashni.me/2018/02/using-firebase-to-upload-files/
 slug: using-firebase-to-upload-files

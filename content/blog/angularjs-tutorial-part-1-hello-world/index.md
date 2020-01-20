@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:46:26+00:00
+description: 'AngularJS Tutorial Part 1: Hello World'
 layout: post
 link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-1-hello-world/
 slug: angularjs-tutorial-part-1-hello-world

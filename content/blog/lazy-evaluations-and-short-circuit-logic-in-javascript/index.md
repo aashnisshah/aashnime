@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-04-10 06:41:16+00:00
+description: Lazy Evaluations and Short Circuit Logic in Javascript
 layout: post
 link: http://blog.aashni.me/2018/04/lazy-evaluations-and-short-circuit-logic-in-javascript/
 slug: lazy-evaluations-and-short-circuit-logic-in-javascript

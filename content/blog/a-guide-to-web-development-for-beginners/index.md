@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-26 08:41:36+00:00
+description: A Guide to Web Development for Beginners
 layout: post
 link: http://blog.aashni.me/2018/02/a-guide-to-web-development-for-beginners/
 slug: a-guide-to-web-development-for-beginners

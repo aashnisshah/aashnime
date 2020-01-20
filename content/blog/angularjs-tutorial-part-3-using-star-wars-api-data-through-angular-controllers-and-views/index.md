@@ -2,6 +2,8 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:47:14+00:00
+description: 'AngularJS Tutorial Part 3: Using Star Wars API Data through Angular
+  Controllers and Views'
 layout: post
 link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views/
 slug: angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views

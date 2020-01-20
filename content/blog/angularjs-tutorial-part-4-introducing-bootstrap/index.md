@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:47:35+00:00
+description: 'AngularJS Tutorial Part 4: Introducing Bootstrap'
 layout: post
 link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-4-introducing-bootstrap/
 slug: angularjs-tutorial-part-4-introducing-bootstrap

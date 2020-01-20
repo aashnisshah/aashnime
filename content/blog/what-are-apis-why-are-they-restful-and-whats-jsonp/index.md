@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-03-05 08:31:09+00:00
+description: What Are APIs, Why Are They RESTful, and What's JSONP?
 layout: post
 link: http://blog.aashni.me/2018/03/what-are-apis-why-are-they-restful-and-whats-jsonp/
 slug: what-are-apis-why-are-they-restful-and-whats-jsonp

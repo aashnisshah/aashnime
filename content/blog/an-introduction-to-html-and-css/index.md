@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-05 06:48:53+00:00
+description: An Introduction to HTML and CSS
 layout: post
 link: http://blog.aashni.me/2018/02/an-introduction-to-html-and-css/
 slug: an-introduction-to-html-and-css

@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-01-15 10:10:26+00:00
+description: Goodbye 2017, Hello 2018
 layout: post
 link: http://blog.aashni.me/2018/01/goodbye-2017-hello-2018/
 slug: goodbye-2017-hello-2018

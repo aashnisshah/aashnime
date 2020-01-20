@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-01-22 12:14:54+00:00
+description: Create and Deploy An AngularJS App to Github Pages
 layout: post
 link: http://blog.aashni.me/2018/01/create-and-deploy-angularjs-app-to-github-pages/
 slug: create-and-deploy-angularjs-app-to-github-pages

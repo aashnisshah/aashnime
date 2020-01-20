@@ -2,6 +2,8 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:46:56+00:00
+description: 'AngularJS Tutorial Part 2: Introducing the Star Wars API and Angular
+  Services'
 layout: post
 link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services/
 slug: angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services

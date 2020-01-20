@@ -30,12 +30,12 @@ def getImages(post, filepath):
 
   try: 
     for img_url in md.images:
-
       req = requests.get(img_url, allow_redirects=True)
       if req.headers['Content-Type'].startswith('image'):
         filename = os.path.split(img_url)[1]
         open(filepath + "/" + filename, 'wb').write(req.content)
-        print '  downloaded ' + filename ' to ' + filepath
+        print '  downloaded ' + filename + ' to ' + filepath
+        postdata = postdata.replace(img_url, filename)
 
   except Exception as e:
     print "ran into exception while downloading image, " + str(e)

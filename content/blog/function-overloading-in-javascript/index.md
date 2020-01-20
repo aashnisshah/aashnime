@@ -2,6 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-03-26 03:12:10+00:00
+description: Function Overloading in Javascript
 layout: post
 link: http://blog.aashni.me/2018/03/function-overloading-in-javascript/
 slug: function-overloading-in-javascript
