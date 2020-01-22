@@ -21,12 +21,12 @@ class ImgExtExtension(Extension):
     md.treeprocessors.add('imgext', img_ext, '>inline')
 
 def getImages(post, filepath):
-  print '  getting images for ' + post
+  # print '  getting images for ' + post
 
   md = markdown.Markdown(extensions=[ImgExtExtension()])
   postdata = io.open(post, "r", encoding="utf-8").read()
   html = md.convert(postdata)
-  print md.images
+  # print md.images
 
   try: 
     for img_url in md.images:
@@ -34,11 +34,11 @@ def getImages(post, filepath):
       if req.headers['Content-Type'].startswith('image'):
         filename = os.path.split(img_url)[1]
         open(filepath + "/" + filename, 'wb').write(req.content)
-        print '  downloaded ' + filename + ' to ' + filepath
-        postdata = postdata.replace(img_url, filename)
+        # print '  downloaded ' + filename + ' to ' + filepath
 
   except Exception as e:
-    print "ran into exception while downloading image, " + str(e)
+    print "ran into exception while downloading image, " + img_url + " for " + post
+    print str(e)
 
 def main():
   print("\n> starting conversion")
@@ -66,7 +66,7 @@ def main():
       os.makedirs(filepath)
       shutil.copy2(cwd + "/" + post, filepathext)
       getImages(post, filepath)
-      print ("   converted " + filename)
+      # print ("   converted " + filename)
 
   print "> completed"
 
