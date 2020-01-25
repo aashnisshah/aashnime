@@ -18,7 +18,7 @@ categories:
 - Workshop
 ---
 
-This is part 2 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 1 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-1-hello-world), and Part 3 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views).
+This is part 2 of a multi-part [Intro to AngularJS]../angularjs-an-introduction/) tutorial series. Part 1 can be found [here]../angularjs-tutorial-part-1-hello-world), and Part 3 can be found [here]../angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views).
 
 
 

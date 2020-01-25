@@ -18,7 +18,7 @@ categories:
 - Workshop
 ---
 
-This is part 5 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 4 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-4-introducing-bootstrap).
+This is part 5 of a multi-part [Intro to AngularJS]../angularjs-an-introduction/) tutorial series. Part 4 can be found [here]../angularjs-tutorial-part-4-introducing-bootstrap).
 
 
 

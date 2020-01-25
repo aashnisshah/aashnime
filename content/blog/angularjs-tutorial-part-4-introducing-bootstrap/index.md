@@ -17,7 +17,7 @@ categories:
 - Workshop
 ---
 
-This is part 4 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 3 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views), and Part 5 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-5-creating-individual-pages-for-characters-and-movies).
+This is part 4 of a multi-part [Intro to AngularJS]../angularjs-an-introduction/) tutorial series. Part 3 can be found [here]../angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views), and Part 5 can be found [here]../angularjs-tutorial-part-5-creating-individual-pages-for-characters-and-movies).
 
 
 

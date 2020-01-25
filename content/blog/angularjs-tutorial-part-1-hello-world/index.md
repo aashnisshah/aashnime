@@ -17,7 +17,7 @@ categories:
 - Workshop
 ---
 
-This is part 1 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 2 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services).
+This is part 1 of a multi-part [Intro to AngularJS]../angularjs-an-introduction/) tutorial series. Part 2 can be found [here]../angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services).
 
 
 

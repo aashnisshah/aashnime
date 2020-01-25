@@ -17,7 +17,7 @@ categories:
 - Web Development
 ---
 
-Following on from last week’s post, [A Guide to Web Development for Beginners](https://aashni.me/blog/a-guide-to-web-development-for-beginners/), I wanted to a do a deeper dive into some of the concepts I mentioned in that post, such as backend servers, databases and APIs. I’ll pick APIs today, as they’re a pretty vital component of how the other three can work together. 
+Following on from last week’s post, [A Guide to Web Development for Beginners]../a-guide-to-web-development-for-beginners/), I wanted to a do a deeper dive into some of the concepts I mentioned in that post, such as backend servers, databases and APIs. I’ll pick APIs today, as they’re a pretty vital component of how the other three can work together. 
 
 
 
@@ -25,7 +25,7 @@ Following on from last week’s post, [A Guide to Web Development for Beginners]
 
 
 
-API stands for `Application Programming Interface`, and like all interfaces, the API let’s two applications communicate. It’s how you can send information from the frontend to the backend, or fetch data from a completely separate app. I’ve already written a few blog posts before that show you examples of using APIs, such as the [Intro to Slack Apps](https://aashni.me/blog/an-intro-to-slack-apps/), [Using Firebase to Upload Files](hhttps://aashni.me/blog/using-firebase-to-upload-files/) or [Making Maps with Googles Map API](https://aashni.me/blog/making-maps-with-googles-map-api/).
+API stands for `Application Programming Interface`, and like all interfaces, the API let’s two applications communicate. It’s how you can send information from the frontend to the backend, or fetch data from a completely separate app. I’ve already written a few blog posts before that show you examples of using APIs, such as the [Intro to Slack Apps]../an-intro-to-slack-apps/), [Using Firebase to Upload Files](hhttps://aashni.me/blog/using-firebase-to-upload-files/) or [Making Maps with Googles Map API]../making-maps-with-googles-map-api/).
 
 API’s cover all types of communication, and there are several types such as [SOAP](https://en.wikipedia.org/wiki/SOAP) or [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), however I’ll focus on [REST](https://developer.mozilla.org/en-US/docs/Glossary/REST) API’s in this post.
 
