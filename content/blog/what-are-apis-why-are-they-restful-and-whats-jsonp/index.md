@@ -4,7 +4,7 @@ comments: true
 date: 2018-03-05 08:31:09+00:00
 description: What Are APIs, Why Are They RESTful, and What's JSONP?
 layout: post
-link: http://blog.aashni.me/2018/03/what-are-apis-why-are-they-restful-and-whats-jsonp/
+link: https://aashni.me/blog/what-are-apis-why-are-they-restful-and-whats-jsonp/
 slug: what-are-apis-why-are-they-restful-and-whats-jsonp
 title: What Are APIs, Why Are They RESTful, and What's JSONP?
 wordpress_id: 426
@@ -17,7 +17,7 @@ categories:
 - Web Development
 ---
 
-Following on from last week’s post, [A Guide to Web Development for Beginners](http://blog.aashni.me/2018/02/a-guide-to-web-development-for-beginners/), I wanted to a do a deeper dive into some of the concepts I mentioned in that post, such as backend servers, databases and APIs. I’ll pick APIs today, as they’re a pretty vital component of how the other three can work together. 
+Following on from last week’s post, [A Guide to Web Development for Beginners](https://aashni.me/blog/a-guide-to-web-development-for-beginners/), I wanted to a do a deeper dive into some of the concepts I mentioned in that post, such as backend servers, databases and APIs. I’ll pick APIs today, as they’re a pretty vital component of how the other three can work together. 
 
 
 
@@ -25,7 +25,7 @@ Following on from last week’s post, [A Guide to Web Development for Beginners]
 
 
 
-API stands for `Application Programming Interface`, and like all interfaces, the API let’s two applications communicate. It’s how you can send information from the frontend to the backend, or fetch data from a completely separate app. I’ve already written a few blog posts before that show you examples of using APIs, such as the [Intro to Slack Apps](http://blog.aashni.me/2018/02/an-intro-to-slack-apps/), [Using Firebase to Upload Files](http://blog.aashni.me/2018/02/using-firebase-to-upload-files/) or [Making Maps with Googles Map API](http://blog.aashni.me/2018/01/making-maps-with-googles-map-api/).
+API stands for `Application Programming Interface`, and like all interfaces, the API let’s two applications communicate. It’s how you can send information from the frontend to the backend, or fetch data from a completely separate app. I’ve already written a few blog posts before that show you examples of using APIs, such as the [Intro to Slack Apps](https://aashni.me/blog/an-intro-to-slack-apps/), [Using Firebase to Upload Files](hhttps://aashni.me/blog/using-firebase-to-upload-files/) or [Making Maps with Googles Map API](https://aashni.me/blog/making-maps-with-googles-map-api/).
 
 API’s cover all types of communication, and there are several types such as [SOAP](https://en.wikipedia.org/wiki/SOAP) or [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), however I’ll focus on [REST](https://developer.mozilla.org/en-US/docs/Glossary/REST) API’s in this post.
 
@@ -58,7 +58,7 @@ A company may later decide to expand and share these APIs with the general publi
 
 Here, the `https://swapi.co/` acts as the base url.`api/` is the route. The specific resource we’d like to know about is `planets/`. I could leave out the `1/`, however it adds some more specification on the type of information I want. Without the 1, we’d get a list of all planets and their data, with the 1 (or any other valid number), we’re able to specify which planet resource we want. Finally, this query appends `?format=json` to the end to specify we want a JSON object. Each API is different and what return types they support also differs, where some websites may return back XML if specified. If I ran this as a URL in the browser, I’d see a JSON object with information about Tatooine.
 
-[![](http://blog.aashni.me/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-2.57.17-AM-1024x601.png)](http://blog.aashni.me/wp-content/uploads/2018/03/Screen-Shot-2018-03-05-at-2.57.17-AM.png)
+[![](./Screen-Shot-2018-03-05-at-2.57.17-AM-1024x601.png)](./Screen-Shot-2018-03-05-at-2.57.17-AM.png)
 
 
 

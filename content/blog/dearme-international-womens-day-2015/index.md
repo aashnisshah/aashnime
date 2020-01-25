@@ -4,7 +4,7 @@ comments: true
 date: 2015-03-08 22:06:02+00:00
 description: '#DearMe - International Womens Day 2015'
 layout: post
-link: http://blog.aashni.me/2015/03/dearme-international-womens-day-2015/
+link: https://aashni.me/blog/dearme-international-womens-day-2015/
 slug: dearme-international-womens-day-2015
 title: '#DearMe - International Womens Day 2015'
 wordpress_id: 137

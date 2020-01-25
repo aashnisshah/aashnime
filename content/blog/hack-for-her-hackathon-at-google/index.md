@@ -4,7 +4,7 @@ comments: true
 date: 2013-03-18 08:57:04+00:00
 description: Hack For Her Hackathon at Google
 layout: post
-link: http://blog.aashni.me/2013/03/hack-for-her-hackathon-at-google/
+link: https://aashni.me/blog/hack-for-her-hackathon-at-google/
 slug: hack-for-her-hackathon-at-google
 title: Hack For Her Hackathon at Google
 wordpress_id: 39

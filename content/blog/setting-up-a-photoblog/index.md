@@ -4,7 +4,7 @@ comments: true
 date: 2013-08-04 13:44:33+00:00
 description: Setting Up A Photoblog
 layout: post
-link: http://blog.aashni.me/2013/08/setting-up-a-photoblog/
+link: https://aashni.me/blog/setting-up-a-photoblog/
 slug: setting-up-a-photoblog
 title: Setting Up A Photoblog
 wordpress_id: 91

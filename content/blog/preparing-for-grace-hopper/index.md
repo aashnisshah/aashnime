@@ -4,7 +4,7 @@ comments: true
 date: 2015-10-05 08:05:09+00:00
 description: Preparing For Grace Hopper
 layout: post
-link: http://blog.aashni.me/2015/10/preparing-for-grace-hopper/
+link: https://aashni.me/blog/preparing-for-grace-hopper/
 slug: preparing-for-grace-hopper
 title: Preparing For Grace Hopper
 wordpress_id: 186

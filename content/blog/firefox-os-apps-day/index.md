@@ -4,7 +4,7 @@ comments: true
 date: 2013-02-10 01:07:44+00:00
 description: FireFox OS Apps Day
 layout: post
-link: http://blog.aashni.me/2013/02/firefox-os-apps-day/
+link: https://aashni.me/blog/firefox-os-apps-day/
 slug: firefox-os-apps-day
 title: FireFox OS Apps Day
 wordpress_id: 20

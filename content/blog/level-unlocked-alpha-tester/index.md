@@ -4,7 +4,7 @@ comments: true
 date: 2013-02-16 08:08:17+00:00
 description: "Level Unlocked: Alpha Tester"
 layout: post
-link: http://blog.aashni.me/2013/02/level-unlocked-alpha-tester/
+link: https://aashni.me/blog/level-unlocked-alpha-tester/
 slug: level-unlocked-alpha-tester
 title: "Level Unlocked: Alpha Tester"
 wordpress_id: 24

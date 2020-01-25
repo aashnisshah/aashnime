@@ -4,7 +4,7 @@ comments: true
 date: 2013-11-28 02:37:11+00:00
 description: Lego Robots!
 layout: post
-link: http://blog.aashni.me/2013/11/lego-robots/
+link: https://aashni.me/blog/lego-robots/
 slug: lego-robots
 title: Lego Robots!
 wordpress_id: 116

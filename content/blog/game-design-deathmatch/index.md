@@ -4,7 +4,7 @@ comments: true
 date: 2013-02-02 09:29:41+00:00
 description: Game Design Deathmatch
 layout: post
-link: http://blog.aashni.me/2013/02/game-design-deathmatch/
+link: https://aashni.me/blog/game-design-deathmatch/
 slug: game-design-deathmatch
 title: Game Design Deathmatch
 wordpress_id: 10

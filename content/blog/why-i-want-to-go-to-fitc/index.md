@@ -4,7 +4,7 @@ comments: true
 date: 2015-03-11 01:21:12+00:00
 description: Why I Want To Go To FITC
 layout: post
-link: http://blog.aashni.me/2015/03/why-i-want-to-go-to-fitc/
+link: https://aashni.me/blog/why-i-want-to-go-to-fitc/
 slug: why-i-want-to-go-to-fitc
 title: Why I Want To Go To FITC
 wordpress_id: 142
@@ -24,6 +24,6 @@ The incredible design of these wearable devices paired with the simplicity and e
 
 I want to come to FITC this year to learn about the latest technology, and see what creative minds are coming up with. I am a student, currently interning at a company in Toronto. My programming background is primarily web dev, though I have an interest and experience with both hardware and wearable devices. I am also a sucker for good design, and want to improve my skills in order to produce better overall products. I think the UI/UX and way a product is advertised could potentially make or break the app, and want to learn how to successfully ‘make it’. I want to celebrate the best the world has to offer in design and technology, learn from the speakers, and be inspired to keep working on my own projects. This is why I want to come to FITC.
 
-I wrote a [#DearMe](http://blog.aashni.me/2015/03/dearme-international-womens-day-2015/) blog post on International Womens Day highlighting advice I would give to younger versions of myself. The lack of women in technology is a complicated problem, however one aspect is extremely clear - in order to get more women into the technological world, we need to show girls from a young age all the different opportunities available to them. To these younger girls, my advice is: Your choices now, as a child, will always impact your future - take control of your future. Find something that interests you, whether or not it is tech related, and make it your passion. Don’t ever let anyone dissuade you from it.
+I wrote a [#DearMe](https://aashni.me/blog/dearme-international-womens-day-2015/) blog post on International Womens Day highlighting advice I would give to younger versions of myself. The lack of women in technology is a complicated problem, however one aspect is extremely clear - in order to get more women into the technological world, we need to show girls from a young age all the different opportunities available to them. To these younger girls, my advice is: Your choices now, as a child, will always impact your future - take control of your future. Find something that interests you, whether or not it is tech related, and make it your passion. Don’t ever let anyone dissuade you from it.
 
-[![FITC 2015 Entry](http://blog.aashni.me/wp-content/uploads/2015/03/fitc01-297x300.png)](http://blog.aashni.me/wp-content/uploads/2015/03/fitc01.png)
+[![FITC 2015 Entry](./fitc01-297x300.png)](./fitc01-297x300.png)

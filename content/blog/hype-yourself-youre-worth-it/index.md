@@ -4,7 +4,7 @@ comments: true
 date: 2019-01-24 10:00:33+00:00
 description: Hype Yourself! You're Worth It!
 layout: post
-link: http://blog.aashni.me/2019/01/hype-yourself-youre-worth-it/
+link: https://aashni.me/blog/hype-yourself-youre-worth-it/
 slug: hype-yourself-youre-worth-it
 title: Hype Yourself! You're Worth It!
 wordpress_id: 472

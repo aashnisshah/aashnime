@@ -4,7 +4,7 @@ comments: true
 date: 2016-08-20 23:46:26+00:00
 description: 'AngularJS Tutorial Part 1: Hello World'
 layout: post
-link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-1-hello-world/
+link: https://aashni.me/blog/angularjs-tutorial-part-1-hello-world/
 slug: angularjs-tutorial-part-1-hello-world
 title: 'AngularJS Tutorial Part 1: Hello World'
 wordpress_id: 211
@@ -17,7 +17,7 @@ categories:
 - Workshop
 ---
 
-This is part 1 of a multi-part [Intro to AngularJS](http://blog.aashni.me/2016/08/angularjs-an-introduction/) tutorial series. Part 2 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services).
+This is part 1 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 2 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services).
 
 
 
@@ -31,7 +31,7 @@ I usually like to keep my files organized, especially since I've seen what happe
 
 I like keeping all controller related files in one folder, and the same for my views files. If we get down to creating directives or services, then I would also create individual folders for those as well, but this is good for the Hello World app.
 
-[![AngularJS Initial Files](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_tutorial_files.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_tutorial_files.png)
+[![AngularJS Initial Files](./angularjs_tutorial_files.png)](./angularjs_tutorial_files.png)
 
 Now we can open up the index.html file and start creating the app.
 
@@ -165,6 +165,6 @@ Phew, that was a lot. Now, let's go over to our terminal, and create a simple HT
 
 And finally, go to `http://localhost:8000` in your browser and let's see what we got! If everything went according to plan, then this is what you should see.
 
-[![AngularJS Tutorial Hello World](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs-hello-world.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs-hello-world.png)
+[![AngularJS Tutorial Hello World](./angularjs-hello-world.png)](./angularjs-hello-world.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/14dc5a4ac18510dc53906b8d162b91c9860abc66) to see all the code upto the end of this section.

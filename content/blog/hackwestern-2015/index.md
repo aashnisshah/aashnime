@@ -4,7 +4,7 @@ comments: true
 date: 2015-04-04 20:35:44+00:00
 description: HackWestern 2015
 layout: post
-link: http://blog.aashni.me/2015/04/hackwestern-2015/
+link: https://aashni.me/blog/hackwestern-2015/
 slug: hackwestern-2015
 title: HackWestern 2015
 wordpress_id: 153

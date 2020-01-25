@@ -4,7 +4,7 @@ comments: true
 date: 2018-03-12 07:25:11+00:00
 description: 'Regex: A Regular Guide to Regular Expressions'
 layout: post
-link: http://blog.aashni.me/2018/03/regex-a-regular-guide-to-regular-expressions/
+link: https://aashni.me/blog/regex-a-regular-guide-to-regular-expressions/
 slug: regex-a-regular-guide-to-regular-expressions
 title: 'Regex: A Regular Guide to Regular Expressions'
 wordpress_id: 433

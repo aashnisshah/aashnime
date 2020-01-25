@@ -4,7 +4,7 @@ comments: true
 date: 2013-07-28 10:57:35+00:00
 description: Updating the RAM on a MacBook Pro
 layout: post
-link: http://blog.aashni.me/2013/07/updating-the-ram-on-a-macbook-pro/
+link: https://aashni.me/blog/updating-the-ram-on-a-macbook-pro/
 slug: updating-the-ram-on-a-macbook-pro
 title: Updating the RAM on a MacBook Pro
 wordpress_id: 73

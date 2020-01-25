@@ -4,7 +4,7 @@ comments: true
 date: 2013-03-04 06:00:57+00:00
 description: Nothing Tech-y This Week
 layout: post
-link: http://blog.aashni.me/2013/03/nothing-tech-y-this-week/
+link: https://aashni.me/blog/nothing-tech-y-this-week/
 slug: nothing-tech-y-this-week
 title: Nothing Tech-y This Week
 wordpress_id: 33

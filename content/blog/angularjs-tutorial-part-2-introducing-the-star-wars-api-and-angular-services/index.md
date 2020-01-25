@@ -5,7 +5,7 @@ date: 2016-08-20 23:46:56+00:00
 description: 'AngularJS Tutorial Part 2: Introducing the Star Wars API and Angular
   Services'
 layout: post
-link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services/
+link: https://aashni.me/blog/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services/
 slug: angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services
 title: 'AngularJS Tutorial Part 2: Introducing the Star Wars API and Angular Services'
 wordpress_id: 240
@@ -18,7 +18,7 @@ categories:
 - Workshop
 ---
 
-This is part 2 of a multi-part [Intro to AngularJS](http://blog.aashni.me/2016/08/angularjs-an-introduction/) tutorial series. Part 1 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-1-hello-world), and Part 3 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views).
+This is part 2 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 1 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-1-hello-world), and Part 3 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views).
 
 
 
@@ -116,6 +116,6 @@ One of my favorite features about AngularJS is that you can write for-loops in H
 
 Let's go back to our browser and take a look at what's happened! If everything went as planned, then this is what you should see when you load up `http://localhost:8000`.
 
-[![AngularJS Tutorial Star Wars API Data Dump](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump-1024x640.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump.png)
+[![AngularJS Tutorial Star Wars API Data Dump](./angularjs_star_wars_api_data_dump-1024x640.png)](./angularjs_star_wars_api_data_dump.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/9fd51638c5861b6c928555b2a6cd36c2415715f5) to see all the code upto the end of this section.

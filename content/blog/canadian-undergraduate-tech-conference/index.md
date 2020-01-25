@@ -4,7 +4,7 @@ comments: true
 date: 2015-05-14 22:00:05+00:00
 description: Canadian Undergraduate Tech Conference
 layout: post
-link: http://blog.aashni.me/2015/05/canadian-undergraduate-tech-conference/
+link: https://aashni.me/blog/canadian-undergraduate-tech-conference/
 slug: canadian-undergraduate-tech-conference
 title: Canadian Undergraduate Tech Conference
 wordpress_id: 173
@@ -31,10 +31,10 @@ A challenge that we faced while planning this event is that most of the team had
 
 I had originally signed up as the Social Media Co-ordinator, being responsible for our tweets and facebook posts, I ended up getting a lot more involved with the event than I had originally anticipated. During the planning stage, I had been asked to moderate the panel that we were planning to host. The panel was a great hit, and I had a fun time moderating it. The panelists spoke on a range of topics from their book reading preferences (e-readers vs. physical books) and things they do everyday, to in-depth backgrounds into where they work and why they chose to work there over other opportunities they had. At some point during the panel, we talked about things we do everyday, and I ended up talking about my #Project365 that I've been doing on Instagram for nearly a year now. Everyone seemed pretty moved by the idea, and asked to jump in and be part of my #Project365 for that day - this made me super happy!
 
-[![cutcblog01](http://blog.aashni.me/wp-content/uploads/2015/06/cutcblog01-300x199.jpg)](http://blog.aashni.me/wp-content/uploads/2015/06/cutcblog01.jpg)
+[![cutcblog01](./cutcblog01-300x199.jpg)](./cutcblog01.jpg)
 
 Aside from the panel, I also presented as a speaker on how Hackathons have evolved the Tech industry. I gave a brief introduction and history on Hackathons as the expected demographics of the crowd would include both tech and business students. I then gave a brief history on hackathons, and described how they’re run today. I had a few minutes left in the end where we got heavily involved in a Q&A; session, and found out the next day that some of the delegates have signed up to help plan other hackathons that were coming up.
 
-[![cutcblog02](http://blog.aashni.me/wp-content/uploads/2015/06/cutcblog02-199x300.jpg)](http://blog.aashni.me/wp-content/uploads/2015/06/cutcblog02.jpg)
+[![cutcblog02](./cutcblog02-199x300.jpg)](./cutcblog02.jpg)
 
 I think my favourite part of the conference was that it was smaller, and gave me an opportunity to get to know the participating delegates. The environment was very relaxed, and the discussions and interactions with the speakers were really interesting. I especially enjoyed the panel because we talked about such a wide range of things. I also loved that when it was time for our final keynote by Anthony D'Souza, he and I joked about taking the talk outside in the sun - and that's exactly what we did. Can you imagine having the final keynote of a conference sitting outside in the sun? It felt great!

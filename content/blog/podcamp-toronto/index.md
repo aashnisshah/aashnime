@@ -4,7 +4,7 @@ comments: true
 date: 2015-03-25 02:50:15+00:00
 description: PodCamp Toronto
 layout: post
-link: http://blog.aashni.me/2015/03/podcamp-toronto/
+link: https://aashni.me/blog/podcamp-toronto/
 slug: podcamp-toronto
 title: PodCamp Toronto
 wordpress_id: 149

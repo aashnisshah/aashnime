@@ -4,7 +4,7 @@ comments: true
 date: 2013-05-08 04:51:26+00:00
 description: Exams Came And Went, Now It's Summer Time
 layout: post
-link: http://blog.aashni.me/2013/05/exams-came-and-went/
+link: https://aashni.me/blog/exams-came-and-went/
 slug: exams-came-and-went
 title: Exams Came And Went, Now It's Summer Time
 wordpress_id: 43

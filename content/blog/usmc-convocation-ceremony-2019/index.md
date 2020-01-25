@@ -8,7 +8,7 @@ excerpt: I was asked to be the guest speaker for the convocation ceremony and it
   I graduated. It took many drafts to figure out what message I wanted to share with
   the students on such an important day.
 layout: post
-link: http://blog.aashni.me/2019/06/usmc-convocation-ceremony-2019/
+link: https://aashni.me/blog/usmc-convocation-ceremony-2019/
 slug: usmc-convocation-ceremony-2019
 title: UofT St Mike's Convocation
 wordpress_id: 475

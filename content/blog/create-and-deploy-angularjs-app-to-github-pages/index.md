@@ -4,7 +4,7 @@ comments: true
 date: 2018-01-22 12:14:54+00:00
 description: Create and Deploy An AngularJS App to Github Pages
 layout: post
-link: http://blog.aashni.me/2018/01/create-and-deploy-angularjs-app-to-github-pages/
+link: https://aashni.me/blog/create-and-deploy-angularjs-app-to-github-pages/
 slug: create-and-deploy-angularjs-app-to-github-pages
 title: Create and Deploy An AngularJS App to Github Pages
 wordpress_id: 336
@@ -116,7 +116,7 @@ Once this command completes, a base version of the app is ready to deploy. At th
 
 If all went well, you’ll see something similar to this on your screen.
 
-[![](http://blog.aashni.me/wp-content/uploads/2018/01/AngularJSAppLocalhost-973x1024.png)](http://blog.aashni.me/wp-content/uploads/2018/01/AngularJSAppLocalhost.png)
+[![](./AngularJSAppLocalhost-973x1024.png)](./AngularJSAppLocalhost.png)
 
 
 

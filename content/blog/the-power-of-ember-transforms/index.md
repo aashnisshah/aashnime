@@ -4,7 +4,7 @@ comments: true
 date: 2018-04-02 00:48:58+00:00
 description: The Power of Ember Transforms
 layout: post
-link: http://blog.aashni.me/2018/04/the-power-of-ember-transforms/
+link: https://aashni.me/blog/the-power-of-ember-transforms/
 slug: the-power-of-ember-transforms
 title: The Power of Ember Transforms
 wordpress_id: 445

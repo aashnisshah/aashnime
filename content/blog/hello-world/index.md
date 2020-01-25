@@ -4,7 +4,7 @@ comments: true
 date: 2013-01-18 09:24:06+00:00
 description: Hello world!
 layout: post
-link: http://blog.aashni.me/2013/01/hello-world/
+link: https://aashni.me/blog/hello-world/
 slug: hello-world
 title: Hello world!
 wordpress_id: 1

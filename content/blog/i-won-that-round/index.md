@@ -4,7 +4,7 @@ comments: true
 date: 2013-02-25 03:06:26+00:00
 description: I Won That Round
 layout: post
-link: http://blog.aashni.me/2013/02/i-won-that-round/
+link: https://aashni.me/blog/i-won-that-round/
 slug: i-won-that-round
 title: I Won That Round
 wordpress_id: 30

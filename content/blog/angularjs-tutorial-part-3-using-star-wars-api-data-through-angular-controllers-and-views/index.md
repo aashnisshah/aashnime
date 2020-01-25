@@ -5,7 +5,7 @@ date: 2016-08-20 23:47:14+00:00
 description: 'AngularJS Tutorial Part 3: Using Star Wars API Data through Angular
   Controllers and Views'
 layout: post
-link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views/
+link: https://aashni.me/blog/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views/
 slug: angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views
 title: 'AngularJS Tutorial Part 3: Using Star Wars API Data through Angular Controllers
   and Views'
@@ -19,7 +19,7 @@ categories:
 - Workshop
 ---
 
-This is part 3 of a multi-part [Intro to AngularJS](http://blog.aashni.me/2016/08/angularjs-an-introduction/) tutorial series. Part 2 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services), and Part 4 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-4-introducing-bootstrap).
+This is part 3 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 2 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services), and Part 4 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-4-introducing-bootstrap).
 
 
 
@@ -40,7 +40,7 @@ First, we'll start by displaying each characters name. Go back to your `main.htm
 
 
 
-[![AngularJS Tutorial Displaying Star Wars API Character Names](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_character_names.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_character_names.png)
+[![AngularJS Tutorial Displaying Star Wars API Character Names](./angularjs_display_character_names.png)](./angularjs_display_character_names.png)
 
 You can actually have an ng-repeat inside another ng-repeat, which we will do now to list all the movies a character has been in.
 
@@ -59,7 +59,7 @@ You can actually have an ng-repeat inside another ng-repeat, which we will do no
 
 
 
-[![AngularJS Tutorial Display Characters Name and Movies](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_character_names_and_movies.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_character_names_and_movies.png)
+[![AngularJS Tutorial Display Characters Name and Movies](./angularjs_display_character_names_and_movies.png)](./angularjs_display_character_names_and_movies.png)
 
 This doesn't look particularly nice, since SWAPI stores the movie names as the API URL to each individual movie, instead of providing the movie name. So now we have a couple of different options. We can either store each movie's name on `$scope` using the controller, and use this as a quick lookup option. Or we can make a second service function to call the SWAPI films API. We'll start with the first option so that you can see how easy it is to create a lookup, however we'll eventually swap to the second method since we'd like to make pages for characters and films.
 
@@ -92,7 +92,7 @@ Next, we'll update our `main.html` view so that instead of just outputting the A
 
 Let's test this out by viewing it in our browser at `http://localhost:8000`.
 
-[![AngularJS Tutorial displaying movie names using a lookup variable created in the controller](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_movies_using_movieNames_from_controller-1024x485.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_movies_using_movieNames_from_controller.png)
+[![AngularJS Tutorial displaying movie names using a lookup variable created in the controller](./angularjs_display_movies_using_movieNames_from_controller-1024x485.png)](./angularjs_display_movies_using_movieNames_from_controller.png)
 
 Sweet, it works! But can you see any long term problems with using this method? What if a new movie get's added? You'd have to go and update the lookup, which can get tedious and annoying. Especially since we already know that the SWAPI gives us access to this information. First let's `undo the two changes` above, then we'll go back into our `swapi.js` service, and add the following API function call.
 
@@ -135,11 +135,11 @@ Next add this to the bottom of the `main.html` file.
 
 
 
-[![AngularJS Tutorial displaying films after creating films service api call](http://blog.aashni.me/wp-content/uploads/2016/08/angulrjs_display_films_api_data.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angulrjs_display_films_api_data.png)
+[![AngularJS Tutorial displaying films after creating films service api call](./angulrjs_display_films_api_data.png)](./angulrjs_display_films_api_data.png)
 
 If you notice, this is another data block. Before we continue much further, I want to show you a really nifty tool called [NG-Inspector](https://chrome.google.com/webstore/detail/ng-inspector-for-angularj/aadgmnobpdmgmigaicncghmmoeflnamj). It's a Chrome plugin that helps view what content is stored on the $scope variable, and can make debugging a lot easier. If we inspect the `films` variable, we notice that it's an Object array. Dig a little deeper, into the `episode_id`, and we know that the movie order is based on when they were filmed.
 
-[![AngularJS Tutorial Using the NG-Inspector](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_ng_inspector.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_ng_inspector.png)
+[![AngularJS Tutorial Using the NG-Inspector](./angularjs_ng_inspector.png)](./angularjs_ng_inspector.png)
 
 We can map the `episode_id` to the end of the SWAPI url we get for the films in order to help automate the film information process. To do this, we'll dive into the `main.js` file, and make the following changes.
 
@@ -184,6 +184,6 @@ We can map the `episode_id` to the end of the SWAPI url we get for the films in 
 
 If everything worked well, you will now see a list of the main characters, and the names of the movies that they have been in beside them.
 
-[![AngularJS Tutorial displaying names and films for characters after creating a films API service call](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_names_films_for_characters_using_films_service.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_display_names_films_for_characters_using_films_service.png)
+[![AngularJS Tutorial displaying names and films for characters after creating a films API service call](./angularjs_display_names_films_for_characters_using_films_service.png)](./angularjs_display_names_films_for_characters_using_films_service.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/11d5ecf38b8ae1aac1710c806b7ece5499f0cc44) to see all the code upto the end of this section.

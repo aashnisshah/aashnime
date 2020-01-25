@@ -5,7 +5,7 @@ date: 2016-08-20 23:47:55+00:00
 description: 'AngularJS Tutorial Part 5: Creating Individual Pages for Characters
   and Movies'
 layout: post
-link: http://blog.aashni.me/2016/08/angularjs-tutorial-part-5-creating-individual-pages-for-characters-and-movies/
+link: https://aashni.me/blog/angularjs-tutorial-part-5-creating-individual-pages-for-characters-and-movies/
 slug: angularjs-tutorial-part-5-creating-individual-pages-for-characters-and-movies
 title: 'AngularJS Tutorial Part 5: Creating Individual Pages for Characters and Movies'
 wordpress_id: 278
@@ -18,7 +18,7 @@ categories:
 - Workshop
 ---
 
-This is part 5 of a multi-part [Intro to AngularJS](http://blog.aashni.me/2016/08/angularjs-an-introduction/) tutorial series. Part 4 can be found [here](http://blog.aashni.me/2016/08/angularjs-tutorial-part-4-introducing-bootstrap).
+This is part 5 of a multi-part [Intro to AngularJS](https://aashni.me/blog/angularjs-an-introduction/) tutorial series. Part 4 can be found [here](https://aashni.me/blog/angularjs-tutorial-part-4-introducing-bootstrap).
 
 
 
@@ -285,10 +285,10 @@ Head back to the `main.html` view and update the reference to the film name from
 
 And with that, we're done! Load `http://localhost:8000` in your browser and see the magic. You'll first be greeted by the original page we created, with the characters names and movies that each character has been in. Next if you click on a character name or movie title, you'll be taken to an information page about that character or movie. 
 
-[![AngularJS Tutorial Final Website Displaying Star Wars Data Movies](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_movie.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_movie.png)
+[![AngularJS Tutorial Final Website Displaying Star Wars Data Movies](./angularjs_final_star_wars_website_movie.png)](./angularjs_final_star_wars_website_movie.png)
 
-[![AngularJS Tutorial Final Website Displaying Star Wars Data Characters](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_character.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_character.png)
+[![AngularJS Tutorial Final Website Displaying Star Wars Data Characters](./angularjs_final_star_wars_website_character.png)](./angularjs_final_star_wars_website_character.png)
 
-[![AngularJS Tutorial Final Website Displaying Star Wars Data Home Page](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_home.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_final_star_wars_website_home.png)
+[![AngularJS Tutorial Final Website Displaying Star Wars Data Home Page](./angularjs_final_star_wars_website_home.png)](./angularjs_final_star_wars_website_home.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/1b04e6dfbcd201eabad133ee9534068aa5af90db) to see all the code upto the end of this section.

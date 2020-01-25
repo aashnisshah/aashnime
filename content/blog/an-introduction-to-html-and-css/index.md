@@ -4,7 +4,7 @@ comments: true
 date: 2018-02-05 06:48:53+00:00
 description: An Introduction to HTML and CSS
 layout: post
-link: http://blog.aashni.me/2018/02/an-introduction-to-html-and-css/
+link: https://aashni.me/blog/an-introduction-to-html-and-css/
 slug: an-introduction-to-html-and-css
 title: An Introduction to HTML and CSS
 wordpress_id: 378
@@ -39,16 +39,16 @@ Here's an example of some image tag manipulations.
 
 Display an image of a husky at 100x100px:
 ```
-<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="100px" width="100px" />
+<img src="./puppyy.jpg" height="100px" width="100px" />
 ```
-<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="100px" width="100px" />
+<img src="./puppyy.jpg" height="100px" width="100px" />
 
 Display an image of a husky at 250x250px:
 ```
-<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="250px" width="250px" />
+<img src="./puppyy.jpg" height="250px" width="250px" />
 ```
 
-<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="250px" width="250px" />
+<img src="./puppyy.jpg" height="250px" width="250px" />
 
 
 ## Example HTML Website
@@ -67,17 +67,17 @@ The following code snippet creates a simple HTML page with the head and body sec
     <body>
     <h1>This Is My Awesome Website</h1>
     <p>My awesome website will have a picture of a beautiful Siberian Husky because they are really beautiful dogs</p>
-    <img src="https://siberianhusky.com/wp-content/uploads/2016/09/puppyy11.jpg">
+    <img src="./puppyy.jpg">
     </body>
     </html>
     
-[![](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite-1024x955.png)](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite.png)
+[![](./awesomewebsite-1024x955.png)](./awesomewebsite.png)
 
 ## What is CSS
 
 These attributes make it much easier to style a website page, but can you imagine realizing you need to update one of the tags? It becomes quite a tedious task, and human error is extremely high as well. Enter: CSS. CSS or Custom Style Sheets are a way for us to define the attributes once, in a single location and have them update any HTML website page that’s referring to them. In recent years, CSS has added some new, pretty incredible features, but I’ll stick to the basics for this post.
 
-CSS works in two ways, the first is inline, and the second is exported in. Inline CSS works similar to HTML attributes in that you edit them in line with the HTML text. For example, to style the images above, you could do `<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" style="height:100px;width:"100px" />`. Unfortunately this leaves us with the same problem as HTML attributes - they'd be horrible to try and update in the future.
+CSS works in two ways, the first is inline, and the second is exported in. Inline CSS works similar to HTML attributes in that you edit them in line with the HTML text. For example, to style the images above, you could do `<img src="./puppyy.jpg" style="height:100px;width:"100px" />`. Unfortunately this leaves us with the same problem as HTML attributes - they'd be horrible to try and update in the future.
 
 Instead, we can use imported CSS files instead. The first step would be to create a file `style.css` in the same directory as your HTML file. Then, in our HTML page, include the CSS file by including this line in the header (between the head tags). `<link rel="stylesheet" href="styles.css">`.
 
@@ -87,12 +87,12 @@ Instead, we can use imported CSS files instead. The first step would be to creat
     <div><html></div>
     <div><head></div>
     <div><title>My Awesome Website</title></div>
-    <div><linkrel="stylesheet"href="style.css"></div>
+    <div><link rel="stylesheet"href="style.css"></div>
     <div></head></div>
     <div><body></div>
     <div><h1>This Is My Awesome Website</h1></div>
     <div><p>My awesome website will have a picture of a beautiful Siberian Husky because they are really beautiful dogs</p></div>
-    <div><imgsrc="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg"></div>
+    <div><img src="./puppyy.jpg"></div>
     <div></body></div>
     <div></html></div>
     
@@ -119,6 +119,6 @@ We can now create a a style page called `style.css`. Inside the style page, I'll
 
 Here's what the website looks like.
 
-[![](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite2-1024x628.png)](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite2.png)
+[![](./awesomewebsite2-1024x628.png)](./awesomewebsite2-1024x628.png)
 
 Yes - this looks terrible right now - but that's where styling and knowing more about design play really important roles to making a website.

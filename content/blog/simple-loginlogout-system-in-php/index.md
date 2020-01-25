@@ -4,7 +4,7 @@ comments: true
 date: 2013-07-10 11:22:07+00:00
 description: Simple Login/Logout System in PHP
 layout: post
-link: http://blog.aashni.me/2013/07/simple-loginlogout-system-in-php/
+link: https://aashni.me/blog/simple-loginlogout-system-in-php/
 slug: simple-loginlogout-system-in-php
 title: Simple Login/Logout System in PHP
 wordpress_id: 55

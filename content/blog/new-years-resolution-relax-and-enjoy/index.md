@@ -4,7 +4,7 @@ comments: true
 date: 2014-01-23 04:21:10+00:00
 description: 'New Years Resolution: Relax and Enjoy'
 layout: post
-link: http://blog.aashni.me/2014/01/new-years-resolution-relax-and-enjoy/
+link: https://aashni.me/blog/new-years-resolution-relax-and-enjoy/
 slug: new-years-resolution-relax-and-enjoy
 title: 'New Years Resolution: Relax and Enjoy'
 wordpress_id: 132
@@ -29,7 +29,7 @@ categories:
 
 
 
-For me, personally, 2013 has been insane. And I’m not sure if that’s a good thing or a bad thing. I started the year off travelling to Indianapolis and Connecticut to visit some friends and family, and got back just in time for the winter semester. I took part in the [Hack For Her](http://blog.aashni.me/2013/03/hack-for-her-hackathon-at-google/) Hackathon at Google, the [CUTC Hackathon](http://infect.cutc.ca/toronto) and the [Nth Gen Google I/O Hackathon](http://mobile.utoronto.ca/dev-days), as well as attempted to make my first game called [Goo Goo Ka Ka](https://github.com/aashnisshah/googookaka) (please don’t play it. It’s terrible). I went home for summer, and worked at Kingsway Tyres. I also got to travel to Turkey (and Greece for about 12 hours) for 2 amazing weeks with my sister and friends. This was immediately followed up with a family retreat with 30 Shah’s (my closest relatives) at the Coast in Kenya. I also spent the summer planning [UofTHacks](http://blog.aashni.me/2013/12/uofthacks-2013-an-overview/), the largest student run hackathon in Canada, as well as planning events for our [CSSU](http://www.cssu.ca). My mom surprised me for my birthday, and I moved into an amazing Condo downtown. I have a lot going for me, and 2014 has a lot of ground to cover too.
+For me, personally, 2013 has been insane. And I’m not sure if that’s a good thing or a bad thing. I started the year off travelling to Indianapolis and Connecticut to visit some friends and family, and got back just in time for the winter semester. I took part in the [Hack For Her](https://aashni.me/blog/hack-for-her-hackathon-at-google/) Hackathon at Google, the [CUTC Hackathon](http://infect.cutc.ca/toronto) and the [Nth Gen Google I/O Hackathon](http://mobile.utoronto.ca/dev-days), as well as attempted to make my first game called [Goo Goo Ka Ka](https://github.com/aashnisshah/googookaka) (please don’t play it. It’s terrible). I went home for summer, and worked at Kingsway Tyres. I also got to travel to Turkey (and Greece for about 12 hours) for 2 amazing weeks with my sister and friends. This was immediately followed up with a family retreat with 30 Shah’s (my closest relatives) at the Coast in Kenya. I also spent the summer planning [UofTHacks](https://aashni.me/blog/uofthacks-2013-an-overview/), the largest student run hackathon in Canada, as well as planning events for our [CSSU](http://www.cssu.ca). My mom surprised me for my birthday, and I moved into an amazing Condo downtown. I have a lot going for me, and 2014 has a lot of ground to cover too.
 
 
 

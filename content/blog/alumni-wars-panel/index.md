@@ -4,7 +4,7 @@ comments: true
 date: 2013-01-25 01:13:05+00:00
 description: Alumni Wars Panel
 layout: post
-link: http://blog.aashni.me/2013/01/alumni-wars-panel/
+link: https://aashni.me/blog/alumni-wars-panel/
 slug: alumni-wars-panel
 title: Alumni Wars Panel
 wordpress_id: 7

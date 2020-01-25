@@ -4,7 +4,7 @@ comments: true
 date: 2013-11-01 20:35:48+00:00
 description: UofTHacks and it was Amazing!
 layout: post
-link: http://blog.aashni.me/?p=110
+link: https://aashni.me/blog/uofthacks-and-it-was-amazing
 published: false
 slug: uofthacks-and-it-was-amazing
 title: UofTHacks and it was Amazing!

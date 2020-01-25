@@ -4,7 +4,7 @@ comments: true
 date: 2013-12-26 00:00:32+00:00
 description: UofTHacks 2013, An Overview
 layout: post
-link: http://blog.aashni.me/2013/12/uofthacks-2013-an-overview/
+link: https://aashni.me/blog/uofthacks-2013-an-overview/
 slug: uofthacks-2013-an-overview
 title: UofTHacks 2013, An Overview
 wordpress_id: 121

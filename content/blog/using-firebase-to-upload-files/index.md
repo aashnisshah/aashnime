@@ -4,7 +4,7 @@ comments: true
 date: 2018-02-12 09:26:32+00:00
 description: Using Firebase to Upload Files
 layout: post
-link: http://blog.aashni.me/2018/02/using-firebase-to-upload-files/
+link: https://aashni.me/blog/using-firebase-to-upload-files/
 slug: using-firebase-to-upload-files
 title: Using Firebase to Upload Files
 wordpress_id: 398
@@ -23,7 +23,7 @@ First setup the skeleton HTML page. As Firebase integrates, the code will be add
     
     <html>
       <head>
-        <title>Firebase File Upload | blog.aashni.me</title>
+        <title>Firebase File Upload | aashni.me</title>
       </head>
       <body>
       </body>
@@ -224,6 +224,6 @@ The final step would be to replace the console.log in `handleFileSelect` with a 
 
 Voila! Test it out and let me know what happens! Here’s what my completed page looks like after I uploaded a photo of a gorgeous Siberian Husky.
 
-[![](http://blog.aashni.me/wp-content/uploads/2018/02/Screen-Shot-2018-02-12-at-4.15.04-AM.png)](http://blog.aashni.me/wp-content/uploads/2018/02/Screen-Shot-2018-02-12-at-4.15.04-AM.png)
+[![](./Screen-Shot-2018-02-12-at-4.15.04-AM.png)](./Screen-Shot-2018-02-12-at-4.15.04-AM.png)
 
 You can find the completed version of the code on [my Firebase File upload GitHub repository](https://github.com/aashnisshah/firebasefileupload). Make sure you update the API keys to match your own project.
