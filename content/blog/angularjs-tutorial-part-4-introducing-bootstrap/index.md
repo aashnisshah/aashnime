@@ -66,6 +66,6 @@ Now for some Bootstrapping fun! We'll change the header, then make each characte
 
 Doesn't that look a lot better?
 
-[caption id="attachment_273" align="aligncenter"][![AngularJS Tutorial Styling the Website Using Bootstrap](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_styling_with_bootstrap-1024x640.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_styling_with_bootstrap.png) AngularJS Tutorial Styling the Website Using Bootstrap[/caption]
+[![AngularJS Tutorial Styling the Website Using Bootstrap](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_styling_with_bootstrap-1024x640.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_styling_with_bootstrap.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/0c50a4c4ace82d711a56bd15620776c93e7e28b6) to see all the code upto the end of this section.

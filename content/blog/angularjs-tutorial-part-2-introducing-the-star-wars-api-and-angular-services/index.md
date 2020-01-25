@@ -116,6 +116,6 @@ One of my favorite features about AngularJS is that you can write for-loops in H
 
 Let's go back to our browser and take a look at what's happened! If everything went as planned, then this is what you should see when you load up `http://localhost:8000`.
 
-[caption id="attachment_243" align="aligncenter" width="800"][![AngularJS Tutorial Star Wars API Data Dump](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump-1024x640.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump.png) AngularJS Tutorial Star Wars API Data Dump[/caption]
+[![AngularJS Tutorial Star Wars API Data Dump](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump-1024x640.png)](http://blog.aashni.me/wp-content/uploads/2016/08/angularjs_star_wars_api_data_dump.png)
 
 If you think you've made a mistake somewhere, you can access a copy of the above code from the accompanying github repository. [Click here](https://github.com/aashnisshah/lsh_angularjs_tutorial/commit/9fd51638c5861b6c928555b2a6cd36c2415715f5) to see all the code upto the end of this section.

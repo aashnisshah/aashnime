@@ -37,32 +37,21 @@ HTML tags also have attributes, and when variables are passed to these attribute
 
 Here's an example of some image tag manipulations.
 
-<table ><tr >
-<td >
 Display an image of a husky at 100x100px:
-`<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="100px" width="100px" />`
+```
+<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="100px" width="100px" />
+```
+<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="100px" width="100px" />
 
-</td>
-<td >
 Display an image of a husky at 250x250px:
-`<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="250px" width="250px" />`
+```
+<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="250px" width="250px" />
+```
 
-</td></tr>
-<tr >
-<td >
-![](http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg)
-
-</td>
-<td >
-![](http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg)
-
-</td></tr></table>
-
+<img src="http://blog.aashni.me/wp-content/uploads/2018/02/puppyy.jpg" height="250px" width="250px" />
 
 
 ## Example HTML Website
-
-
 
 When we create a page in HTML, we usually include a head section and a body section. Scripts, imports and website Meta data (the title of the page for example) all go into the page head and this is often not visible on the actual page that gets loaded. The changes we'd like to see on the website will isntead need to be added in the body of the website.
 
@@ -82,16 +71,9 @@ The following code snippet creates a simple HTML page with the head and body sec
     </body>
     </html>
     
-
-
-
 [![](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite-1024x955.png)](http://blog.aashni.me/wp-content/uploads/2018/02/awesomewebsite.png)
 
-
-
 ## What is CSS
-
-
 
 These attributes make it much easier to style a website page, but can you imagine realizing you need to update one of the tags? It becomes quite a tedious task, and human error is extremely high as well. Enter: CSS. CSS or Custom Style Sheets are a way for us to define the attributes once, in a single location and have them update any HTML website page that’s referring to them. In recent years, CSS has added some new, pretty incredible features, but I’ll stick to the basics for this post.
 

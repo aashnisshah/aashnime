@@ -23,15 +23,15 @@ UofTHacks, and it was amazing! This was the largest Student Run Hackathon to tak
 
 We began with registration, where each participant was given a swag bag, and had some time to meet with other hackers and some of the sponsoring companies that had setup booths. The Swag Bags had some stickers from Various Companies like Google, Git Hub, Microsoft and Stackoverflow, as well as pens, flyers and information about the event.The bags themselves were tote bags with the UofTHacks logo on them.
 
-[![](./uofthacks2013/pic01.jpg)]()
+[![](./pic01.jpg)]()
 
 We then headed over to the OISE building for the Opening Ceremony which included a Key Note, and going over what would happen at the Hackathon. There was a great turnout from many different schools such as UofT (of course), Waterloo, McGill and students from other Universities like Harvard and Rutgers as well. We introduced some of the executive team, as well as went over the rules for the hackathon, and the general outline of the timeline.
 
-[![](./uofthacks2013/pic02.jpg)]()
+[![](./pic02.jpg)]()
 
 The Key Note was done by [Tobias Lutke](http://tobi.lutke.com/), the CEO of [Shopify](http://www.shopify.com/), our platinum sponsor.
 
-[![](./uofthacks2013/pic03.jpg)]()
+[![](./pic03.jpg)]()
 
 Here's a video of the Opening Ceremony and Key Note. Only after watching the video did I realize how many times I said "Umm" - so sorry guys!
 
@@ -41,21 +41,21 @@ We then headed back to The Bahen Center, where hackers dug into some food before
 
 Breakfast is an extremely important meal of the day! We made pancakes, bagels, got coffee and other delicious breakfast foods. Once Hackers were well fed, we got to some of the exciting activities of the day. The first being our Tech Expo and Job Fair. Here sponsoring companies set up booths with information about potential future employment, as well as some of the cool gadgets that the company currently works with. We even had a 3D printer setup!
 
-[![](./uofthacks2013/pic04.jpg)]()
+[![](./pic04.jpg)]()
 
-[![](./uofthacks2013/pic05.jpg)]()
+[![](./pic05.jpg)]()
 
-[![](./uofthacks2013/pic06.jpg)]()
+[![](./pic06.jpg)]()
 
 Following the tech expo, we had Seminars hosted by some truly amazing people. The first was by [Rosy Rumpal](https://twitter.com/the_leanlawyer), a lawyer with a huge interest in startups. She walked us through some of the many legal issues that are important, and that one needs to know when considering creating a startup company. She was followed by [Niche Thevarajah](http://www.oanda.com/) from Oanda who discussed their API system. Finally, we had [Harry Brundage](https://twitter.com/harrybrundage) from Shopify talk about the inspiration that led to Shopify, as well as answered many questions about what it was like to work at Shopify. Below you can find a video of these seminars.
 
-[![](./uofthacks2013/pic07.jpg)]()
+[![](./pic07.jpg)]()
 
-[![](./uofthacks2013/pic08.jpg)]()
+[![](./pic08.jpg)]()
 
 After the seminars, the amazing team from Cofoundster helped setup a unique experience for UofTHackers. They found individuals in their community with different backgrounds to come out and talk to students about their projects, and some of the best ways to grow their project and help turn it from a weekend hack into a profitable startup in the future. Students signed up and the team stayed on longer than expected to help out and keep giving students advice, and the hackers seemed to really appreciate it as well.
 
-[![](./uofthacks2013/pic09.jpg)]()
+[![](./pic09.jpg)]()
 
 This long day of activities was followed by Dinner, and then another night of hacking, napping, dancing and prize raffling. We held two larger Raffles the second night, had even more people dancing, and gave away even more prizes. A huge thanks to all our sponsors who helped provide us with the swag we could use for the prizes! We also had a little surprise in store for the students that stayed up all night hacking! We got an [ICE CREAM TRUCK](https://twitter.com/UofTHacks/status/384158422809468928) with unlimited Ice Cream for students all night long!
 
@@ -135,9 +135,9 @@ A full list of submitted Hacks, as well as descriptions/demos etc. can be found 
 
 - ASL-Hand Tracker
 
-[![](./uofthacks2013/pic10.jpg)]()
+[![](./pic10.jpg)]()
 
-[![](./uofthacks2013/pic11.jpg)]()
+[![](./pic11.jpg)]()
 
 We had two types of judges circulating the room, the first group being the overall judges that comprised of a representative from Shopify, and CoFoundster, as well as UofT's very own [Karen Reid](http://www.cs.toronto.edu/~reid/) and [Joshua Gans](http://www.joshuagans.com/). We believed this mix of judges from both different companies, as well as different fields of teaching, would help create a balanced discussion when selecting the final winners. We asked these Judges to base their judging criteria on Design, Innovation, Flashiness, Fun Factor, Usability, Functionality and a large proportion of the scoring went to Marketability and Presentation. We really wanted to emphasize the importance of being able to market a product, and thought this was a very important aspect to keep as part of the Judging. The second type of Judges at the Hackathon were the Categorical Prize Judges. These were companies who decided to sponsor their own prize, either to appreciate an apps use of their API, or just to improve the average students life. We let the companies judges determine their own judging criteria for this app. Below are the list of categories.
 
@@ -157,13 +157,13 @@ We had two types of judges circulating the room, the first group being the overa
 
 - "Best Game" - Ubisoft
 
-[![](./uofthacks2013/pic12.jpg)]()
+[![](./pic12.jpg)]()
 
 Once we had the finalists determined, we began the Closing Ceremony. A bittersweet moment that signified the end of an amazing weekend. Each of the finalists, as well as the winners of each Category were asked to present their Hack in front of the entire audience. We then ended with a few closing remarks, and some thank-yous to all our sponsors, judges, volunteers and hackers.
 
-[![](./uofthacks2013/pic13.jpg)]()
+[![](./pic13.jpg)]()
 
-[![](./uofthacks2013/pic17.jpg)]()
+[![](./pic17.jpg)]()
 
 I'm trying to see if there was a video recording of the Closing Ceremony, however I'm not sure that there was one :(
 
