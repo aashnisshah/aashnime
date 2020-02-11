@@ -9,15 +9,18 @@ import "../styles/main.css"
 
 const NavbarToggle = styled.span`
   position: absolute;
-  top: 10px;
   right: 20px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `
 
-const TitleLink = styled.p`
+const TitleLink = styled.span`
   font-family: Zeyada;
   display: inline-block;
   font-size: 1.6em;
+  text-decoration: none;
 `
 
 const NavigationLink = styled.a`
@@ -30,7 +33,6 @@ const NavigationLink = styled.a`
 const NavigationItem = styled.li`
   text-align: center;
   margin: 15px auto;
-  // display: inline-block;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -41,7 +43,7 @@ const NavBar = styled.nav`
   font-size: 0.8em;
 `
 
-const MainNav = styled.ul`
+const MainNav = styled.span`
   list-style-type: none;
 `
 
@@ -90,7 +92,7 @@ class Layout extends React.Component {
           </Link>
         </TitleLink>
         <MainNav className={`menu ${this.state.isOpen ? " active" : ""}`}>
-          {formattedNavigation}
+          <ul>{formattedNavigation}</ul>{" "}
         </MainNav>
       </NavBar>
     )

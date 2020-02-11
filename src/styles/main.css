@@ -1,3 +1,5 @@
-.active {
-  display: none;
+@media screen and (max-width: 768px) {
+  .active {
+    display: none;
+  }
 }
