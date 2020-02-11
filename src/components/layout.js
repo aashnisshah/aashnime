@@ -30,6 +30,11 @@ const NavigationLink = styled.a`
 const NavigationItem = styled.li`
   text-align: center;
   margin: 15px auto;
+  // display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
 `
 
 const NavBar = styled.nav`
