@@ -1,4 +1,4 @@
-const footerLinks = [
+const navigationLinks = [
   {
     link: "https://twitter.com/aashnisshah",
     name: "twitter",
@@ -21,4 +21,4 @@ const footerLinks = [
   },
 ]
 
-export default footerLinks
+export default navigationLinks
