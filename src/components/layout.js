@@ -97,7 +97,7 @@ class Layout extends React.Component {
       return (
         <NavigationItem key={name}>
           <NavigationLink href={link} target="_blank" rel="noopener noreferrer">
-            <Link to={link}>{name}</Link>
+            <a href={link}>{name}</a>
           </NavigationLink>
         </NavigationItem>
       )
