@@ -42,7 +42,7 @@ class IndexPage extends React.Component {
         <p>
           I enjoy teaching and inspiring other technologists through my public
           speaking and writing. I've had the opportunity to speak at events
-          organized by FITC, the University of Toronto. I have also been
+          organized by FITC, and the University of Toronto. I have also been
           featured as the Top 50 Inspiring Women in Canada by the Government of
           Canada's International Women's Day #StemForChange project, and a few
           more.
@@ -64,6 +64,14 @@ class IndexPage extends React.Component {
         <p>
           Feel free to <Link to={`/contact`}>get in touch</Link> - I'd love to
           get to know you too!
+        </p>
+
+        <p>
+          I have most recently worked at Square, working on the Cash App. I have
+          previously worked at LivEpicly in Jakarta, Indonesia. Amazon in
+          Seattle, USA. OANDA in Toronto, Canada. Microsoft in Vancouver Canada.
+          I'm currently exploring new opportunities - if you're company is
+          hiring then <Link to={`/contact`}>I'd love to know</Link>!
         </p>
       </Layout>
     )
