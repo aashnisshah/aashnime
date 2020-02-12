@@ -61,7 +61,7 @@ class Layout extends React.Component {
     super(props)
 
     this.state = {
-      isOpen: false,
+      isClosed: false,
     }
   }
   render() {
@@ -82,8 +82,7 @@ class Layout extends React.Component {
       <NavBar>
         <NavbarToggle
           onClick={() => {
-            console.log("click", this.state.isOpen)
-            this.setState({ isOpen: !this.state.isOpen })
+            this.setState({ isClosed: !this.state.isClosed })
           }}
         >
           <FaBars />
@@ -91,7 +90,7 @@ class Layout extends React.Component {
         <TitleLink>
           <Link to={`/`}>{title}</Link>
         </TitleLink>
-        <MainNav className={`menu ${this.state.isOpen ? " active" : ""}`}>
+        <MainNav className={`menu ${this.state.isClosed ? "" : " active"}`}>
           <NavList>{formattedNavigation}</NavList>{" "}
         </MainNav>
       </NavBar>
