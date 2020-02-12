@@ -18,9 +18,17 @@ const NavbarToggle = styled.span`
 
 const TitleLink = styled.span`
   font-family: Zeyada;
-  display: inline-block;
+  display: inline;
   font-size: 1.6em;
   text-decoration: none;
+`
+
+const NavList = styled.ul`
+  @media screen and (min-width: 768px) {
+    display: inline;
+    float: right;
+    line-height: 0px;
+  }
 `
 
 const NavigationLink = styled.a`
@@ -33,6 +41,7 @@ const NavigationLink = styled.a`
 const NavigationItem = styled.li`
   text-align: center;
   margin: 15px auto;
+  list-style-type: none;
 
   @media screen and (min-width: 768px) {
     display: inline-block;
@@ -80,19 +89,10 @@ class Layout extends React.Component {
           <FaBars />
         </NavbarToggle>
         <TitleLink>
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
+          <Link to={`/`}>{title}</Link>
         </TitleLink>
         <MainNav className={`menu ${this.state.isOpen ? " active" : ""}`}>
-          <ul>{formattedNavigation}</ul>{" "}
+          <NavList>{formattedNavigation}</NavList>{" "}
         </MainNav>
       </NavBar>
     )
