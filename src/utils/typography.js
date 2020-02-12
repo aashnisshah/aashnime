@@ -6,6 +6,12 @@ Sutro.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    a: {
+      color: `#1BA098`,
+    },
+    body: {
+      backgroundColor: `#EFEDE7`,
+    },
   }
 }
 

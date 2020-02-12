@@ -6,6 +6,8 @@ module.exports = {
     siteUrl: `https://aashni.me`,
     social: {
       twitter: `aashnisshah`,
+      github: `aashnisshah`,
+      instagram: `aashnisshah`,
     },
   },
   plugins: [

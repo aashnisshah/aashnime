@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { FaBars } from "react-icons/fa"
+import { FaBars, FaCopyright, FaHeart } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 import navigationLinks from "../utils/navigationLinks"
@@ -74,6 +74,13 @@ const SocialItem = styled.li`
   }
 `
 
+const Footer = styled.footer`
+  background-color: #051622;
+  color: #efede7;
+  text-align: center;
+  font-size: 0.8em;
+`
+
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -125,17 +132,40 @@ class Layout extends React.Component {
     )
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>{formattedSocial}</footer>
+      <div>
+        <div
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(24),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            minHeight: `100%`,
+          }}
+        >
+          <header>{header}</header>
+          <main>{children}</main>
+        </div>
+        <Footer>
+          <div
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              maxWidth: rhythm(24),
+              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+            }}
+          >
+            <p>{formattedSocial}</p>
+            <p>
+              Interested in collaborating?{" "}
+              <Link to={`/contact`}>Get in touch!</Link>
+            </p>
+            <p>
+              Made with <FaHeart /> in Toronto, Canada
+              <br />
+              <FaCopyright /> Aashni Shah 2020
+            </p>
+          </div>
+        </Footer>
       </div>
     )
   }
