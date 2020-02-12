@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 import navigationLinks from "../utils/navigationLinks"
+import socialLinks from "../utils/socialLinks"
 import "../styles/main.css"
 
 const NavbarToggle = styled.span`
@@ -31,7 +32,15 @@ const NavList = styled.ul`
   }
 `
 
-const NavigationLink = styled.a`
+const NavBar = styled.nav`
+  font-size: 0.8em;
+`
+
+const MainNav = styled.span`
+  list-style-type: none;
+`
+
+const NavigationLink = styled.p`
   text-decoration: none;
   text-align: center;
   padding-right: 0.8em;
@@ -48,12 +57,21 @@ const NavigationItem = styled.li`
   }
 `
 
-const NavBar = styled.nav`
-  font-size: 0.8em;
+const SocialLink = styled.a`
+  text-decoration: none;
+  text-align: center;
+  padding-right: 0.8em;
+  box-shadow: none;
 `
 
-const MainNav = styled.span`
+const SocialItem = styled.li`
+  text-align: center;
+  margin: 15px auto;
   list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
 `
 
 class Layout extends React.Component {
@@ -66,15 +84,25 @@ class Layout extends React.Component {
   }
   render() {
     const { title, children } = this.props
-    let header, formattedNavigation
+    let header, formattedNavigation, formattedSocial
 
     formattedNavigation = navigationLinks.map(({ link, name }) => {
       return (
         <NavigationItem key={name}>
           <NavigationLink href={link} target="_blank" rel="noopener noreferrer">
-            {name}
+            <Link to={link}>{name}</Link>
           </NavigationLink>
         </NavigationItem>
+      )
+    })
+
+    formattedSocial = socialLinks.map(({ link, name }) => {
+      return (
+        <SocialItem key={name}>
+          <SocialLink href={link} target="_blank" rel="noopener noreferrer">
+            {name}
+          </SocialLink>
+        </SocialItem>
       )
     })
 
@@ -107,7 +135,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>{formattedNavigation}</footer>
+        <footer>{formattedSocial}</footer>
       </div>
     )
   }
