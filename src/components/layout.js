@@ -49,7 +49,7 @@ const NavigationLink = styled.p`
 
 const NavigationItem = styled.li`
   text-align: center;
-  margin: 15px auto;
+  margin: auto auto;
   list-style-type: none;
 
   @media screen and (min-width: 768px) {
@@ -66,7 +66,7 @@ const SocialLink = styled.a`
 
 const SocialItem = styled.li`
   text-align: center;
-  margin: 15px auto;
+  margin: auto auto;
   list-style-type: none;
 
   @media screen and (min-width: 768px) {

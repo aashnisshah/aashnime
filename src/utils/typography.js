@@ -12,6 +12,15 @@ Sutro.overrideThemeStyles = () => {
     body: {
       backgroundColor: `#EFEDE7`,
     },
+    li: {
+      margin: `20px`,
+    },
+    ol: {
+      margin: `20px`,
+    },
+    ul: {
+      margin: `20px`,
+    },
   }
 }
 
