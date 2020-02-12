@@ -1,24 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import styled from "styled-components"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ProfilePic from "../../content/assets/aashni.jpg"
-
-const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 1.2em;
-  font-style: italic;
-`
-
-const ProfilePicCircle = styled.img`
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  border: 3px solid #1ba098;
-  float: right;
-`
 
 class AboutPage extends React.Component {
   render() {
