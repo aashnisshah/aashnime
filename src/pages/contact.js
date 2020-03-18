@@ -13,10 +13,6 @@ const FormFields = styled.div`
   margin: 18px 0px;
 `
 
-const Label = styled.label`
-  padding: 20px;
-`
-
 const InputField = styled.input`
   background-color: #efede7;
   border: none;
