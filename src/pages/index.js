@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -31,48 +31,22 @@ class IndexPage extends React.Component {
         <SEO title="Aashni" />
         <h1>Aashni Shah</h1>
         <ProfilePicCircle src={ProfilePic} />
-        <Subtitle>Product Manager, Software Engineer & Public Speaker</Subtitle>
+        <Subtitle>Tech, Philanthropy, Travel and Photography</Subtitle>
 
         <p>
-          Hi! A quick little intro about me: I'm passionate about creating a
-          better tomorrow using technology. My happy place is thinking about
-          internationalization, dealing with funky edge cases, and building a
-          great user experience.
-        </p>
-
-        <p>
-          I enjoy teaching and inspiring other technologists through my public
-          speaking and writing. I've had the opportunity to speak at events
-          organized by FITC, and the University of Toronto. I have also been
-          featured as the Top 50 Inspiring Women in Canada by the Government of
-          Canada's International Women's Day #StemForChange project, and a few
-          more.
-        </p>
-
-        <p>
-          Currently I run{" "}
+          Hi there! My name is Aashni and I run{" "}
           <a
-            href="http://elixirlabs.org"
+            href="https://elixirlabs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
             Elixir Labs
           </a>
-          , a non profit that builds solutions for nonprofit organizations with
-          mandates to affect social, environmental and economic good.
+          . In my free time I enjoy photography, travelling and Scuba Diving!
         </p>
 
         <p>
-          Feel free to <Link to={`/contact`}>get in touch</Link> - I'd love to
-          get to know you too!
-        </p>
-
-        <p>
-          I have most recently worked at Square, working on the Cash App. I have
-          previously worked at LivEpicly in Jakarta, Indonesia. Amazon in
-          Seattle, USA. OANDA in Toronto, Canada. Microsoft in Vancouver Canada.
-          I'm currently exploring new opportunities - if you're company is
-          hiring then <Link to={`/contact`}>I'd love to know</Link>!
+          Fun fact: I once fell out of a helicopter and lived to tell the tale!
         </p>
       </Layout>
     )
