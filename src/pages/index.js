@@ -18,6 +18,7 @@ const ProfilePicCircle = styled.img`
   width: 250px;
   border: 3px solid #1ba098;
   float: right;
+  margin: 20px;
 `
 
 class IndexPage extends React.Component {
