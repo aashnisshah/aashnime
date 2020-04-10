@@ -93,14 +93,26 @@ class Layout extends React.Component {
     const { title, children } = this.props
     let header, formattedNavigation, formattedSocial
 
-    formattedNavigation = navigationLinks.map(({ link, name }) => {
-      return (
-        <NavigationItem key={name}>
-          <NavigationLink href={link} target="_blank" rel="noopener noreferrer">
-            <a href={link}>{name}</a>
-          </NavigationLink>
-        </NavigationItem>
-      )
+    formattedNavigation = navigationLinks.map(({ link, name, target }) => {
+      if (target === "") {
+        return (
+          <NavigationItem key={name}>
+            <NavigationLink>
+              <Link to={link}>{name}</Link>
+            </NavigationLink>
+          </NavigationItem>
+        )
+      } else {
+        return (
+          <NavigationItem key={name}>
+            <NavigationLink>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {name}
+              </a>
+            </NavigationLink>
+          </NavigationItem>
+        )
+      }
     })
 
     formattedSocial = socialLinks.map(({ link, name }) => {
