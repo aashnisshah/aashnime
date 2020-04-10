@@ -12,8 +12,8 @@ const navigationLinks = [
     name: "about",
   },
   {
-    link: "/resume.pdf",
-    name: "resume",
+    link: "/services",
+    name: "services",
   },
   {
     link: "/contact",
