@@ -18,7 +18,7 @@ class ContactPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <h1>Subscribe</h1>
+        <h1>Subscribe to my Newsletter</h1>
         <p>
           Hey all! In this newsletter, I'll be sharing updates, announcements
           and resources straight to your inbox. This includes exciting things
