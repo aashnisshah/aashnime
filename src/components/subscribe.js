@@ -91,7 +91,7 @@ class SubscribeBlock extends React.Component {
             into your inbox.
           </p>
           <SmallText>
-            I promise not to send spam. You can subscribe anytime.
+            I promise not to send spam. You can unsubscribe anytime.
           </SmallText>
         </SubscribeIntro>
         <SubscribeForm>
