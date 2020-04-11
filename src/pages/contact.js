@@ -1,6 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import {
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+  FaStackOverflow,
+  FaLinkedin,
+} from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -14,38 +21,53 @@ const FormFields = styled.div`
 `
 
 const InputField = styled.input`
-  background-color: #efede7;
+  background-color: #1ba098;
+  color: #fff;
   border: none;
-  border-bottom: 2px #051622 solid;
+  border-radius: 4px;
   width: 100%;
-  focus {
+  padding: 12px;
+  :focus {
     outline: none;
   }
   ::placeholder {
-    color: #051622;
+    color: #efede7;
   }
 `
 
 const TextField = styled.textarea`
-  background-color: #efede7;
+  background-color: #1ba098;
+  color: #fff;
   border: none;
-  border-bottom: 2px #051622 solid;
+  border-radius: 4px;
+  padding: 12px;
   width: 100%;
+  rows: 20;
+  ::placeholder {
+    color: #efede7;
+  }
 `
 
 const SubmitButton = styled.button`
-  background-color: #051622;
+  background-color: #1ba098;
   border: none;
-  border: 2px #051622 solid;
   width: 100%;
   color: #efede7;
+  border-radius: 4px;
+  padding: 12px;
 `
 
 const HiddenFields = styled.div`
   display: none;
 `
 
-class AboutPage extends React.Component {
+const SocialLink = styled.a`
+  padding: 24px;
+  width: 100px;
+  height: 200px;
+`
+
+class ContactPage extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -54,9 +76,50 @@ class AboutPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="Contact | Aashni" />
         <h1>Get in Touch</h1>
+        <p>Hey there! Looking to get in touch? I'd love to hear from you.</p>
+
+        <p>You can find me online @aashnisshah:</p>
         <p>
-          Hey there! Looking to get in touch? I'd love to hear from you. Send me
-          an email at contact[at]aashni.me, or fill out the form below.
+          <SocialLink
+            href="https://twitter.com/aashnisshah"
+            target="_blank"
+            ref="noopener noreferrer"
+          >
+            <FaTwitter size={50} />
+          </SocialLink>
+          <SocialLink
+            href="https://instagram.com/aashnisshah"
+            target="_blank"
+            ref="noopener noreferrer"
+          >
+            <FaInstagram size={50} />
+          </SocialLink>
+          <SocialLink
+            href="https://github.com/aashnisshah"
+            target="_blank"
+            ref="noopener noreferrer"
+          >
+            <FaGithub size={50} />
+          </SocialLink>
+          <SocialLink
+            href="https://stackoverflow.com/users/1989265/aashnisshah"
+            target="_blank"
+            ref="noopener noreferrer"
+          >
+            <FaStackOverflow size={50} />
+          </SocialLink>
+          <SocialLink
+            href="https://linkedin.com/in/aashnisshah"
+            target="_blank"
+            ref="noopener noreferrer"
+          >
+            <FaLinkedin size={50} />
+          </SocialLink>
+        </p>
+
+        <p>
+          You can also send me an email at contact[at]aashni.me, or fill out the
+          form below.
         </p>
         <Form
           name="contact"
@@ -71,7 +134,12 @@ class AboutPage extends React.Component {
             <InputField type="text" name="email" placeholder="Email" />
           </FormFields>
           <FormFields>
-            <TextField type="text" name="message" placeholder="Message" />
+            <TextField
+              type="text"
+              name="message"
+              placeholder="Message"
+              rows="6"
+            />
           </FormFields>
           <HiddenFields>
             <input type="hidden" name="bot-field" />
@@ -81,12 +149,13 @@ class AboutPage extends React.Component {
           </HiddenFields>
           <SubmitButton type="submit">Submit</SubmitButton>
         </Form>
+        <hr />
       </Layout>
     )
   }
 }
 
-export default AboutPage
+export default ContactPage
 
 export const pageQuery = graphql`
   query {

@@ -6,6 +6,7 @@ import { FaBars, FaCopyright, FaHeart } from "react-icons/fa"
 import { rhythm } from "../utils/typography"
 import navigationLinks from "../utils/navigationLinks"
 import socialLinks from "../utils/socialLinks"
+import SubscribeBlock from "../components/subscribe"
 import "../styles/main.css"
 
 const NavbarToggle = styled.span`
@@ -156,6 +157,8 @@ class Layout extends React.Component {
         >
           <header>{header}</header>
           <main>{children}</main>
+
+          <SubscribeBlock />
         </div>
         <Footer>
           <div
