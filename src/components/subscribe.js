@@ -2,9 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
 const Form = styled.form`
   background-color: none;
 `
@@ -85,8 +82,6 @@ const SubscribeForm = styled.div`
 
 class SubscribeBlock extends React.Component {
   render() {
-    const { data } = this.props
-
     return (
       <SubscribeBox>
         <SubscribeIntro>
