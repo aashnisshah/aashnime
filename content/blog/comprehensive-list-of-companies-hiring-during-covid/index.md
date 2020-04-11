@@ -52,6 +52,12 @@ If you come across any additional lists, feel free to add it yourself by making 
 
 [We Work Remotely](https://weworkremotely.com/)
 
+[Remotive.io](https://remotive.io/remote-jobs)
+
+## Freelancer Roles
+[Upwork](https://www.upwork.com/)
+[Fiverr](http://www.fiverr.com/s2/eb272409e5)
+
 ## Non-Technical Remote Roles
 
 [Thousands of Non-Technical Remote Jobs](https://remotelyinclined.substack.com/p/where-to-find-thousands-of-non-tech?utm_campaign=Newsletter&utm_source=hs_email&utm_medium=email&utm_content=85479333&_hsenc=p2ANqtz-8EzWTTh_nkfa9MOsX4n_j9X-1U9IF5L4sf_VdnFcIk0X1EZ-BiIPTesrKk8lOVgta5PH9VBaHlR7lgTblT-KCLm2puYw&_hsmi=85479333)
