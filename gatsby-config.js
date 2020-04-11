@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Aashni's Pensive`,
+    title: `Aashni's Archives`,
     author: `Aashni Shah`,
     description: `My small corner of the world.`,
     siteUrl: `https://aashni.me`,

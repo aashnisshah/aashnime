@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -42,6 +43,7 @@ class IndexPage extends React.Component {
           >
             Elixir Labs
           </a>
+          . I also do some <Link to={"/services"}>consulting and coaching</Link>
           . In my free time I enjoy photography, travelling and Scuba Diving!
         </p>
 
