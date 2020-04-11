@@ -116,7 +116,7 @@ class SubscribeBlock extends React.Component {
               <input type="hidden" name="bot-field" />
             </HiddenFields>
             <HiddenFields>
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="newsletter" />
             </HiddenFields>
             <SubmitButton type="submit">Subscribe</SubmitButton>
           </Form>
