@@ -1,12 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import {
-  FaTwitter,
-  FaInstagram,
-  FaGithub,
-  FaStackOverflow,
-  FaLinkedin,
-} from "react-icons/fa"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,6 +11,7 @@ class ContactPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="Subscribe to my Newsletter | Aashni" />
         <h1>Subscribe to my Newsletter</h1>
         <p>
           Hey all! In this newsletter, I'll be sharing updates, announcements
