@@ -2,7 +2,10 @@
 author: Aashni
 comments: true
 date: 2019-06-17 04:42:31+00:00
-description: UofT St Mike's Convocation
+description: I was asked to be the guest speaker for the convocation ceremony and it was
+  truly an honour, and an opportunity to share some of the things I’ve learnt since
+  I graduated. It took many drafts to figure out what message I wanted to share with
+  the students on such an important day.
 excerpt: I was asked to be the guest speaker for the convocation ceremony and it was
   truly an honour, and an opportunity to share some of the things I’ve learnt since
   I graduated. It took many drafts to figure out what message I wanted to share with

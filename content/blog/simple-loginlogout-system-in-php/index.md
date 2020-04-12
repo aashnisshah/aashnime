@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-07-10 11:22:07+00:00
-description: Simple Login/Logout System in PHP
+description: Follow this guide to create a simple login and logout system using PHP
 layout: post
 link: https://aashni.me/blog/simple-loginlogout-system-in-php/
 slug: simple-loginlogout-system-in-php

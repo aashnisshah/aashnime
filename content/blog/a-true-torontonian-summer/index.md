@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-06-15 14:12:01+00:00
-description: A True Torontonian Summer
+description: My first time spending a few weeks of Summer in Toronto
 layout: post
 link: https://aashni.me/blog/a-true-torontonian-summer/
 slug: a-true-torontonian-summer

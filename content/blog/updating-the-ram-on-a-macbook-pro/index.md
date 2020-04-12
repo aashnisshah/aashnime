@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-07-28 10:57:35+00:00
-description: Updating the RAM on a MacBook Pro
+description: I'm not the kinda person to normally take my macbook apart, but here's a details guide on how I did it to update my RAM.
 layout: post
 link: https://aashni.me/blog/updating-the-ram-on-a-macbook-pro/
 slug: updating-the-ram-on-a-macbook-pro

@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-09-29 23:29:35+00:00
-description: That One Time I Hack’ed The North
+description: Hack The North is the largest hackathon in Canada, and it's one of the most incredible events I've ever attended.
 layout: post
 link: https://aashni.me/blog/that-one-time-i-hacked-the-north/
 slug: that-one-time-i-hacked-the-north

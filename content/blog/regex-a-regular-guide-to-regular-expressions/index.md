@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-03-12 07:25:11+00:00
-description: 'Regex: A Regular Guide to Regular Expressions'
+description: Regular Expression, or RegEx, is confusing. Here's a quick guide to break things down for you.
 layout: post
 link: https://aashni.me/blog/regex-a-regular-guide-to-regular-expressions/
 slug: regex-a-regular-guide-to-regular-expressions

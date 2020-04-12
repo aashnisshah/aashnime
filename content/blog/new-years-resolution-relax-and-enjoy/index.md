@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2014-01-23 04:21:10+00:00
-description: 'New Years Resolution: Relax and Enjoy'
+description: A recap of my 2013 as we move into 2014
 layout: post
 link: https://aashni.me/blog/new-years-resolution-relax-and-enjoy/
 slug: new-years-resolution-relax-and-enjoy

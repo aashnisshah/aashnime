@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-04-23 06:01:34+00:00
-description: 'TODO: Make TODO Comments Better For Everyone'
+description: Most codebases are riddled with TODO comments. Here's a few tips on how to keep them manageable
 layout: post
 link: https://aashni.me/blog/todo-make-todo-comments-better-for-everyone/
 slug: todo-make-todo-comments-better-for-everyone

@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:47:35+00:00
-description: "AngularJS Tutorial Part 4: Introducing Bootstrap"
+description: AngularJS is a great framework for building fast frontend websites. Here's part 4 in a series of tutorials on how to build and deploy a website with AngularJS.
 layout: post
 link: https://aashni.me/blog/angularjs-tutorial-part-4-introducing-bootstrap/
 slug: angularjs-tutorial-part-4-introducing-bootstrap

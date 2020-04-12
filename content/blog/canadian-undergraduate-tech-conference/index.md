@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-05-14 22:00:05+00:00
-description: Canadian Undergraduate Tech Conference
+description: Here's a story of the first and last time I ever helped plan a conference.
 layout: post
 link: https://aashni.me/blog/canadian-undergraduate-tech-conference/
 slug: canadian-undergraduate-tech-conference

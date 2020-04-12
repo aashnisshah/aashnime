@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-02-16 08:08:17+00:00
-description: "Level Unlocked: Alpha Tester"
+description: I got a unique opportunity to be an alpha tester for some friends new edTech startup.
 layout: post
 link: https://aashni.me/blog/level-unlocked-alpha-tester/
 slug: level-unlocked-alpha-tester

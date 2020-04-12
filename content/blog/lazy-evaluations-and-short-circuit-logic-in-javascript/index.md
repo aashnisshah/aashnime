@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-04-10 06:41:16+00:00
-description: Lazy Evaluations and Short Circuit Logic in Javascript
+description: If you're trying to improve your runtime, consider Javascript's short circuit logic as a way to speed things up
 layout: post
 link: https://aashni.me/blog/lazy-evaluations-and-short-circuit-logic-in-javascript/
 slug: lazy-evaluations-and-short-circuit-logic-in-javascript

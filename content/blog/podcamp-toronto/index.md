@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-03-25 02:50:15+00:00
-description: PodCamp Toronto
+description: Is this possibly my first ever speaker experience, YES IT IS! I spoke about UofTHacks and hackathons in general
 layout: post
 link: https://aashni.me/blog/podcamp-toronto/
 slug: podcamp-toronto

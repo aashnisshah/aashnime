@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-04-04 20:35:44+00:00
-description: HackWestern 2015
+description: Here's my experience from attending HackWestern 2015
 layout: post
 link: https://aashni.me/blog/hackwestern-2015/
 slug: hackwestern-2015

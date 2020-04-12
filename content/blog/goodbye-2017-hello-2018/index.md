@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-01-15 10:10:26+00:00
-description: Goodbye 2017, Hello 2018
+description: Everyone writes their annual "this is the new year" post, here's mine.
 layout: post
 link: https://aashni.me/blog/goodbye-2017-hello-2018/
 slug: goodbye-2017-hello-2018

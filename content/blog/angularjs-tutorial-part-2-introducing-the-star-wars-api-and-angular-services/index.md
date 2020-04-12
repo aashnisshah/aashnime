@@ -3,8 +3,7 @@ author: Aashni
 comments: true
 date: 2016-08-20 23:46:56+00:00
 description:
-  "AngularJS Tutorial Part 2: Introducing the Star Wars API and Angular
-  Services"
+  AngularJS is a great framework for building fast frontend websites. Here's part 2 in a series of tutorials on how to build and deploy a website with AngularJS.
 layout: post
 link: https://aashni.me/blog/angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services/
 slug: angularjs-tutorial-part-2-introducing-the-star-wars-api-and-angular-services

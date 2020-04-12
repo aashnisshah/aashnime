@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-26 08:41:36+00:00
-description: A Guide to Web Development for Beginners
+description: There are so many different languages and frameworks and ways to get started with web development. This guide is a great way to understand what the different buzz words like HTML, CSS, Javascript, PHP and Ruby mean.
 layout: post
 link: https://aashni.me/blog/a-guide-to-web-development-for-beginners/
 slug: a-guide-to-web-development-for-beginners

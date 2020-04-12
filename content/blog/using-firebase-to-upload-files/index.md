@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-12 09:26:32+00:00
-description: Using Firebase to Upload Files
+description: When creating an input form, using a tool like Firebase to upload files can be extremely powerful
 layout: post
 link: https://aashni.me/blog/using-firebase-to-upload-files/
 slug: using-firebase-to-upload-files

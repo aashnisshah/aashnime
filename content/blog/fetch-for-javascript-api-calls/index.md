@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-03-19 08:32:15+00:00
-description: Fetch For Javascript API Calls
+description: There are many (painful) ways to make an API call using Javascript. Fetch is a new version that makes it so much nicer
 layout: post
 link: https://aashni.me/blog/fetch-for-javascript-api-calls/
 slug: fetch-for-javascript-api-calls

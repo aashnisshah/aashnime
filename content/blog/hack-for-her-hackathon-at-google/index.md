@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-03-18 08:57:04+00:00
-description: Hack For Her Hackathon at Google
+description: On International Women's Day, I got to head to the Google Office in Waterloo and participate in an International Women's Day hackathon event - it was incredible and my team won!
 layout: post
 link: https://aashni.me/blog/hack-for-her-hackathon-at-google/
 slug: hack-for-her-hackathon-at-google

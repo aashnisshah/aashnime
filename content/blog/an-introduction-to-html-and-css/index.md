@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-05 06:48:53+00:00
-description: An Introduction to HTML and CSS
+description: HTML and CSS are the true backbones of web development, no matter what other framework or language you decide to use. Here's an brief glance explaining what the two are.
 layout: post
 link: https://aashni.me/blog/an-introduction-to-html-and-css/
 slug: an-introduction-to-html-and-css

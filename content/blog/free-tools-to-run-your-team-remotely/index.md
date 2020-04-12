@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2020-03-18 09:45:53+00:00
-description: Free Tools To Run Your Team Remotely
+description: COVID-19 has impacted us all, and many of our companies and teams are now trying to work remotely. Here's a list of free tools I've been using to run Elixir Labs remotely for the last 3.5 years.
 layout: post
 link: https://aashni.me/blog/free-tools-to-run-your-team-remotely/
 slug: free-tools-to-run-your-team-remotely

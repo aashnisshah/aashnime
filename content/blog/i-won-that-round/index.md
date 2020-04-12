@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-02-25 03:06:26+00:00
-description: I Won That Round
+description: An old memory of me convincing my dad to buy me a flash drive when I was 11.
 layout: post
 link: https://aashni.me/blog/i-won-that-round/
 slug: i-won-that-round

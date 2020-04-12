@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-03-26 03:12:10+00:00
-description: Function Overloading in Javascript
+description: Javascript doesn't really allow you to practice function overloading. But I wanted to do it, so I figured out a way.
 layout: post
 link: https://aashni.me/blog/function-overloading-in-javascript/
 slug: function-overloading-in-javascript

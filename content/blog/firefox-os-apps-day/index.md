@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-02-10 01:07:44+00:00
-description: FireFox OS Apps Day
+description: Firefox was testing out the launch of their new phone, and I got to play around with it.
 layout: post
 link: https://aashni.me/blog/firefox-os-apps-day/
 slug: firefox-os-apps-day

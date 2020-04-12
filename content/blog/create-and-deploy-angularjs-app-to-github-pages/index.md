@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-01-22 12:14:54+00:00
-description: Create and Deploy An AngularJS App to Github Pages
+description: AngularJS is a great framework for building websites. It becomes even more powerful when you're able to deploy the entire site to github pages, therefore hosting the site for free!
 layout: post
 link: https://aashni.me/blog/create-and-deploy-angularjs-app-to-github-pages/
 slug: create-and-deploy-angularjs-app-to-github-pages

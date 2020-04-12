@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-08-04 13:44:33+00:00
-description: Setting Up A Photoblog
+description: Making use of Wordpress and the YAPB plugin to setup a photoblog 
 layout: post
 link: https://aashni.me/blog/setting-up-a-photoblog/
 slug: setting-up-a-photoblog

@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-03-11 01:21:12+00:00
-description: Why I Want To Go To FITC
+description: Here's my entry to attend the FITC conference in Toronto
 layout: post
 link: https://aashni.me/blog/why-i-want-to-go-to-fitc/
 slug: why-i-want-to-go-to-fitc

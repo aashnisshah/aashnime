@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-01-18 09:24:06+00:00
-description: Hello world!
+description: Hello world! The most generic blog post title!
 layout: post
 link: https://aashni.me/blog/hello-world/
 slug: hello-world

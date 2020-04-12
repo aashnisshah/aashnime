@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-02-02 09:29:41+00:00
-description: Game Design Deathmatch
+description: The Game Design Club at UofT planned a Game Design Deathmatch - here's a breakdown of the (terrible) game I built for it.
 layout: post
 link: https://aashni.me/blog/game-design-deathmatch/
 slug: game-design-deathmatch

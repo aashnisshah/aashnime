@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-03-08 22:06:02+00:00
-description: '#DearMe - International Womens Day 2015'
+description: Here's a letter I wrote to my past self as part of the 2015 International Women's Day
 layout: post
 link: https://aashni.me/blog/dearme-international-womens-day-2015/
 slug: dearme-international-womens-day-2015

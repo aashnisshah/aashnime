@@ -2,9 +2,7 @@
 author: Aashni
 comments: true
 date: 2016-08-20 23:47:14+00:00
-description:
-  "AngularJS Tutorial Part 3: Using Star Wars API Data through Angular
-  Controllers and Views"
+description: AngularJS is a great framework for building fast frontend websites. Here's part 3 in a series of tutorials on how to build and deploy a website with AngularJS.
 layout: post
 link: https://aashni.me/blog/angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views/
 slug: angularjs-tutorial-part-3-using-star-wars-api-data-through-angular-controllers-and-views

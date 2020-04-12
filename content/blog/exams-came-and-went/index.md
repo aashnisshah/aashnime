@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-05-08 04:51:26+00:00
-description: Exams Came And Went, Now It's Summer Time
+description: Exams are never a fun time. Now it's time to enjoy summer!
 layout: post
 link: https://aashni.me/blog/exams-came-and-went/
 slug: exams-came-and-went

@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2015-04-23 05:11:03+00:00
-description: FITC Womens Mix and Make Social
+description: My second ever speaking opportunity where I spoke at a FITC Women's Mix and Make Social, focusing on how I learnt by planning, and eventually became a leader.
 layout: post
 link: https://aashni.me/blog/fitc-womens-mix-and-make-social/
 slug: fitc-womens-mix-and-make-social

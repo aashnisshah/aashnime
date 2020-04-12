@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-02-19 09:00:49+00:00
-description: An Intro to Slack Apps!
+description: Slack is one of the best tools for communication. What's better is that it's fairly customizable, allowing you to make simple plugins and hacks unique for your company. Here's a guide on how to get started.
 layout: post
 link: https://aashni.me/blog/an-intro-to-slack-apps/
 slug: an-intro-to-slack-apps

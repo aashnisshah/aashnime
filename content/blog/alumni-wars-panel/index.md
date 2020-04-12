@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-01-25 01:13:05+00:00
-description: Alumni Wars Panel
+description: What's better than a panel of UofT alumni? One where they all took different paths!
 layout: post
 link: https://aashni.me/blog/alumni-wars-panel/
 slug: alumni-wars-panel

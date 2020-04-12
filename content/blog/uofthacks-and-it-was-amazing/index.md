@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2013-11-01 20:35:48+00:00
-description: UofTHacks and it was Amazing!
+description: UofTHacks was such a big part of my life! Here's a breakdown of the first event.
 layout: post
 link: https://aashni.me/blog/uofthacks-and-it-was-amazing
 published: false

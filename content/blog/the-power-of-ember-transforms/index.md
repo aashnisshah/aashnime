@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2018-04-02 00:48:58+00:00
-description: The Power of Ember Transforms
+description: Ember transformations are extremely powerful! Here's how I used one to transform birthday's and dates
 layout: post
 link: https://aashni.me/blog/the-power-of-ember-transforms/
 slug: the-power-of-ember-transforms
