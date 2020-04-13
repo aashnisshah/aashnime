@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2020-04-11 06:01:34+00:00
-description: "As an unfortunate effect of the current COVID-19 pandemic, millions of people are unemployed. Here are some resources to help anyone in the tech industry find their next job."
+description: "As an unfortunate effect of the current COVID-19 pandemic, millions of people are unemployed. Here are some resources to help anyone in the tech industry find which companies are still hiring during the pandemic."
 layout: post
 link: https://aashni.me/blog/comprehensive-list-of-companies-hiring-during-covid/
 slug: comprehensive-list-of-companies-hiring-during-covid
