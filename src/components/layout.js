@@ -58,6 +58,29 @@ const NavigationItem = styled.li`
   }
 `
 
+const NotificationBar = styled.div`
+  margin: 0px;
+  background-color: #051622;
+  color: #efede7;
+  text-align: center;
+  font-size: 0.8em;
+`
+
+const NotificationMessage = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  width: rhythm(24);
+  padding: ${rhythm(0.5)} ${rhythm(3 / 4)};
+  font-size: 0.8em;
+`
+
+const NotificationClose = styled.button`
+  background: none !important;
+  padding: 8px;
+  border: none;
+  color: #1ba098;
+`
+
 const SocialLink = styled.a`
   text-decoration: none;
   text-align: center;
@@ -88,6 +111,7 @@ class Layout extends React.Component {
 
     this.state = {
       isClosed: false,
+      showNotifications: true,
     }
   }
   render() {
@@ -146,6 +170,31 @@ class Layout extends React.Component {
 
     return (
       <div>
+        {this.state.showNotifications
+          ? console.log(this.state)
+          : console.log(this.state)}
+        <NotificationBar
+          className={`notifications ${
+            this.state.showNotifications ? "" : " hide"
+          }`}
+        >
+          <NotificationMessage>
+            Want to help the fight against COVID-19? Take part in this{" "}
+            <a
+              href="https://quiznight.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              virtual quiz night fundraiser
+            </a>{" "}
+            on April 25th, 5pm EST.
+            <NotificationClose
+              onClick={() => this.setState({ showNotifications: false })}
+            >
+              close
+            </NotificationClose>
+          </NotificationMessage>
+        </NotificationBar>
         <div
           style={{
             marginLeft: `auto`,
