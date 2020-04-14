@@ -30,6 +30,8 @@ If you come across any additional lists, feel free to add it yourself by making 
 
 [Still Hiring](https://stillhiring.org)
 
+[TechLadies](https://hiretechladies.com/jobs)
+
 ## Companies in Canada
 
 [Spreadsheet of Companies hiring in Canada during COVID](https://docs.google.com/spreadsheets/d/1d2pyNKVOeKbzRzqEMLpxNkT7ABWbPoGLgsPt1CuHsW0/edit#gid=0)
