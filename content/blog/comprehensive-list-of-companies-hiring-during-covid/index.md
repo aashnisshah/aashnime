@@ -38,6 +38,8 @@ If you come across any additional lists, feel free to add it yourself by making 
 
 [Tech Companies in Toronto](https://github.com/toriagibbs/toronto-tech-scene)
 
+[LinkedIn Post Highlighting Companies Hiring in Kenya](https://www.linkedin.com/feed/news/whos-hiring-in-canada-4531435/) - many are non technical roles!
+
 ## Region Specific Lists
 
 [List of 1000+ American Companies Hiring](https://candor.co/hiring-freezes/?utm_campaign=Newsletter&utm_source=hs_email&utm_medium=email&utm_content=85479333&_hsenc=p2ANqtz-8EzWTTh_nkfa9MOsX4n_j9X-1U9IF5L4sf_VdnFcIk0X1EZ-BiIPTesrKk8lOVgta5PH9VBaHlR7lgTblT-KCLm2puYw&_hsmi=85479333)
@@ -65,8 +67,10 @@ If you come across any additional lists, feel free to add it yourself by making 
 [Upwork](https://www.upwork.com/)
 [Fiverr](http://www.fiverr.com/s2/eb272409e5)
 
-## Non-Technical Remote Roles
+## Non-Technical Roles
 
 [Thousands of Non-Technical Remote Jobs](https://remotelyinclined.substack.com/p/where-to-find-thousands-of-non-tech?utm_campaign=Newsletter&utm_source=hs_email&utm_medium=email&utm_content=85479333&_hsenc=p2ANqtz-8EzWTTh_nkfa9MOsX4n_j9X-1U9IF5L4sf_VdnFcIk0X1EZ-BiIPTesrKk8lOVgta5PH9VBaHlR7lgTblT-KCLm2puYw&_hsmi=85479333)
+
+[LinkedIn Post Highlighting Companies Hiring in Kenya](https://www.linkedin.com/feed/news/whos-hiring-in-canada-4531435/)
 
 If you're currently on the job market and looking for new roles - I wish you good luck! I've [given talks](https://www.youtube.com/watch?v=N__a2v8nVbE) in the past on how to prep for the job hunt, and am open to [coaching](/services) if you need it.
