@@ -38,7 +38,7 @@ If you come across any additional lists, feel free to add it yourself by making 
 
 [Tech Companies in Toronto](https://github.com/toriagibbs/toronto-tech-scene)
 
-[LinkedIn Post Highlighting Companies Hiring in Kenya](https://www.linkedin.com/feed/news/whos-hiring-in-canada-4531435/) - many are non technical roles!
+[LinkedIn Post Highlighting Companies Hiring in Canada](https://www.linkedin.com/feed/news/whos-hiring-in-canada-4531435/) - many are non technical roles!
 
 ## Region Specific Lists
 
