@@ -14,7 +14,7 @@ categories:
   - Job Hunting
 ---
 
-The COVID-19 Pandemic has brought most industries to their knees, and as a result many incredibly talented and skilled workers have lost their jobs. If you are one of those people, here are some resources I've seen floating arond the internet. Most of these are for roles at technical companies (i.e. software engineer, PM, designer etc), but there are a few non-tech roles too.
+The COVID-19 Pandemic has brought most industries to their knees, and as a result many incredibly talented and skilled workers have lost their jobs. If you are one of those people, here are some resources I've seen floating around the internet. Most of these are for roles at technical companies (i.e. software engineer, PM, designer etc), but there are a few non-tech roles too.
 
 If you come across any additional lists, feel free to add it yourself by making a [pull request](https://github.com/aashnisshah/aashnime) or [let me know](https://aashni.me/contact) and I can add it in.
 
