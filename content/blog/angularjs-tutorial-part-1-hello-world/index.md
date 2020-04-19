@@ -22,11 +22,13 @@ This is part 1 of a multi-part [Intro to AngularJS](../blog/angularjs-an-introdu
 Before we can churn out a kickass Star Wars website, we'll create the "Hello World" of Angular Apps.
 
 I usually like to keep my files organized, especially since I've seen what happens when you have over 100 files for a single project. With that in mind, let's create the following files and folder.
-`> index.html
 
-> app.js
-> controllers/
-> views/`
+```bash
+touch index.html
+touch app.js
+mkdir controllers/
+mkdir views/
+```
 
 I like keeping all controller related files in one folder, and the same for my views files. If we get down to creating directives or services, then I would also create individual folders for those as well, but this is good for the Hello World app.
 
@@ -34,28 +36,33 @@ I like keeping all controller related files in one folder, and the same for my v
 
 Now we can open up the index.html file and start creating the app.
 
-    <!DOCTYPE html>
-    <html ng-app="AngularApp">
-    <head>
-      <title>Star Wars App</title>
+```html
+<!DOCTYPE html>
+<html ng-app="AngularApp">
+  <head>
+    <title>Star Wars App</title>
 
-      <!-- include AngualrJS js -->
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"></script>
+    <!-- include AngualrJS js -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.min.js"
+    ></script>
 
-      <!-- our files -->
-      <script type="text/javascript" src="app.js"></script>
+    <!-- our files -->
+    <script type="text/javascript" src="app.js"></script>
 
-      <!-- Controllers -->
-      <script type="text/javascript" src="controllers/main.js"></script>
-
-    </head>
-    <body>
-
-      <div ng-view></div>
-
-    </body>
-    </html>
+    <!-- Controllers -->
+    <script type="text/javascript" src="controllers/main.js"></script>
+  </head>
+  <body>
+    <div ng-view></div>
+  </body>
+</html>
+```
 
 So the important things you need to understand from the above code is this:
 
@@ -71,23 +78,28 @@ So the important things you need to understand from the above code is this:
 
 Next we'll move on to creating the `app.js` file. Open it up, and add the following line:
 
-    var angularApp = angular.module('AngularApp', ['ngRoute']);
+```javascript
+var angularApp = angular.module("AngularApp", ["ngRoute"])
+```
 
 The code above creates an angular module called AngularApp that has `ngRoute` as one of the activated options, and assigns it to the angularApp variable.
 
 We're now going to setup the routing configuration, so underneath the line you've already added in the app.js, add the following code:
 
-    angularApp.config(['$routeProvider',
-      function($routeProvider){
-        $routeProvider
-        .when('/', {
-          templateUrl : 'views/main.html',
-          controller : 'MainCtrl',
-          controllerAs : 'main'
-        })
-        .otherwise('/');
-      }
-    ]);
+```javascript
+angularApp.config([
+  "$routeProvider",
+  function($routeProvider) {
+    $routeProvider
+      .when("/", {
+        templateUrl: "views/main.html",
+        controller: "MainCtrl",
+        controllerAs: "main",
+      })
+      .otherwise("/")
+  },
+])
+```
 
 This let's you add and configure the `routeProvider`. What's important here is in each `when` block, you assign what the router should do (second parameter) when the first parameter (in this case '/') is rendered in the browser. For now, we'll assign the templateUrl to `views/main.html`, which links to a `main.html` file we will create in the views folder. Assign the controller as `MainCtrl` and the controllerAs to `main`. We will create a controller called MainCtrl, and this is what the routeProvider will pick up on.
 
@@ -95,13 +107,15 @@ You can have multiple `when` blocks, however at the end you should include an `o
 
 Now we're going to create our first controller. Inside your `controller` folder, create a new file called `main.js` and add the following code.
 
-    angularApp.controller('MainCtrl', [
-      '$scope',
-      function($scope){
-        $scope.heading = "Hello World";
-        $scope.message = "This is me";
-      }
-    ]);
+```javascript
+angularApp.controller("MainCtrl", [
+  "$scope",
+  function($scope) {
+    $scope.heading = "Hello World"
+    $scope.message = "This is me"
+  },
+])
+```
 
 Here we have created a controller called `MainCtrl`. Within the `.controller()` you have two parameters. The first parameter is the name of the controller (which you use in the router). The second is an n-length array that can contain a few different things. The first n-1 elements in the array are all different object types that you want included in AngularJS. In our example, this includes the `$scope` object (which we'll dive into soon). The nth element is a `function()` call, where all the objects you previously listed will also be listed as parameters being passed into the function. It's a little redundant, but oh well. Inside this function, you can include the logic for your website, in our case we create two variables (`$scope.heading` and `$scope.message`) and assign some strings to these variables.
 
@@ -109,18 +123,26 @@ A quick dive into what `$scope` is - it acts as the binding bridge between the c
 
 Ok, we're on the last part of our `Hello World` app - we need to add a view. In the `views` folder, create a new file called `main.html`. Inside this file, add the following two lines:
 
+```html
     <h1>{{ heading }}</h1>
     <p>{{ message }}</h1>
+```
 
 AngularJS renders anything within `{{ }}` as Javascript. You can actually stick logic between these brackets! In our case, we're referring to the heading and message variables we created on \$scope.
 
 Phew, that was a lot. Now, let's go over to our terminal, and create a simple HTTP server so that we can run the AngularJS app. Make sure you cd into the angularJS app that we created, then type one of these commands:
 
-    Mac OS X & Linux (in terminal):
-    > python -m SimpleHTTPServer 8000
+Mac OS X & Linux (in terminal):
 
-    Windows (maybe Python 3):
+```bash
+    > python -m SimpleHTTPServer 8000
+```
+
+Windows (maybe Python 3):
+
+```bash
     > python -m http.server 8000
+```
 
 And finally, go to `http://localhost:8000` in your browser and let's see what we got! If everything went according to plan, then this is what you should see.
 

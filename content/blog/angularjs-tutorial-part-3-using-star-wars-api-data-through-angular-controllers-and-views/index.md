@@ -25,25 +25,30 @@ The Star Wars API is working, and we're able to access information about the cha
 
 First, we'll start by displaying each characters name. Go back to your `main.html` view, and change the reference from `person` to `person.name`. The `name` is a field we know each person object has, and Angular will display all the information found at `person.name`.
 
-    <div>
-      <div ng-repeat="person in data">
-        <p>{{ person.name }}</p>
-      </div>
-      <hr>
-    </div>
+```html
+<div>
+  <div ng-repeat="person in data">
+    <p>{{ person.name }}</p>
+  </div>
+  <hr />
+</div>
+```
 
 [![AngularJS Tutorial Displaying Star Wars API Character Names](./angularjs_display_character_names.png)](./angularjs_display_character_names.png)
 
 You can actually have an ng-repeat inside another ng-repeat, which we will do now to list all the movies a character has been in.
 
-    <div>
-      <div ng-repeat="person in data">
-        <p>
-          <b>{{ person.name }}</b> - <span ng-repeat="film in person.films">{{film}}</span>
-        </p>
-      </div>
-      <hr>
-    </div>
+```html
+<div>
+  <div ng-repeat="person in data">
+    <p>
+      <b>{{ person.name }}</b> -
+      <span ng-repeat="film in person.films">{{film}}</span>
+    </p>
+  </div>
+  <hr />
+</div>
+```
 
 [![AngularJS Tutorial Display Characters Name and Movies](./angularjs_display_character_names_and_movies.png)](./angularjs_display_character_names_and_movies.png)
 
@@ -51,19 +56,24 @@ This doesn't look particularly nice, since SWAPI stores the movie names as the A
 
 We'll start by creating the lookup in our main controller. Head over to the `controllers/main.js` page, and add the following lines.
 
-    $scope.movieNames = {
-      'http://swapi.co/api/films/1/': 'I - The Phantom Menace',
-      'http://swapi.co/api/films/2/': 'II - Attack of the Clones',
-      'http://swapi.co/api/films/3/': 'III - Revenge of the Sith',
-      'http://swapi.co/api/films/4/': 'IV - A New Hope',
-      'http://swapi.co/api/films/5/': 'V - The Empire Strikes Back',
-      'http://swapi.co/api/films/6/': 'VI - Return of the Jedi',
-      'http://swapi.co/api/films/7/': 'VII - The Force Awakens',
-    }
+```javascript
+$scope.movieNames = {
+  "http://swapi.co/api/films/1/": "I - The Phantom Menace",
+  "http://swapi.co/api/films/2/": "II - Attack of the Clones",
+  "http://swapi.co/api/films/3/": "III - Revenge of the Sith",
+  "http://swapi.co/api/films/4/": "IV - A New Hope",
+  "http://swapi.co/api/films/5/": "V - The Empire Strikes Back",
+  "http://swapi.co/api/films/6/": "VI - Return of the Jedi",
+  "http://swapi.co/api/films/7/": "VII - The Force Awakens",
+}
+```
 
 Next, we'll update our `main.html` view so that instead of just outputting the API url, it will pull the name of the movie from the list we created. More specifically, we are looking for the `film` key in our `movieNames` variable on \$scope, and returning the associated value.
 
-    <b>{{ person.name }}</b> - <span ng-repeat="film in person.films">{{movieNames[film]}}</span>
+```html
+<b>{{ person.name }}</b> -
+<span ng-repeat="film in person.films">{{movieNames[film]}}</span>
+```
 
 Let's test this out by viewing it in our browser at `http://localhost:8000`.
 
@@ -71,6 +81,7 @@ Let's test this out by viewing it in our browser at `http://localhost:8000`.
 
 Sweet, it works! But can you see any long term problems with using this method? What if a new movie get's added? You'd have to go and update the lookup, which can get tedious and annoying. Especially since we already know that the SWAPI gives us access to this information. First let's `undo the two changes` above, then we'll go back into our `swapi.js` service, and add the following API function call.
 
+```javscript
     Swapi.films = function() {
       var path = '/films';
       var url = Swapi.domain + path;
@@ -80,17 +91,21 @@ Sweet, it works! But can you see any long term problems with using this method? 
           return response;
         });
     };
+```
 
 For now we can go ahead and display this on our website by adding the following to the `main.js` file.
 
-    SwapiService.films()
-      .then(function(data) {
-        $scope.films = data.data.results;
-    });
+```javascript
+SwapiService.films().then(function(data) {
+  $scope.films = data.data.results
+})
+```
 
 Next add this to the bottom of the `main.html` file.
 
+```javsacript
     {{ films }}
+```
 
 [![AngularJS Tutorial displaying films after creating films service api call](./angulrjs_display_films_api_data.png)](./angulrjs_display_films_api_data.png)
 
@@ -100,38 +115,35 @@ If you notice, this is another data block. Before we continue much further, I wa
 
 We can map the `episode_id` to the end of the SWAPI url we get for the films in order to help automate the film information process. To do this, we'll dive into the `main.js` file, and make the following changes.
 
-    $scope.films = {};
+```javascript
+$scope.films = {}
 
-    SwapiService.people()
-      .then(function(data) {
-        $scope.data = data.data.results;
+SwapiService.people().then(function(data) {
+  $scope.data = data.data.results
 
-        angular.forEach($scope.data, function(person) {
-          // creating a list of all possible films
-          angular.forEach(person.films, function(film) {
-            $scope.films[film] = '';
-          });
-        });
-    });
+  angular.forEach($scope.data, function(person) {
+    // creating a list of all possible films
+    angular.forEach(person.films, function(film) {
+      $scope.films[film] = ""
+    })
+  })
+})
 
-    SwapiService.films()
-      .then(function(data) {
-        $scope.filmInfo = data.data.results;
+SwapiService.films().then(function(data) {
+  $scope.filmInfo = data.data.results
 
-        // adding film names to list of films
-        angular.forEach($scope.filmInfo, function(film) {
-          var api_call = 'http://swapi.co/api/films/' + film.episode_id + '/';
-          $scope.films[api_call] = film.title;
-        });
-    });
+  // adding film names to list of films
+  angular.forEach($scope.filmInfo, function(film) {
+    var api_call = "http://swapi.co/api/films/" + film.episode_id + "/"
+    $scope.films[api_call] = film.title
+  })
+})
+```
 
-
-
-
-
-
-
-    <b>{{ person.name }}</b> - <span ng-repeat="film in person.films">{{films[film]}}</span>
+```html
+<b>{{ person.name }}</b> -
+<span ng-repeat="film in person.films">{{films[film]}}</span>
+```
 
 If everything worked well, you will now see a list of the main characters, and the names of the movies that they have been in beside them.
 

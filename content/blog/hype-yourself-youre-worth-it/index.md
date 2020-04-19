@@ -9,20 +9,16 @@ slug: hype-yourself-youre-worth-it
 title: Hype Yourself! You're Worth It!
 wordpress_id: 472
 categories:
-- Conference
-- Friends
-- Plans
-- Projects
-- Speaker
-- Women In Tech
-- Workshop
+  - Conference
+  - Friends
+  - Plans
+  - Projects
+  - Speaker
+  - Women In Tech
+  - Workshop
 ---
 
-
-
-
 I've given a talk focused on this topic numerous times in the past. If you'd ever like me to visit your office or give a virtual version of this talk, please [get in touch](https://aashni.me/contact). You can find the slides [here](https://docs.google.com/presentation/d/1u0jCJAbAagEXW-Qjh3hZLAWwH0etDE_CFPEvdlY2HNw/edit?usp=sharing). If you’re interested in viewing some sample Hype Docs, here is an [example using a spreadsheet format](https://docs.google.com/spreadsheets/d/1YRA8j3HzwBkj2rBto774zWuKIj6GaoopZuwwtu6bUS0), and here is an [example using a word document](https://drive.google.com/open?id=1o12BOKREVOXu_alnJgWygTTspmx56IPz8ljiuYNBEfw).
-
 
 ## **Hype Docs**
 
@@ -38,10 +34,10 @@ The Hype Doc structure is really flexible - you need to create a style that work
 
 The general idea with your hype doc is that if you’re proud of some work, it should go in. Here are four categories of achievements you can include in your Hype Doc - but there are always more!
 
-  * Work related to Projects you’ve shipped, like design documents or code changes
-  * Cross team collaboration, where you’ve helped other team members review their code or design docs. Additionally, when you’ve helped other teams outside of who you normally interact with
-  * Invisible Accomplishments such as doing code cleanup or implementing a new testing suite, as well as other things you do outside of the scope of your job such as plan Women Engineering events for your company
-  * Extracurricular activities, which includes things outside of work. These can be related to your job, such as speaking at a panel or writing a blog post, however they can also include the other accomplishments in your life that you’re proud of, such as getting a Scuba Diving license
+- Work related to Projects you’ve shipped, like design documents or code changes
+- Cross team collaboration, where you’ve helped other team members review their code or design docs. Additionally, when you’ve helped other teams outside of who you normally interact with
+- Invisible Accomplishments such as doing code cleanup or implementing a new testing suite, as well as other things you do outside of the scope of your job such as plan Women Engineering events for your company
+- Extracurricular activities, which includes things outside of work. These can be related to your job, such as speaking at a panel or writing a blog post, however they can also include the other accomplishments in your life that you’re proud of, such as getting a Scuba Diving license
 
 ### **Hype Docs and Goal Setting**
 
@@ -51,17 +47,14 @@ Hype Docs are a great resource at evaluation time. One of the outcomes of evalua
 
 Having a Hype Doc is awesome, but keeping it updated is a habit you need to form. Here are a few tips to get you onto the right track.
 
-  * Set a recurring meeting in your calendar to update your Hype Doc. The more frequently you update your Hype Doc, the more you remember to put down, so doing it once a week is a really good strategy.
-  * Update your Hype Doc with friends or coworkers. This helps keep you accountable, as well as gives you a chance to share some of your achievements
-  * Go through your Hype Doc with your manager about once a quarter. This gives you a chance to identify areas you’re excelling in, and areas to spend more energy well before your next evaluation roles around.
+- Set a recurring meeting in your calendar to update your Hype Doc. The more frequently you update your Hype Doc, the more you remember to put down, so doing it once a week is a really good strategy.
+- Update your Hype Doc with friends or coworkers. This helps keep you accountable, as well as gives you a chance to share some of your achievements
+- Go through your Hype Doc with your manager about once a quarter. This gives you a chance to identify areas you’re excelling in, and areas to spend more energy well before your next evaluation roles around.
 
 ## **Conclusion**
+
 Voila! You’ve now got some proven techniques of building up your personal brand, sharing your experience and keeping track of your achievements.
 
 Do you ever sometimes get into a funk and question everything about your skills and abilities? Because we are human, we are more likely to remember all the bad decisions and mistakes we make, and less likely to remember the good. Your Experience Map and Hype Doc are here to change that! So next time you’re feeling a little down, crack open your Experience Map or Hype Doc and remember why you’re awesome.
 
-As Marie Chatfield once said, [You are your best hype person](https://medium.com/square-corner-blog/you-are-your-own-best-hype-person-cf1e3a83c0c2), and you deserve it!  
-
-
-
-
+As Marie Chatfield once said, [You are your best hype person](https://medium.com/square-corner-blog/you-are-your-own-best-hype-person-cf1e3a83c0c2), and you deserve it!

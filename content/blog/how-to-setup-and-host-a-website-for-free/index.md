@@ -2,7 +2,7 @@
 author: Aashni
 comments: true
 date: 2020-04-18 06:01:34+00:00
-description: "you're trying to create a personal website, portfolio of all your work or a landing page for your brand spanking new startup, this guide is for you! I'll walk you through how to create and setup a very basic website, using github for code management then hosting it on Netlify."
+description: "This guide will walk you through how to register a domain, create a very basic website, then use Github and Netlify to host your website. This is great if you want to setup a personal website, portfolio of all your work or a landing page for your brand spanking new startup."
 layout: post
 link: https://aashni.me/blog/how-to-setup-and-host-a-website-for-free/
 slug: how-to-setup-and-host-a-website-for-free

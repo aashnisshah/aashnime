@@ -23,32 +23,48 @@ Since AngularJS uses HTML based views, it's extremely easy to add styling to you
 
 The first step is to include all the necessary Bootstrap files. I'll be using the hosted CDN files, and include those into the 'index.html' file, however you can also use other techniques like Bootstrap as a directive or BootstrapJS.
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+```html
+<!-- Bootstrap -->
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous"
+/>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+  integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+  crossorigin="anonymous"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"
+></script>
+```
 
 Now for some Bootstrapping fun! We'll change the header, then make each character into their own div, and turn the movie names into buttons (we'll make these clickable buttons in the next section).
 
-    <div class="col-md-10 col-md-offset-1">
+```html
+<div class="col-md-10 col-md-offset-1">
+  <div class="page-header">
+    <h1>Star Wars</h1>
+  </div>
 
-      <div class="page-header">
-        <h1>Star Wars</h1>
-      </div>
-
-      <div class="panel panel-default" ng-repeat="person in data">
-        <div class="panel-heading">{{ person.name }}</div>
-        <div class="panel-body">
-          <ul class="btn-group" ng-repeat="film in person.films">
-            <button class="btn btn-primary">
-              {{ films[film] }}
-            </button>
-          </ul>
-        </div>
-      </div>
-
+  <div class="panel panel-default" ng-repeat="person in data">
+    <div class="panel-heading">{{ person.name }}</div>
+    <div class="panel-body">
+      <ul class="btn-group" ng-repeat="film in person.films">
+        <button class="btn btn-primary">
+          {{ films[film] }}
+        </button>
+      </ul>
     </div>
+  </div>
+</div>
+```
 
 Doesn't that look a lot better?
 

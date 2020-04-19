@@ -9,10 +9,10 @@ slug: simple-loginlogout-system-in-php
 title: Simple Login/Logout System in PHP
 wordpress_id: 55
 categories:
-- Contests and Hackathons
-- Projects
-- Summer 2013
-- Tutorial
+  - Contests and Hackathons
+  - Projects
+  - Summer 2013
+  - Tutorial
 ---
 
 I've been working on recoding the #PickMe project I started at the CUTC Hackathon. I decided to start from the ground up, and literally create the site form scratch. And so I began coding the Login/Logout section of the site. I plan on making this all PHP based, with the use of a MySQL Database.
@@ -21,7 +21,7 @@ The first thing you need to do is create your Database setup. Make sure you keep
 
 In your MySQL Manager, create a database, then create a new table with as such:
 
-    
+```sql
     CREATE TABLE Users
     (
     userID int NOT NULL AUTO_INCREMENT,
@@ -29,19 +29,16 @@ In your MySQL Manager, create a database, then create a new table with as such:
     password varchar(255) NOT NULL,
     PRIMARY KEY (userID)
     )
-
-
+```
 
 This table is called `Users` and has three fields. `userID` is the ID key to keep users distinct. It will automatically be increased every time a new user is created and is classed as the primary key for this table. Username and Password are both set to be not empty, and have a size of 255 characters.
 
 Once you've created your table, we can now start coding the pages. We will create four pages, the first is the `config.php`config.php
 
-
 The Config page is where we connect to our database. I prefer writing it as it's own page, then including it into other pages as it's needed as this reduces the amount of code needed overall, and also means that we don't have to update database information in multiple places. Remember to update the values to fit your database requirements.
 
-
-    
-    <?php
+```html
+<?php
     $database = &quot;database_name&quot;; // the name of the database.
     $server = &quot;localhost&quot;; // server to connect to.
     $user = &quot;database_user&quot;; //
@@ -59,18 +56,14 @@ The Config page is where we connect to our database. I prefer writing it as it's
     
     /* change to pickme_db database */
     $mysqli->select_db(&quot;users&quot;); // select the users table ?>
-
-
-
-
+```
 
 ## login.php
 
-
 The next page we will create is the login page. On this page, we will first include the config.php page so that we can connect to the database. We then perform checks to see if the user is already logged in, and if they are we pass them on to the admin.php page. We then perform user checks to see if the password they submitted is accurate, and finally, we have the login form.
 
-    
-    <?php
+```html
+<?php
     
          include("config.php");
     
@@ -88,86 +81,58 @@ The next page we will create is the login page. On this page, we will first incl
          if($_GET["atmpt"] != NULL){
               if($_GET["atmpt"] == 2){
               // forgotten password
-              $error .= "Did you forget your password?<br>";
-         }
-    
-         /* get username and password */
-         $username = $_POST["username"];
-         $password = $_POST["password"];
-    
-         /* MySQL Injection prevention */
-         $username = mysqli_real_escape_string($mysqli, stripslashes($username));
-         $password = mysqli_real_escape_string($mysqli, stripslashes($password));
-    
-         /* check for user in database */
-         $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'"; // replace "users" with your table name
-         $result = mysqli_query($mysqli, $query);
-         $count = $result->num_rows;
-         if($count > 0){
-              //successfully logged in
-              $_SESSION['username']=$username;
-              $_SESSION['loggedin']='yes';
-              header("location:admin.php");
-              exit();
-         } else {
-              // Login Failed
-              $error .=  "Wrong Username or Password";
-              $_SESSION['loggedin']='no';
-              $atmpt = 2;
-         }
-    } else {
-         $atmpt = 1;
-    }
-    
-    ?>
-    
-    
-    <!doctype html>
-    <html>
-         <head>
-              <title>Log In</title>
-         </head>
-         <body>
-    
-         <h1>Log In</h1>
-    
-         <p>Enter your details below to log in to your account.</p>
-    
-         <span><?php echo $error ?></span>
-    
-         <form action="login.php?atmpt=1" method="post">
-         <table>
-              <tr>
-                   <td>Username</td>
-                   <td><input type="text" name="username"></td>
-              </tr>
-              <tr>
-                   <td>Password</td>
-                   <td><input type="password" name="password"></td>
-              </tr>
-              <tr>
-                   <td colspan="2"><input type="submit" value="Log In"></td>
-              </tr>
-         </table>
-         </form>
-    
-         </body>
-    </html>
-    
-    
+              $error .= "Did you forget your password?<br>"; } /* get username
+and password */ $username = $_POST["username"]; $password = $_POST["password"];
+/* MySQL Injection prevention */ $username = mysqli_real_escape_string($mysqli,
+stripslashes($username)); $password = mysqli_real_escape_string($mysqli,
+stripslashes($password)); /* check for user in database */ $query = "SELECT *
+FROM users WHERE username = '$username' AND password = '$password'"; // replace
+"users" with your table name $result = mysqli_query($mysqli, $query); $count =
+$result->num_rows; if($count > 0){ //successfully logged in
+$_SESSION['username']=$username; $_SESSION['loggedin']='yes';
+header("location:admin.php"); exit(); } else { // Login Failed $error .= "Wrong
+Username or Password"; $_SESSION['loggedin']='no'; $atmpt = 2; } } else { $atmpt
+= 1; } ?>
+```
 
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+  </head>
+  <body>
+    <h1>Log In</h1>
 
+    <p>Enter your details below to log in to your account.</p>
 
+    <span><?php echo $error ?></span>
 
+    <form action="login.php?atmpt=1" method="post">
+      <table>
+        <tr>
+          <td>Username</td>
+          <td><input type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" name="password" /></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Log In" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+```
 
 ## admin.php
 
-
 If the user successfully logs in to their account, they are redirected to the admin.php page. Since this page is only for people that are logged in, we want to make a check to see that a user is logged in. If a user is trying to access the page without being logged in, we redirect them back to the login page. Otherwise we display the admin page content.
 
-
-    
-    <?php
+```html
+<?php
          if (!file_exists('config.php')) {
               echo 'Error. Database file does not exist.';
          } else {
@@ -187,33 +152,29 @@ If the user successfully logs in to their account, they are redirected to the ad
          }
     
     ?>
-    
+```
+
+```
     <!doctype html>
          <html>
          <head>
               <title>Admin Page</title>
          </head>
          <body>
-    
+
          <h1>Admin page</h1>
          <p>Congratulations! You have successfully logged in.</p>
          <p>Would you like to <a href="logout.php">log out</a>?</p>
          </body>
      </html>
-    
-
-
-
-
+```
 
 ## logout.php
 
-
 To let a user log out, we need to destroy their user session and then redirect them to the login page as follows.
 
-    
-    
-    <?php
+```html
+<?php
     
          session_start();
          session_destroy();
@@ -221,14 +182,8 @@ To let a user log out, we need to destroy their user session and then redirect t
          exit();
     
     ?>
-    
-
-
-
-
-
+```
 
 ## Everything Else
-
 
 This is a really simple login system setup. You will need to create some extra security controls, such as what to do when someone has tried entering their password incorrectly too many times, or how to avoid people accessing other parts of your website. You should also consider trying to set up a Registration page, as well as a "forgot your email page" as well.

@@ -21,17 +21,11 @@ On Thursday I got a request to come out and be an Alpha Tester for a project tha
 I introduce to you [divNotes](http://www.divnotes.com), a real-time collaborative note taking and sharing application. It let's you:
 
 - Upload and share course materials
-
 - Organize lecture materials and resources
-
 - Create groups to collaborate on understanding material
-
 - Obtain instant student feedback about concepts (includes anonynimity)
-
 - Assign Group Exercises
-
 - Access questions asked by other students
-
 - Ask a question by slide location
 
 DivNotes combines the best of a blackboard/whiteboard and using projected slides by letting professors draw directly onto the slides without having to buy some of the expensive hardware (such as those needed with smart boards). It also lets students draw and write directly onto the slides, save the pdf's for later use, and have multi-layers on the slides so you can distinguish between your notes and the profs.

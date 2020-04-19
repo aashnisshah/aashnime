@@ -9,23 +9,21 @@ slug: fitc-womens-mix-and-make-social
 title: FITC Womens Mix and Make Social
 wordpress_id: 158
 categories:
-- Conference
-- FITC
-- Hackathons
-- Social Event
-- Speaker
-- UofTHacks
-- Women In Tech
-- Women's Independance
+  - Conference
+  - FITC
+  - Hackathons
+  - Social Event
+  - Speaker
+  - UofTHacks
+  - Women In Tech
+  - Women's Independance
 ---
 
 The FITC Womens Mix and Make social was hosted by [Pearl Chen](https://twitter.com/pearlchen) and [Caroline McGregor](https://twitter.com/carolinemcgrgr) at the beautiful [Mozilla](https://twitter.com/mozilla) office and sponsored by [Intel Canada](https://twitter.com/intelcanada). [FITC](http://fitc.ca/) is all about Future, Innovation, Technology and Creativity. It’s a 3 day conference with incredible talks by speakers from all around the world. I’ll be writing another blog about my time and experience there soon!
 
-
-    
+```
     Hey Aashni, what are you doing the afternoon of Apr 11th? Would you be interested in giving a 10 minute lighting talk at a women in tech event that I'm organizing?
-
-
+```
 
 That’s the email I got. After a considerate amount of [jumping up and down in joy](https://twitter.com/aashnisshah/status/574735631277916160) (fortunately I wasn’t in a very public place), I replied expressing my interest! After a few emails back and forth, I found out more about the event and had a rough idea of what I was going to talk about.
 

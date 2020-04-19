@@ -9,18 +9,16 @@ slug: that-one-time-i-hacked-the-north
 title: That One Time I Hack’ed The North
 wordpress_id: 189
 categories:
-- Attended
-- Contests and Hackathons
-- Hackathons
+  - Attended
+  - Contests and Hackathons
+  - Hackathons
 ---
 
 Note: This has been cross-posted on my medium account at [https://medium.com/@aashnisshah](https://medium.com/@aashnisshah/that-one-time-i-hack-ed-the-north-17a373cf666d)
 
-
-    
+```
     Tl;dr: Hack the North was incredible.
-
-
+```
 
 I finally managed to make it out to Hack The North, and I’m so happy I decided to go. I was a little worried about whether or not I should go since I had just gotten back from a trip to Kenya and South Africa, school had just started, and I had a lot of things already going on. But then I figured — this is my last year, I want to make the most of it. I jumped onto the bus on Friday, headed to Waterloo and found myself standing in a giant tent with a bunch of other hackers waiting for registration. Just seeing the sheer number of hackers in attendance, my adrenaline started pumping even more.
 

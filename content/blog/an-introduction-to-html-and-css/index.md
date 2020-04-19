@@ -9,27 +9,19 @@ slug: an-introduction-to-html-and-css
 title: An Introduction to HTML and CSS
 wordpress_id: 378
 categories:
-- HTML and CSS
-- Tutorial
+  - HTML and CSS
+  - Tutorial
 ---
 
 In this week’s post, I’ll be writing my take on a simple guide to HTML and CSS. This is mostly a high overview of HTML and CSS, and won't get into too many language specific details. Instead, I discuss what HTML and CSS are, and how they work to make a website.
 
-
-
 ## How Does the Internet Work
 
-
-
-Websites generally live on the internet, and the easiest way to see a website is by visiting it through a web browser. So let’s say you go to your internet browser (my browser of choice is [Google Chrome](https://www.google.ca/chrome/browser/features.html?brand=CHBD&ds_kid=43700017582260978&gclid=EAIaIQobChMIvteSpIWO2QIVxbXACh0kkgLuEAAYASABEgKnbPD_BwE&gclsrc=aw.ds&dclid=CN_ZtqaFjtkCFR6zTwod5rwA9Q), and you type in a URL or Uniform Resource Locator into the browser (that’s the website address, like www.google.com or www.aashni.me or www.facebook.com). You’ve created a request on your browser to go find the content related to the website. The browser will connect to the internet and communicate with multiple other computers to figure out where the files for the website are located, and once it’s found the files, it returns these files for your browser to interpret and display. These files can be in many different formats, depending on what you requested. For our intents and purposes, we’ll stick to the files being HTML and CSS type files. 
-
-
+Websites generally live on the internet, and the easiest way to see a website is by visiting it through a web browser. So let’s say you go to your internet browser (my browser of choice is [Google Chrome](https://www.google.ca/chrome/browser/features.html?brand=CHBD&ds_kid=43700017582260978&gclid=EAIaIQobChMIvteSpIWO2QIVxbXACh0kkgLuEAAYASABEgKnbPD_BwE&gclsrc=aw.ds&dclid=CN_ZtqaFjtkCFR6zTwod5rwA9Q), and you type in a URL or Uniform Resource Locator into the browser (that’s the website address, like www.google.com or www.aashni.me or www.facebook.com). You’ve created a request on your browser to go find the content related to the website. The browser will connect to the internet and communicate with multiple other computers to figure out where the files for the website are located, and once it’s found the files, it returns these files for your browser to interpret and display. These files can be in many different formats, depending on what you requested. For our intents and purposes, we’ll stick to the files being HTML and CSS type files.
 
 ## What is HTML
 
-
-
-HTML stands for Hyper Text Markup Language, and you can think of it as the language your browser speaks in order to display the right things on the website. We need to declare what type of language we’re using so that the browser can correctly pick up the right language and interpret the file properly. Imagine you were speaking French to someone else, but the only way they could properly understand you is if they knew you were speaking French as well. 
+HTML stands for Hyper Text Markup Language, and you can think of it as the language your browser speaks in order to display the right things on the website. We need to declare what type of language we’re using so that the browser can correctly pick up the right language and interpret the file properly. Imagine you were speaking French to someone else, but the only way they could properly understand you is if they knew you were speaking French as well.
 
 HTML uses tags, specially reserved words between triangle brackets such as `<b>` to declare what a certain bit of code refers to. In this example, the `b` tag makes text bold. Most tags have a closing tag pair, which you can achieve by adding a `/` after the first closing bracket, for example `</b>` is the closing tag. If you wrote `<b>his is bold text</b>`, then you’d get **this is bold text** as the outcome. The closing tag signifies the end of that specific type of HTML tag. Each tag or set of tags has different properties which control how content can be controlled on a page.
 
@@ -38,18 +30,20 @@ HTML tags also have attributes, and when variables are passed to these attribute
 Here's an example of some image tag manipulations.
 
 Display an image of a husky at 100x100px:
-```
+
+```html
 <img src="./puppyy.jpg" height="100px" width="100px" />
 ```
+
 <img src="./puppyy.jpg" height="100px" width="100px" />
 
 Display an image of a husky at 250x250px:
-```
+
+```html
 <img src="./puppyy.jpg" height="250px" width="250px" />
 ```
 
 <img src="./puppyy.jpg" height="250px" width="250px" />
-
 
 ## Example HTML Website
 
@@ -57,20 +51,22 @@ When we create a page in HTML, we usually include a head section and a body sect
 
 The following code snippet creates a simple HTML page with the head and body sections. The title is set to `My Awesome Website`. There is ah `<h1/>` header describing the page, some text and then an image. I'll save this page as `index.html`
 
-
-    
-    
-    <html>
-    <head>
-    <title>My Awesome Website</title>
-    </head><
-    <body>
+```html
+<html>
+  <head>
+    <title>My Awesome Website</title></head
+  ><
+  <body>
     <h1>This Is My Awesome Website</h1>
-    <p>My awesome website will have a picture of a beautiful Siberian Husky because they are really beautiful dogs</p>
-    <img src="./puppyy.jpg">
-    </body>
-    </html>
-    
+    <p>
+      My awesome website will have a picture of a beautiful Siberian Husky
+      because they are really beautiful dogs
+    </p>
+    <img src="./puppyy.jpg" />
+  </body>
+</html>
+```
+
 [![](./awesomewebsite-1024x955.png)](./awesomewebsite.png)
 
 ## What is CSS
@@ -81,41 +77,37 @@ CSS works in two ways, the first is inline, and the second is exported in. Inlin
 
 Instead, we can use imported CSS files instead. The first step would be to create a file `style.css` in the same directory as your HTML file. Then, in our HTML page, include the CSS file by including this line in the header (between the head tags). `<link rel="stylesheet" href="styles.css">`.
 
-
-    
-    
-    <div><html></div>
-    <div><head></div>
-    <div><title>My Awesome Website</title></div>
-    <div><link rel="stylesheet"href="style.css"></div>
-    <div></head></div>
-    <div><body></div>
-    <div><h1>This Is My Awesome Website</h1></div>
-    <div><p>My awesome website will have a picture of a beautiful Siberian Husky because they are really beautiful dogs</p></div>
-    <div><img src="./puppyy.jpg"></div>
-    <div></body></div>
-    <div></html></div>
-    
-
-
+```html
+<html>
+  <head>
+    <title>My Awesome Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>This Is My Awesome Website</h1>
+    <p>
+      My awesome website will have a picture of a beautiful Siberian Husky
+      because they are really beautiful dogs
+    </p>
+    <img src="./puppyy.jpg" />
+  </body>
+</html>
+```
 
 We can now create a a style page called `style.css`. Inside the style page, I'll set the img tag height to 320px by 240px. I will also set the website background to a light green, and set the font to a `4286f4` which is a type of blue.
 
+```css
+html,
+body {
+  background: #8af2ca;
+  color: #4286f4;
+}
 
-    
-    
-    html, body {
-      background: #8af2ca;
-      color: #4286f4;
-    }
-    
-    img {
-      height: 240px;
-      width: 320px;
-    }
-    
-
-
+img {
+  height: 240px;
+  width: 320px;
+}
+```
 
 Here's what the website looks like.
 
