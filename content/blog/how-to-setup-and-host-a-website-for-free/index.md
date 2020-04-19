@@ -13,7 +13,6 @@ categories:
   - Guide
   - Frontend
   - Netlify
-  - Buttondown.email
 ---
 
 I need to setup a landing page for one of my new projects, [Tech Nyumba](https://technyumba.com), and I thought I'd take you along for the journey. So wether you're trying to create a personal website, portfolio of all your work or a landing page for your brand spanking new startup, this guide is for you! I'll walk you through how to create and setup a very basic website, using github for code management then hosting it on Netlify. In my next blog post, I'll share how you can use a combination of Netlify and Buttondown Email to create a contact form and newsletter subscription form.
