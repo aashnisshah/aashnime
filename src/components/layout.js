@@ -170,9 +170,6 @@ class Layout extends React.Component {
 
     return (
       <div>
-        {this.state.showNotifications
-          ? console.log(this.state)
-          : console.log(this.state)}
         <NotificationBar
           className={`notifications ${
             this.state.showNotifications ? "" : " hide"

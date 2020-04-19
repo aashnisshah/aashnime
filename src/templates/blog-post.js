@@ -10,6 +10,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
+    const postUrl = this.props.data.site.siteMetadata.siteUrl
     const { previous, next } = this.props.pageContext
 
     return (
@@ -17,6 +18,8 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          siteUrl={postUrl}
+          slug={post.frontmatter.slug}
         />
         <article>
           <header>
@@ -87,6 +90,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -97,6 +101,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        slug
       }
     }
   }
