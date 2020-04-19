@@ -71,6 +71,21 @@ module.exports = {
               escapeEntities: {},
             },
           },
+          {
+            resolve: `gatsby-remark-twitter-cards`,
+            options: {
+              title: "Aashni's Archives", // website title
+              separator: "|", // default
+              author: "by @aashnisshah",
+              background: require.resolve(
+                "./content/assets/social-card-base.png"
+              ), // path to 1200x630px file or hex code, defaults to black (#000000)
+              fontColor: "#EFEDE7", // defaults to white (#ffffff)
+              titleFontSize: 96, // default
+              subtitleFontSize: 36, // default
+              fontStyle: "monospace", // default
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],

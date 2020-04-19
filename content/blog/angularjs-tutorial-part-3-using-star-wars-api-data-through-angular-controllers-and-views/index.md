@@ -81,16 +81,15 @@ Let's test this out by viewing it in our browser at `http://localhost:8000`.
 
 Sweet, it works! But can you see any long term problems with using this method? What if a new movie get's added? You'd have to go and update the lookup, which can get tedious and annoying. Especially since we already know that the SWAPI gives us access to this information. First let's `undo the two changes` above, then we'll go back into our `swapi.js` service, and add the following API function call.
 
-```javscript
-    Swapi.films = function() {
-      var path = '/films';
-      var url = Swapi.domain + path;
+```javascript
+Swapi.films = function() {
+  var path = "/films"
+  var url = Swapi.domain + path
 
-      return $http.get(url)
-        .then(function(response){
-          return response;
-        });
-    };
+  return $http.get(url).then(function(response) {
+    return response
+  })
+}
 ```
 
 For now we can go ahead and display this on our website by adding the following to the `main.js` file.
@@ -103,8 +102,12 @@ SwapiService.films().then(function(data) {
 
 Next add this to the bottom of the `main.html` file.
 
-```javsacript
-    {{ films }}
+```javascript
+{
+  {
+    films
+  }
+}
 ```
 
 [![AngularJS Tutorial displaying films after creating films service api call](./angulrjs_display_films_api_data.png)](./angulrjs_display_films_api_data.png)
