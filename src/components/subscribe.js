@@ -98,7 +98,7 @@ class SubscribeBlock extends React.Component {
           <Form
             name="newsletter"
             method="POST"
-            action="confirm"
+            action="https://aashni.me/confirm"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
