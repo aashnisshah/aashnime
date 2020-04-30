@@ -1,13 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import {
-  FaTwitter,
-  FaInstagram,
-  FaGithub,
-  FaStackOverflow,
-  FaLinkedin,
-} from "react-icons/fa"
+import SocialLinks from "../utils/socialLinks"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -61,12 +55,6 @@ const HiddenFields = styled.div`
   display: none;
 `
 
-const SocialLink = styled.a`
-  padding: 24px;
-  width: 100px;
-  height: 200px;
-`
-
 class ContactPage extends React.Component {
   render() {
     const { data } = this.props
@@ -79,43 +67,8 @@ class ContactPage extends React.Component {
         <p>Hey there! Looking to get in touch? I'd love to hear from you.</p>
 
         <p>You can find me online @aashnisshah:</p>
-        <p>
-          <SocialLink
-            href="https://twitter.com/aashnisshah"
-            target="_blank"
-            ref="noopener noreferrer"
-          >
-            <FaTwitter size={50} />
-          </SocialLink>
-          <SocialLink
-            href="https://instagram.com/aashnisshah"
-            target="_blank"
-            ref="noopener noreferrer"
-          >
-            <FaInstagram size={50} />
-          </SocialLink>
-          <SocialLink
-            href="https://github.com/aashnisshah"
-            target="_blank"
-            ref="noopener noreferrer"
-          >
-            <FaGithub size={50} />
-          </SocialLink>
-          <SocialLink
-            href="https://stackoverflow.com/users/1989265/aashnisshah"
-            target="_blank"
-            ref="noopener noreferrer"
-          >
-            <FaStackOverflow size={50} />
-          </SocialLink>
-          <SocialLink
-            href="https://linkedin.com/in/aashnisshah"
-            target="_blank"
-            ref="noopener noreferrer"
-          >
-            <FaLinkedin size={50} />
-          </SocialLink>
-        </p>
+
+        <SocialLinks iconSize={50} />
 
         <p>
           You can also send me an email at contact[at]aashni.me, or fill out the

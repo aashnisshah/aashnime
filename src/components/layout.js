@@ -5,7 +5,7 @@ import { FaBars, FaCopyright, FaHeart } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 import navigationLinks from "../utils/navigationLinks"
-import socialLinks from "../utils/socialLinks"
+import SocialLinks from "../utils/socialLinks"
 import SubscribeBlock from "../components/subscribe"
 import "../styles/main.css"
 
@@ -81,23 +81,6 @@ const NotificationClose = styled.button`
   color: #1ba098;
 `
 
-const SocialLink = styled.a`
-  text-decoration: none;
-  text-align: center;
-  padding-right: 0.8em;
-  box-shadow: none;
-`
-
-const SocialItem = styled.li`
-  text-align: center;
-  margin: auto auto;
-  list-style-type: none;
-
-  @media screen and (min-width: 768px) {
-    display: inline-block;
-  }
-`
-
 const Footer = styled.footer`
   background-color: #051622;
   color: #efede7;
@@ -116,7 +99,7 @@ class Layout extends React.Component {
   }
   render() {
     const { title, children } = this.props
-    let header, formattedNavigation, formattedSocial
+    let header, formattedNavigation
 
     formattedNavigation = navigationLinks.map(({ link, name, target }) => {
       if (target === "") {
@@ -138,16 +121,6 @@ class Layout extends React.Component {
           </NavigationItem>
         )
       }
-    })
-
-    formattedSocial = socialLinks.map(({ link, name }) => {
-      return (
-        <SocialItem key={name}>
-          <SocialLink href={link} target="_blank" rel="noopener noreferrer">
-            {name}
-          </SocialLink>
-        </SocialItem>
-      )
     })
 
     header = (
@@ -215,7 +188,7 @@ class Layout extends React.Component {
               padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
             }}
           >
-            <p>{formattedSocial}</p>
+            <SocialLinks iconSize={32} />
             <p>
               Interested in collaborating?{" "}
               <Link to={`/contact`}>Get in touch!</Link>
