@@ -93,8 +93,8 @@ class Layout extends React.Component {
     super(props)
 
     this.state = {
-      isClosed: false,
-      showNotifications: true,
+      isClosed: true,
+      showNotifications: false,
     }
   }
   render() {
