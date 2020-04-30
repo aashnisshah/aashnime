@@ -1,29 +1,76 @@
-const navigationLinks = [
-  {
-    link: "https://twitter.com/aashnisshah",
-    name: "twitter",
-    faName: "fab fa-twitter",
-  },
-  {
-    link: "https://instagram.com/aashnisshah",
-    name: "instagram",
-    faName: "fab fa-instagram",
-  },
-  {
-    link: "https://github.com/aashnisshah",
-    name: "github",
-    faName: "fab fa-github",
-  },
-  {
-    link: "https://stackoverflow.com/users/1989265/aashnisshah",
-    name: "stack overflow",
-    faName: "fab fa-stack-overflow",
-  },
-  {
-    link: "https://ca.linkedin.com/in/aashnisshah",
-    name: "linkedin",
-    faName: "fab fa-linkedin",
-  },
-]
+import React from "react"
+import styled from "styled-components"
+import {
+  FaTwitter,
+  FaInstagram,
+  FaGithub,
+  FaStackOverflow,
+  FaLinkedin,
+  FaDev,
+} from "react-icons/fa"
 
-export default navigationLinks
+const CenteredSocialLinks = styled.div`
+  text-align: center;
+  margin-bottom: 24px;
+`
+
+const SocialLink = styled.a`
+  padding: 24px;
+  width: 100px;
+  height: 200px;
+`
+
+class SocialLinks extends React.Component {
+  render() {
+    const iconSize = this.props.iconSize || 32
+
+    return (
+      <CenteredSocialLinks>
+        <SocialLink
+          href="https://twitter.com/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaTwitter size={iconSize} />
+        </SocialLink>
+        <SocialLink
+          href="https://instagram.com/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaInstagram size={iconSize} />
+        </SocialLink>
+        <SocialLink
+          href="https://github.com/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaGithub size={iconSize} />
+        </SocialLink>
+        <SocialLink
+          href="https://stackoverflow.com/users/1989265/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaStackOverflow size={iconSize} />
+        </SocialLink>
+        <SocialLink
+          href="https://linkedin.com/in/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaLinkedin size={iconSize} />
+        </SocialLink>
+        <SocialLink
+          href="https://dev.to/aashnisshah"
+          target="_blank"
+          ref="noopener noreferrer"
+        >
+          <FaDev size={iconSize} />
+        </SocialLink>
+      </CenteredSocialLinks>
+    )
+  }
+}
+
+export default SocialLinks

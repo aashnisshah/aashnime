@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, siteUrl, slug }) {
 
   const metaDescription = description || site.siteMetadata.description
 
-  const twitterCardUrl =
+  const shareImageUrl =
     slug.length > 1
       ? site.siteMetadata.siteUrl + "/" + slug + "/twitter-card.jpg"
       : site.siteMetadata.siteUrl + "/social-card-default.png"
@@ -58,12 +58,16 @@ function SEO({ description, lang, meta, title, siteUrl, slug }) {
           content: `website`,
         },
         {
+          name: `og:image`,
+          content: shareImageUrl,
+        },
+        {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
         {
           name: `twitter:image`,
-          content: twitterCardUrl,
+          content: shareImageUrl,
         },
         {
           name: `twitter:creator`,
