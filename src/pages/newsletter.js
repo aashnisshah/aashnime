@@ -17,7 +17,16 @@ class ContactPage extends React.Component {
           Hey all! In this newsletter, I'll be sharing updates, announcements
           and resources straight to your inbox. This includes exciting things
           I've found around the internet, interesting events and updates from my
-          blog. Oh, and the occasional (probably really bad) jokes too!
+          blog. Oh, and the occasional (probably really bad) jokes too! You can
+          also see{" "}
+          <a
+            href="https://buttondown.email/aashnisshah/archive"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            previous letters
+          </a>{" "}
+          that I've sent out too.
         </p>
         <p>I promise not to spam you!</p>
       </Layout>
