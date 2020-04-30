@@ -68,10 +68,6 @@ const SubscribeIntro = styled.div`
   }
 `
 
-const SmallText = styled.p`
-  font-size: 0.6em;
-`
-
 const SubscribeForm = styled.div`
   padding: 0px 24px;
   @media screen and (min-width: 768px) {
@@ -87,12 +83,10 @@ class SubscribeBlock extends React.Component {
         <SubscribeIntro>
           <SubscribeTitle>Subscribe</SubscribeTitle>
           <p>
-            Subscribe to get my latest content and other announcements straight
-            into your inbox.
+            Every week I'll send you an email with my latest posts, as well as
+            resources I find around the internet on Software Development,
+            Product Management and Startups.
           </p>
-          <SmallText>
-            I promise not to send spam. You can unsubscribe anytime.
-          </SmallText>
         </SubscribeIntro>
         <SubscribeForm>
           <Form
