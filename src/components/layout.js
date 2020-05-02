@@ -46,6 +46,12 @@ const NavigationLink = styled.p`
   text-align: center;
   padding-right: 0.8em;
   box-shadow: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.2em;
+    padding: 0.8em 2em;
+    border-bottom: #1ba098 1px solid;
+  }
 `
 
 const NavigationItem = styled.li`
@@ -93,7 +99,7 @@ class Layout extends React.Component {
     super(props)
 
     this.state = {
-      isClosed: true,
+      isClosed: false,
       showNotifications: false,
     }
   }
@@ -105,19 +111,17 @@ class Layout extends React.Component {
       if (target === "") {
         return (
           <NavigationItem key={name}>
-            <NavigationLink>
-              <Link to={link}>{name}</Link>
-            </NavigationLink>
+            <Link to={link}>
+              <NavigationLink>{name}</NavigationLink>
+            </Link>
           </NavigationItem>
         )
       } else {
         return (
           <NavigationItem key={name}>
-            <NavigationLink>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                {name}
-              </a>
-            </NavigationLink>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <NavigationLink>{name}</NavigationLink>
+            </a>
           </NavigationItem>
         )
       }
