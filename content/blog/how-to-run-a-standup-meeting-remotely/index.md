@@ -1,7 +1,7 @@
 ---
 author: Aashni
 comments: true
-date: 2020-10-12 12:14:54+00:00
+date: 2020-5-12 12:14:54+00:00
 description: Running an effective standup meeting is already difficult, and adjusting to do that remotely makes it even more difficult. Here are some tips on how to effectively run a Standup Meeting Remotely.
 layout: post
 link: https://aashni.me/blog/how-to-run-a-standup-meeting-remotely/
