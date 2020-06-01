@@ -1,13 +1,21 @@
-<weekly thoughts>
+<title>
+
+<content>
+
+---
+
+# Find me Online
+Want to chat with me? Feel free to schedule some time on my [calendar](https://calendly.com/aashnisshah/connect). I'm happy to chat about dev, PM, startups, tech and anything non-tech too!
+
 ---
 
 # New Blog Posts
+[]()
 
 ---
 
 # Little Plugs
 I like the idea of plugging interesting projects that I see around the internet.
-
 
 ---
 
@@ -15,16 +23,8 @@ I like the idea of plugging interesting projects that I see around the internet.
 Here are some events I'm attending this week
 
 ---
-# Quote of the week
-
-Come from []()
-
-> <insert quote>
-
----
 
 # Question Time!
-I'd love to get to know my audience better, and hope that you `reply` to this email or [tweet me](https://twitter.com/aashnisshah) an answer:
+I'd love to get to know you all a little better, and hope that you `reply` to this email or [tweet me](https://twitter.com/aashnisshah) an answer:
 
-> 
-
+> What's something you've achieved in the last week?
