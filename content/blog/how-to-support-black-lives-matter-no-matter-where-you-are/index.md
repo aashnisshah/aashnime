@@ -51,6 +51,7 @@ Something to keep in mind: only reach out if it's someone you know. [Do not star
 There are many great books that talk about race. I've personally read the first and highly recommend it. If you can't find a copy of the book online for any reason, try libraries. Most libraries have a digital borrowing option which will allow you to borrow these books and read them on your laptop/phone/e-reader.
 
  - So You Want to Talk About Race by Ijeoma Oluo
+ - It's About Damn Time by Arlan Hamilton
  - White Fragility by Robin Diangelo
  - How to be an Antiracist by Ibram X. Kendi
  - Stemped from the Beginning by Ibram X. Kendi
@@ -60,6 +61,12 @@ There are many great books that talk about race. I've personally read the first 
  - Biased by Jennifer L. Eberhardt
  - Between the World and Me by Ta-Nehisi Coates
  - Eloquent Rage by Brittney Cooper
+ - This Book is Anti-Racist by Tiffany Jewell
+ - Hood Feminism by Mikki Kendall
+ - Diversity in the Workplace by Bari Williams
+ - Data Feminism by Catherine D'Ignazio
+ - Algorithms of Opression by Safiya Umoja Noble
+ - Biased by Jennifer Eberhardt
 
 There are plenty more. Read them. Discuss them. Learn from them.
 
