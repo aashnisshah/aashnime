@@ -4,9 +4,9 @@ comments: true
 date: 2020-05-30 08:41:36+00:00
 description: BlackLivesMatter has taken center stage in America. There are many things that non-black folks can do to support this movement from donations, to education and more.
 layout: post
-link: https://aashni.me/blog/how-to-support-black-lives-matter/
-slug: how-to-support-black-lives-matter
-title: How To Support Black Lives Matter
+link: https://aashni.me/blog/how-to-support-black-lives-matter-no-matter-where-you-are/
+slug: how-to-support-black-lives-matter-no-matter-where-you-are
+title: How To Support Black Lives Matter No Matter Where You Are
 categories:
  - Black Lives Matter
 ---
