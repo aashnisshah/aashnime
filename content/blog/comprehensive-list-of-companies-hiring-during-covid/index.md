@@ -32,6 +32,8 @@ If you come across any additional lists, feel free to add it yourself by making 
 
 [TechLadies](https://hiretechladies.com/jobs)
 
+[Diversify Tech](https://www.diversifytech.co/job-board)
+
 ## Companies in Canada
 
 [Spreadsheet of Companies hiring in Canada during COVID](https://docs.google.com/spreadsheets/d/1d2pyNKVOeKbzRzqEMLpxNkT7ABWbPoGLgsPt1CuHsW0/edit#gid=0)
