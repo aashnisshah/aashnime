@@ -31,8 +31,9 @@ On June 14th 2019, I was asked to be the guest speaker for the convocation cerem
 
 The ceremony was live streamed and recorded so [you can watch the whole ceremony here](https://strmstr.com/june-14-230-2019.html). My speech specifically starts around the 9 minute mark.
 
-```
-Hello everyone! Thank you Professor Ragere for the wonderful introduction, and a good afternoon to the faculty, alumni, parents, friends and most importantly the Graduands.
+# My Address
+
+<div style="padding: 20px; font-size: 0.8em;">Hello everyone! Thank you Professor Ragere for the wonderful introduction, and a good afternoon to the faculty, alumni, parents, friends and most importantly the Graduands.
 
 3 years ago, I was sitting in one of those seats, eagerly waiting to receive my diploma just like the rest of you. 3 years later, and I’m now standing here in front of all of you on one of the most important days of your lives. Thank you for having me, it truly is an honour.
 
@@ -61,4 +62,4 @@ It took years of education and trial and error to get the necessary set of skill
 One of my favourite quotes from Mahatma Gandhi is to “be the change you want to see in the world”. I use my passions to help drive those changes I want to see. As you enter the world as fresh, young adults with an incredible education, strong alumni community and network of friends and professors, you have every opportunity available ahead of you to be the change you want to see in the world. Let your passions drive you wherever you need to go.
 
 Graduands of the USMC class of 2019, congratulations once again and I can’t wait to see what the future holds for each of you.
-```
+</div>
