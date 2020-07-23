@@ -55,7 +55,7 @@ Trello is a simple drag-and-drop organizational tool that's perfect for keeping 
 
 _Price:_ Trello's free tier covers 10 Team boards with unlimited team members
 
-_Alternatives:_ [Asana](https://asana.com/), [JIRA](https://www.atlassian.com/software/jira), [Airtable](https://airtable.com/), [ClickUp](https://clickup.com/?fp_ref=2lve1)
+_Alternatives:_ [Asana](https://asana.com/), [JIRA](https://www.atlassian.com/software/jira), [Airtable](https://airtable.com/), [ClickUp](https://clickup.com/?fp_ref=2lve1), [Milanote](https://milanote.com/)
 
 ## [Calendly](https://calendly.com)
 
