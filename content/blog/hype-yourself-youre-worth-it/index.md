@@ -18,6 +18,11 @@ categories:
   - Workshop
 ---
 
+## Update: I recently launched [HYPE DOCS](https://hypedocs.co)
+Hype Docs is a tool to help you track your personal hype events and beat imposter syndrome! Try it out and let me know what you think!
+
+# What Are Hype Docs
+
 I've given a talk focused on this topic numerous times in the past. If you'd ever like me to visit your office or give a virtual version of this talk, please [get in touch](https://aashni.me/contact). You can find the slides [here](https://docs.google.com/presentation/d/1u0jCJAbAagEXW-Qjh3hZLAWwH0etDE_CFPEvdlY2HNw/edit?usp=sharing). If you’re interested in viewing some sample Hype Docs, here is an [example using a spreadsheet format](https://docs.google.com/spreadsheets/d/1YRA8j3HzwBkj2rBto774zWuKIj6GaoopZuwwtu6bUS0), and here is an [example using a word document](https://drive.google.com/open?id=1o12BOKREVOXu_alnJgWygTTspmx56IPz8ljiuYNBEfw).
 
 ## **Hype Docs**
