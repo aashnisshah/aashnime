@@ -1,81 +1,92 @@
 {
     "person": {
-        "role": "Insinyur Desain"
+        "role": "Tech Leader, Mentor, and Innovator"
     },
     "newsletter": {
-        "title": "Langganan Buletin {firstName}",
-        "description": "Saya sesekali menulis tentang desain, teknologi, dan berbagi pemikiran tentang persimpangan kreativitas dan rekayasa",
-        "button": "Daftar"
+        "title": "Subscribe to Aashni's Newsletter",
+        "description": "I write about technology, entrepreneurship, and share insights from my experience in software engineering, startups, and board-level leadership.",
+        "button": "Sign up"
     },
     "home": {
-        "label": "Beranda",
-        "title": "Portofolio {name}",
-        "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
-        "headline": "Insinyur desain dan pembangun",
-        "subline": "Saya Selene, seorang insinyur desain di FLY, di mana saya membuat pengalaman pengguna yang intuitif. Setelah jam kerja, saya mengerjakan proyek-proyek pribadi."
+        "label": "Home",
+        "title": "Aashni's Portfolio",
+        "description": "Portfolio website showcasing my work as a Tech Leader, Mentor, and Innovator",
+        "headline": "Tech Leader, Mentor, and Innovator",
+        "subline": "Hi! I'm Aashni, a startup advisor, angel investor, and innovation leader with a passion for helping businesses scale and build impactful solutions. I create products in my free time, mentor founders, and support women in the tech ecosystem.",
+        "cta-primary": "Work With Me",
+        "cta-secondary": "See My Work",
+        "intro": "I help startups scale, build impactful products, and drive innovation. With experience at Microsoft, Amazon, and Square, I’ve led teams, created platforms like HypeDocs and Mido, and advised startups like Pawtrip and Monadd. I’m also a board member and nonprofit director, passionate about making a difference through technology and strategy."
     },
     "about": {
-        "label": "Tentang",
-        "title": "Tentang Saya",
-        "description": "Kenali {name}, {role} dari {location}",
+        "label": "About",
+        "title": "About me",
+        "description": "Meet Aashni, Tech Leader, Mentor, and Innovator from Canada and Kenya",
         "intro": {
-            "title": "Pengantar",
-            "description": "Selene adalah seorang insinyur desain yang berbasis di Jakarta dengan hasrat untuk mengubah tantangan kompleks menjadi solusi desain yang sederhana dan elegan. Karyanya meliputi antarmuka digital, pengalaman interaktif, dan pertemuan antara desain dan teknologi."
+            "title": "Introduction",
+            "description": "Aashni is a dual citizen of Canada and Kenya with a decade of experience in software engineering, startups, and board-level leadership. She is passionate about creating innovative products, advising businesses, and fostering inclusivity in tech. With expertise spanning Microsoft, Amazon, Square, and various startups, she combines technical excellence with a deep understanding of entrepreneurship."
         },
         "work": {
-            "title": "Pengalaman Kerja",
+            "title": "Work Experience",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Sekarang",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
+                "Kingsway Group": {
+                    "timeframe": "2023 - Present",
+                    "role": "Board Member",
+                    "achievements": "Modernizing operations with a tech lens across industries such as hotels, malls, entertainment, and auto services."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Desainer Utama",
-                    "achievements": "Mengembangkan sistem desain yang menyatukan merek di berbagai platform, meningkatkan konsistensi desain sebesar 40%.;Memimpin tim lintas fungsi untuk meluncurkan lini produk baru, berkontribusi pada peningkatan pendapatan perusahaan sebesar 15%."
+                "Microsoft, Amazon, Square (Block)": {
+                    "timeframe": "2013 - 2023",
+                    "role": "Software Engineer and Leader",
+                    "achievements": "Developed and launched global products impacting millions of users."
+                },
+                "Startups and Products": {
+                    "timeframe": "2023 - Present",
+                    "role": "Founder, Advisor, and Investor",
+                    "achievements": "Built HypeDocs and MIDO, advised startups like Pawtrip and Blossom, and provided angel investments to promising ventures."
                 }
             }
         },
         "studies": {
-            "title": "Pendidikan",
+            "title": "Studies",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Belajar teknik perangkat lunak."
+                "University Education": {
+                    "description": "Studied software engineering and gained expertise in building scalable systems."
                 },
-                "Build the Future": {
-                    "description": "Belajar pemasaran online dan personal branding."
+                "Self-Learning": {
+                    "description": "Continuously learning through courses, mentorship, and hands-on experience in product development and leadership."
                 }
             }
         },
         "technical": {
-            "title": "Kemampuan Teknis",
+            "title": "Technical skills",
             "skills": {
-                "Figma": {
-                    "description": "Mampu membuat prototipe di Figma dengan Once UI dengan kecepatan luar biasa."
+                "React and Next.js": {
+                    "description": "Expert in building next-gen apps with frameworks like React and Next.js."
                 },
-                "Nextjs": {
-                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Once UI + Supabase."
+                "Supabase": {
+                    "description": "Experienced in leveraging Supabase for scalable backend solutions."
+                },
+                "Product Development": {
+                    "description": "Proficient in creating and launching SaaS products that solve real-world problems."
                 }
             }
         }
     },
     "blog": {
         "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
+        "title": "Writing about technology and entrepreneurship...",
+        "description": "Read what Aashni has been up to recently"
     },
     "work": {
-        "label": "Karya",
-        "title": "Proyek Saya",
-        "description": "Proyek desain dan pengembangan oleh {name}"
+        "label": "Work",
+        "title": "My projects",
+        "description": "Tech and product development projects by Aashni"
     },
     "gallery": {
-        "label": "Galeri",
-        "title": "Galeri Foto Saya",
-        "description": "Koleksi foto oleh {name}"
+        "label": "Gallery",
+        "title": "My photo gallery",
+        "description": "A photo collection by Aashni"
     },
     "projectCard": {
-        "label": "Baca Studi Kasus"
+        "label": "Read Case Study"
     }
 }

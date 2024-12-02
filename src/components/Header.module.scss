@@ -7,7 +7,7 @@
     pointer-events: none;
     backdrop-filter: blur(0.5rem);
     background: linear-gradient(to bottom, var(--page-background), var(--static-transparent));
-    mask-image: linear-gradient(rgba(0,0,0) 25%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(rgba(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
     mask-size: 100% 100%;
 }
 
@@ -21,5 +21,31 @@
     .mask {
         transform: rotate(180deg);
         bottom: 0;
+    }
+}
+
+/* Content section takes full width on small screens, and 2/3 on large screens */
+.contentSection {
+    width: 100%;
+    /* Full width on small screens */
+
+    @media (min-width: 768px) {
+        width: 66.6666%;
+        /* 2/3 width on larger screens */
+    }
+}
+
+/* Image section takes full width on small screens, and 1/3 on large screens */
+.imageSection {
+    width: 100%;
+    /* Full width on small screens */
+    margin-top: 1rem;
+    /* Space above the image */
+
+    @media (min-width: 768px) {
+        width: 33.3333%;
+        /* 1/3 width on larger screens */
+        margin-top: 0;
+        /* Reset margin for large screens */
     }
 }
