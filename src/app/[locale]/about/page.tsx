@@ -1,4 +1,4 @@
-import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, Tag, Text } from '@/once-ui/components';
+import { Avatar, Button, Flex, Heading, Icon, IconButton, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
 import { baseURL, renderContent } from '@/app/resources';
 import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
@@ -6,61 +6,61 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+    { params: { locale } }: { params: { locale: string } }
 ) {
     const t = await getTranslations();
-    const {person, about, social } = renderContent(t);
-	const title = about.title;
-	const description = about.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+    const { person, about, social } = renderContent(t);
+    const title = about.title;
+    const description = about.description;
+    const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
-	return {
-		title,
-		description,
-		openGraph: {
-			title,
-			description,
-			type: 'website',
-			url: `https://${baseURL}/${locale}/about`,
-			images: [
-				{
-					url: ogImage,
-					alt: title,
-				},
-			],
-		},
-		twitter: {
-			card: 'summary_large_image',
-			title,
-			description,
-			images: [ogImage],
-		},
-	};
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: 'website',
+            url: `https://${baseURL}/${locale}/about`,
+            images: [
+                {
+                    url: ogImage,
+                    alt: title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [ogImage],
+        },
+    };
 }
 
 export default function About(
-    { params: {locale}}: { params: { locale: string }}
+    { params: { locale } }: { params: { locale: string } }
 ) {
     unstable_setRequestLocale(locale);
     const t = useTranslations();
-    const {person, about, social } = renderContent(t);
+    const { person, about, social } = renderContent(t);
     const structure = [
-        { 
+        {
             title: about.intro.title,
             display: about.intro.display,
             items: []
         },
-        { 
+        {
             title: about.work.title,
             display: about.work.display,
             items: about.work.experiences.map(experience => experience.company)
         },
-        { 
+        {
             title: about.studies.title,
             display: about.studies.display,
             items: about.studies.institutions.map(institution => institution.name)
         },
-        { 
+        {
             title: about.technical.title,
             display: about.technical.display,
             items: about.technical.skills.map(skill => skill.title)
@@ -92,7 +92,7 @@ export default function About(
                     }),
                 }}
             />
-            { about.tableOfContent.display && (
+            {about.tableOfContent.display && (
                 <Flex
                     style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
                     position="fixed"
@@ -106,22 +106,22 @@ export default function About(
             <Flex
                 fillWidth
                 mobileDirection="column" justifyContent="center">
-                { about.avatar.display && (
+                {about.avatar.display && (
                     <Flex
                         minWidth="160" paddingX="l" paddingBottom="xl" gap="m"
                         flex={3} direction="column" alignItems="center">
                         <Avatar
                             src={person.avatar}
-                            size="xl"/>
+                            size="xl" />
                         <Flex
                             gap="8"
                             alignItems="center">
                             <Icon
                                 onBackground="accent-weak"
-                                name="globe"/>
+                                name="globe" />
                             {person.location}
                         </Flex>
-                        { person.languages.length > 0 && (
+                        {person.languages.length > 0 && (
                             <Flex
                                 wrap
                                 gap="8">
@@ -145,31 +145,46 @@ export default function About(
                         direction="column" justifyContent="center"
                         marginBottom="32">
                         {about.calendar.display && (
-                            <Flex
-                                className={styles.blockAlign}
+                            <SmartLink
+                                href={about.calendar.link}
                                 style={{
-                                    backdropFilter: 'blur(var(--static-space-1))',
-                                    border: '1px solid var(--brand-alpha-medium)',
-                                    width: 'fit-content'
+                                    width: 'fit-content',
+                                    textDecoration: 'none'
                                 }}
-                                alpha="brand-weak" radius="full"
-                                fillWidth padding="4" gap="8" marginBottom="m"
-                                alignItems="center">
-                                <Flex paddingLeft="12">
-                                    <Icon
-                                        name="calendar"
-                                        onBackground="brand-weak"/>
-                                </Flex>
+                            >
                                 <Flex
-                                    paddingX="8">
-                                    Schedule a call
+                                    className={styles.blockAlign}
+                                    style={{
+                                        backdropFilter: 'blur(var(--static-space-1))',
+                                        border: '1px solid var(--brand-alpha-medium)',
+                                        width: 'fit-content',
+                                        cursor: 'pointer' // Add cursor pointer to indicate clickability
+                                    }}
+                                    alpha="brand-weak"
+                                    radius="full"
+                                    fillWidth
+                                    padding="4"
+                                    gap="8"
+                                    marginBottom="m"
+                                    alignItems="center"
+                                >
+                                    <Flex paddingLeft="12">
+                                        <Icon
+                                            name="calendar"
+                                            onBackground="brand-weak"
+                                        />
+                                    </Flex>
+                                    <Flex
+                                        paddingX="8"
+                                    >
+                                        Schedule a call
+                                    </Flex>
+                                    <IconButton
+                                        data-border="rounded"
+                                        variant="tertiary"
+                                        icon="chevronRight" />
                                 </Flex>
-                                <IconButton
-                                    href={about.calendar.link}
-                                    data-border="rounded"
-                                    variant="tertiary"
-                                    icon="chevronRight"/>
-                            </Flex>
+                            </SmartLink>
                         )}
                         <Heading
                             className={styles.textAlign}
@@ -194,14 +209,14 @@ export default function About(
                                             prefixIcon={item.icon}
                                             label={item.name}
                                             size="s"
-                                            variant="tertiary"/>
+                                            variant="tertiary" />
                                     )
                                 ))}
                             </Flex>
                         )}
                     </Flex>
 
-                    { about.intro.display && (
+                    {about.intro.display && (
                         <Flex
                             direction="column"
                             textVariant="body-default-l"
@@ -210,7 +225,7 @@ export default function About(
                         </Flex>
                     )}
 
-                    { about.work.display && (
+                    {about.work.display && (
                         <>
                             <Heading
                                 as="h2"
@@ -277,7 +292,7 @@ export default function About(
                                                             radius="m"
                                                             sizes={image.width.toString()}
                                                             alt={image.alt}
-                                                            src={image.src}/>
+                                                            src={image.src} />
                                                     </Flex>
                                                 ))}
                                             </Flex>
@@ -288,7 +303,7 @@ export default function About(
                         </>
                     )}
 
-                    { about.studies.display && (
+                    {about.studies.display && (
                         <>
                             <Heading
                                 as="h2"
@@ -321,7 +336,7 @@ export default function About(
                         </>
                     )}
 
-                    { about.technical.display && (
+                    {about.technical.display && (
                         <>
                             <Heading
                                 as="h2"
@@ -362,7 +377,7 @@ export default function About(
                                                             radius="m"
                                                             sizes={image.width.toString()}
                                                             alt={image.alt}
-                                                            src={image.src}/>
+                                                            src={image.src} />
                                                     </Flex>
                                                 ))}
                                             </Flex>

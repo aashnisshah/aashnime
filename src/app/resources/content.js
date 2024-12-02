@@ -6,10 +6,10 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: 'Design Engineer',
+    role: 'Tech Leader, Mentor, and Builder',
     avatar: '/images/avatar.jpg',
-    location: 'Canada & Kenya',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location: 'Kenya & Canada',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,22 +24,22 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/aashnisshah',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/aashnisshah',
     },
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://www.x.com/aashnisshah',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:contact@aashni.me',
     },
 ]
 
