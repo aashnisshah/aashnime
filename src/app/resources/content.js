@@ -15,7 +15,7 @@ const person = {
 const newsletter = {
     display: true,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>I occasionally write about my experiences and learnings.</>
 }
 
 const social = [
@@ -47,7 +47,7 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Tech Leader, Advisor, and Innovator</>,
+    headline: <>Tech Leader, Advisor, and Builder</>,
     subline: <>Hi! I'm Aashni, a startup advisor and innovation leader, helping businesses scale and build impactful solutions.</>
 }
 

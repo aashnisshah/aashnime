@@ -1,6 +1,6 @@
 {
     "person": {
-        "role": "Tech Leader, Mentor, and Innovator"
+        "role": "Tech Leader, Mentor, and Builder"
     },
     "newsletter": {
         "title": "Subscribe to Aashni's Newsletter",
@@ -10,8 +10,8 @@
     "home": {
         "label": "Home",
         "title": "Aashni's Portfolio",
-        "description": "Portfolio website showcasing my work as a Tech Leader, Mentor, and Innovator",
-        "headline": "Tech Leader, Mentor, and Innovator",
+        "description": "Portfolio website showcasing my work as a Tech Leader, Mentor, and Builder",
+        "headline": "Tech Leader, Mentor, and Builder",
         "subline": "Hi! I'm Aashni, a startup advisor, angel investor, and innovation leader with a passion for helping businesses scale and build impactful solutions. I create products in my free time, mentor founders, and support women in the tech ecosystem.",
         "cta-primary": "Work With Me",
         "cta-secondary": "See My Work",
@@ -20,7 +20,7 @@
     "about": {
         "label": "About",
         "title": "About me",
-        "description": "Meet Aashni, Tech Leader, Mentor, and Innovator from Canada and Kenya",
+        "description": "Meet Aashni, Tech Leader, Mentor, and Builder from Canada and Kenya",
         "intro": {
             "title": "Introduction",
             "description": "Aashni is a dual citizen of Canada and Kenya with a decade of experience in software engineering, startups, and board-level leadership. She is passionate about creating innovative products, advising businesses, and fostering inclusivity in tech. With expertise spanning Microsoft, Amazon, Square, and various startups, she combines technical excellence with a deep understanding of entrepreneurship."

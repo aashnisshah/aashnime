@@ -25,22 +25,22 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/once-ui-system/nextjs-starter',
+            link: 'https://github.com/aashnisshah',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://www.linkedin.com/company/once-ui/',
+            link: 'https://www.linkedin.com/in/aashnisshah',
         },
         {
             name: 'X',
             icon: 'x',
-            link: '',
+            link: 'https://www.x.com/aashnisshah',
         },
         {
             name: 'Email',
             icon: 'email',
-            link: 'mailto:example@gmail.com',
+            link: 'mailto:contact@aashni.me',
         },
     ]
 
