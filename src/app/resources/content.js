@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Tech Leader, Advisor, and Innovator</>,
-    subline: <>Hi! I'm Aashni, a startup advisor and innovation leader, helping businesses scale and build impactful solutions. I create products in my free time and love supporting women in any part of the ecosystem.</>
+    subline: <>Hi! I'm Aashni, a startup advisor and innovation leader, helping businesses scale and build impactful solutions.</>
 }
 
 const about = {
