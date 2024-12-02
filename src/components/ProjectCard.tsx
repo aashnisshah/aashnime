@@ -35,7 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     }, []);
 
     const handleImageClick = () => {
-        if(images.length > 1) {
+        if (images.length > 1) {
             setIsTransitioning(false);
             const nextIndex = (activeIndex + 1) % images.length;
             handleControlClick(nextIndex);
@@ -57,93 +57,99 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <Flex
             fillWidth gap="m"
             direction="column">
-            {images[activeIndex] && <Flex onClick={handleImageClick}>
-                <RevealFx
-                    style={{width: '100%'}}
-                    delay={0.4}
-                    trigger={isTransitioning}
-                    speed="fast">
-                    <SmartImage
-                        tabIndex={0}
-                        radius="l"
-                        alt={title}
-                        aspectRatio="16 / 9"
-                        src={images[activeIndex]}
-                        style={{
-                            border: '1px solid var(--neutral-alpha-weak)',
-                            ...(images.length > 1 && {
-                                cursor: 'pointer',
-                            }),
-                        }}/>
-                </RevealFx>
-            </Flex>}
-            {images.length > 1 && (
-                <Flex
-                    gap="4" paddingX="s"
-                    fillWidth
-                    justifyContent="center">
-                    {images.map((_, index) => (
+            <Flex direction="row" mobileDirection="column">
+                <Flex paddingRight="m">
+                    {images[activeIndex] && <Flex onClick={handleImageClick}>
+                        <RevealFx
+                            style={{ width: '100%' }}
+                            delay={0.4}
+                            trigger={isTransitioning}
+                            speed="fast">
+                            <SmartImage
+                                tabIndex={0}
+                                radius="l"
+                                alt={title}
+                                aspectRatio="16 / 9"
+                                src={images[activeIndex]}
+                                style={{
+                                    border: '1px solid var(--neutral-alpha-weak)',
+                                    ...(images.length > 1 && {
+                                        cursor: 'pointer',
+                                    }),
+                                }} />
+                        </RevealFx>
+                    </Flex>}
+                    {images.length > 1 && (
                         <Flex
-                            key={index}
-                            onClick={() => handleControlClick(index)}
-                            style={{
-                                background: activeIndex === index 
-                                    ? 'var(--neutral-on-background-strong)' 
-                                    : 'var(--neutral-alpha-medium)',
-                                cursor: 'pointer',
-                                transition: 'background 0.3s ease',
-                            }}
+                            gap="4" paddingX="s"
                             fillWidth
-                            height="2">
+                            justifyContent="center">
+                            {images.map((_, index) => (
+                                <Flex
+                                    key={index}
+                                    onClick={() => handleControlClick(index)}
+                                    style={{
+                                        background: activeIndex === index
+                                            ? 'var(--neutral-on-background-strong)'
+                                            : 'var(--neutral-alpha-medium)',
+                                        cursor: 'pointer',
+                                        transition: 'background 0.3s ease',
+                                    }}
+                                    fillWidth
+                                    height="2">
+                                </Flex>
+                            ))}
                         </Flex>
-                    ))}
+                    )}
                 </Flex>
-            )}
-            <Flex
-                mobileDirection="column"
-                fillWidth paddingX="s" paddingTop="12" paddingBottom="24" gap="l">
-                {title && (
+                <Flex direction="column">
                     <Flex
-                        flex={5}>
-                        <Heading
-                            as="h2"
-                            wrap="balance"
-                            variant="heading-strong-xl">
-                            {title}
-                        </Heading>
-                    </Flex>
-                )}
-                {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-                    <Flex
-                        flex={7} direction="column"
-                        gap="16">
-                        {avatars?.length > 0 && (
-                            <AvatarGroup
-                                avatars={avatars}
-                                size="m"
-                                reverseOrder/>
+                        direction="column"
+                        mobileDirection="column"
+                        fillWidth paddingX="s" paddingTop="12" paddingBottom="24" gap="l">
+                        {title && (
+                            <Flex>
+                                <Heading
+                                    as="h2"
+                                    wrap="balance"
+                                    variant="heading-strong-xl">
+                                    {title}
+                                </Heading>
+                            </Flex>
                         )}
-                        {description?.trim() && (
-                            <Text
-                                wrap="balance"
-                                variant="body-default-s"
-                                onBackground="neutral-weak">
-                                {description}
-                            </Text>
-                        )}
-                        {content?.trim() && (
-                            <SmartLink
-                                suffixIcon="chevronRight"
-                                style={{margin: '0', width: 'fit-content'}}
-                                href={href}>
+                        {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
+                            <Flex
+                                direction="column"
+                                gap="16">
+                                {avatars?.length > 0 && (
+                                    <AvatarGroup
+                                        avatars={avatars}
+                                        size="m"
+                                        reverseOrder />
+                                )}
+                                {description?.trim() && (
                                     <Text
-                                        variant="body-default-s">
-                                       {t("projectCard.label")}
+                                        wrap="balance"
+                                        variant="body-default-s"
+                                        onBackground="neutral-weak">
+                                        {description}
                                     </Text>
-                            </SmartLink>
+                                )}
+                                {content?.trim() && (
+                                    <SmartLink
+                                        suffixIcon="chevronRight"
+                                        style={{ margin: '0', width: 'fit-content' }}
+                                        href={href}>
+                                        <Text
+                                            variant="body-default-s">
+                                            {t("projectCard.label")}
+                                        </Text>
+                                    </SmartLink>
+                                )}
+                            </Flex>
                         )}
                     </Flex>
-                )}
+                </Flex>
             </Flex>
         </Flex>
     );
