@@ -1,11 +1,12 @@
 "use client";
 
-import { mailchimp } from '@/app/resources'
-import { Button, Flex, Heading, Input, Text, Background } from '@/once-ui/components';
 import { useState } from 'react';
+import axios from 'axios';
 import { useTranslations } from 'next-intl';
+import { Button, Flex, Heading, Input, Text, Background } from '@/once-ui/components';
+import { mailchimp } from '@/app/resources';
 
-
+// Debounce utility function
 function debounce<T extends (...args: any[]) => void>(func: T, delay: number): T {
     let timeout: ReturnType<typeof setTimeout>;
     return ((...args: Parameters<T>) => {
@@ -20,20 +21,17 @@ type NewsletterProps = {
     description: string | JSX.Element;
 }
 
-export const Mailchimp = (
-    { newsletter }: { newsletter: NewsletterProps}
-) => {
+export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
     const [email, setEmail] = useState<string>('');
     const [error, setError] = useState<string>('');
     const [touched, setTouched] = useState<boolean>(false);
+    const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+    const [submitStatus, setSubmitStatus] = useState<string>('');
 
     const t = useTranslations();
 
     const validateEmail = (email: string): boolean => {
-        if (email === '') {
-            return true;
-        }
-
+        if (email === '') return true;
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     };
@@ -58,22 +56,78 @@ export const Mailchimp = (
         }
     };
 
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        // Reset previous states
+        setIsSubmitting(true);
+        setError('');
+        setSubmitStatus('');
+
+        // Validate email
+        if (!validateEmail(email)) {
+            setError('Please enter a valid email address.');
+            setIsSubmitting(false);
+            return;
+        }
+
+        try {
+            // Replace with your actual MailerLite API details
+            const response = await axios.post(
+                'https://connect.mailerlite.com/api/subscribers',
+                {
+                    email: email,
+                    groups: [process.env.NEXT_PUBLIC_MAILERLITE_GROUP_ID || '']
+                },
+                {
+                    headers: {
+                        'Authorization': `Bearer ${process.env.NEXT_PUBLIC_MAILERLITE_API_KEY}`,
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    }
+                }
+            );
+
+            // Success
+            setSubmitStatus('Successfully subscribed!');
+            setEmail(''); // Clear input
+        } catch (err: any) {
+            // Handle potential errors
+            console.error('Subscription error:', err);
+            const errorMessage = err.response?.data?.message || 'Subscription failed. Please try again.';
+            setError(errorMessage);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <Flex
-            style={{overflow: 'hidden'}}
+            style={{ overflow: 'hidden' }}
             position="relative"
-            fillWidth padding="xl"  radius="l" marginBottom="m"
-            direction="column" alignItems="center" align="center"
-            background="surface" border="neutral-medium" borderStyle="solid-1">
+            fillWidth
+            padding="xl"
+            radius="l"
+            marginBottom="m"
+            direction="column"
+            alignItems="center"
+            align="center"
+            background="surface"
+            border="neutral-medium"
+            borderStyle="solid-1"
+        >
             <Background
                 position="absolute"
                 mask={mailchimp.effects.mask as any}
                 gradient={mailchimp.effects.gradient as any}
                 dots={mailchimp.effects.dots as any}
-                lines={mailchimp.effects.lines as any}/>
-            <Heading style={{position: 'relative'}}
+                lines={mailchimp.effects.lines as any}
+            />
+            <Heading
+                style={{ position: 'relative' }}
                 marginBottom="s"
-                variant="display-strong-xs">
+                variant="display-strong-xs"
+            >
                 {newsletter.title}
             </Heading>
             <Text
@@ -83,62 +137,71 @@ export const Mailchimp = (
                 }}
                 wrap="balance"
                 marginBottom="l"
-                onBackground="neutral-medium">
+                onBackground="neutral-medium"
+            >
                 {newsletter.description}
             </Text>
             <form
+                onSubmit={handleSubmit}
                 style={{
                     width: '100%',
                     display: 'flex',
                     justifyContent: 'center'
                 }}
-                action={mailchimp.action}
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form">
-                <Flex id="mc_embed_signup_scroll"
-                    fillWidth maxWidth={24} gap="8">
+            >
+                <Flex
+                    id="newsletter-signup"
+                    fillWidth
+                    maxWidth={24}
+                    gap="8"
+                >
                     <Input
                         formNoValidate
                         labelAsPlaceholder
-                        id="mce-EMAIL"
+                        id="newsletter-email"
                         name="EMAIL"
                         type="email"
                         label="Email"
                         required
-                        onChange={(e) => {
-                            if (error) {
-                                handleChange(e);
-                            } else {
-                                debouncedHandleChange(e);
-                            }
+                        value={email}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                            // Explicitly call handleChange with the event
+                            handleChange(e);
                         }}
                         onBlur={handleBlur}
-                        error={error}/>
-                    <div style={{display: 'none'}}>
-                        <input type="checkbox" readOnly name="group[3492][1]" id="mce-group[3492]-3492-0" value="" checked/>
-                    </div>
-                    <div id="mce-responses" className="clearfalse">
-                        <div className="response" id="mce-error-response" style={{display: 'none'}}></div>
-                        <div className="response" id="mce-success-response" style={{display: 'none'}}></div>
-                    </div>
-                    <div aria-hidden="true" style={{position: 'absolute', left: '-5000px'}}>
-                        <input type="text" readOnly name="b_c1a5a210340eb6c7bff33b2ba_0462d244aa" tabIndex={-1} value=""/>
-                    </div>
+                        error={error}
+                    />
+
                     <div className="clear">
                         <Flex
-                            height="48" alignItems="center">
+                            height="48"
+                            alignItems="center"
+                        >
                             <Button
-                                id="mc-embedded-subscribe"
-                                value="Subscribe"
+                                type="submit"
                                 size="m"
-                                fillWidth>
-                                {t("newsletter.button")}
+                                fillWidth
+                                disabled={isSubmitting || !!error}
+                            >
+                                {isSubmitting ? 'Subscribing...' : t("newsletter.button")}
                             </Button>
                         </Flex>
                     </div>
+
+                    {/* Error or Success Message */}
+                    {(error || submitStatus) && (
+                        <div
+                            style={{
+                                color: error ? 'red' : 'green',
+                                marginTop: '8px',
+                                textAlign: 'center'
+                            }}
+                        >
+                            {error || submitStatus}
+                        </div>
+                    )}
                 </Flex>
             </form>
         </Flex>
-    )
-}
+    );
+};
