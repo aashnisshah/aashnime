@@ -187,7 +187,8 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
                             </Button>
                         </Flex>
                     </div>
-
+                </Flex>
+                <Flex>
                     {/* Error or Success Message */}
                     {(error || submitStatus) && (
                         <div
