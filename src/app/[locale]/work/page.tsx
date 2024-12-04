@@ -1,47 +1,48 @@
 import { getPosts } from '@/app/utils/utils';
-import { Flex } from '@/once-ui/components';
+import { Flex, Heading, Text } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import styles from '@/components/about/about.module.scss'
 
 export async function generateMetadata(
-    {params: {locale}}: { params: { locale: string }}
+    { params: { locale } }: { params: { locale: string } }
 ) {
 
     const t = await getTranslations();
     const { work } = renderContent(t);
 
-	const title = work.title;
-	const description = work.description;
-	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+    const title = work.title;
+    const description = work.description;
+    const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
-	return {
-		title,
-		description,
-		openGraph: {
-			title,
-			description,
-			type: 'website',
-			url: `https://${baseURL}/${locale}/work/`,
-			images: [
-				{
-					url: ogImage,
-					alt: title,
-				},
-			],
-		},
-		twitter: {
-			card: 'summary_large_image',
-			title,
-			description,
-			images: [ogImage],
-		},
-	};
+    return {
+        title,
+        description,
+        openGraph: {
+            title,
+            description,
+            type: 'website',
+            url: `https://${baseURL}/${locale}/work/`,
+            images: [
+                {
+                    url: ogImage,
+                    alt: title,
+                },
+            ],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title,
+            description,
+            images: [ogImage],
+        },
+    };
 }
 
 export default function Work(
-    { params: {locale}}: { params: { locale: string }}
+    { params: { locale } }: { params: { locale: string } }
 ) {
     unstable_setRequestLocale(locale);
     let allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
@@ -51,8 +52,8 @@ export default function Work(
 
     return (
         <Flex
-			fillWidth maxWidth="m"
-			direction="column">
+            fillWidth maxWidth="m"
+            direction="column">
             <script
                 type="application/ld+json"
                 suppressHydrationWarning
@@ -78,7 +79,26 @@ export default function Work(
                     }),
                 }}
             />
-            <Projects locale={locale}/>
+            <Flex direction="column" gap="l">
+                <Flex direction="column" paddingBottom='m'>
+                    <Heading
+                        className={styles.textAlign}
+                        variant="display-strong-xl">
+                        My Work
+                    </Heading>
+                    <Text
+                        className={styles.textAlign}
+                        variant="display-default-xs"
+                        onBackground="neutral-weak">
+                        Below is a brief overview of some of the work and projects I have completed in recent years.
+                    </Text>
+                </Flex>
+                <Flex>
+                    <Flex>
+                        <Projects locale={locale} />
+                    </Flex>
+                </Flex>
+            </Flex>
         </Flex>
     );
 }
