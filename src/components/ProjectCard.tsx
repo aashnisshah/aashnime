@@ -53,13 +53,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         }
     };
 
+    console.log(`images: ${JSON.stringify(images)}`);
+
     return (
         <Flex
             fillWidth gap="m"
             direction="column">
             <Flex direction="row" mobileDirection="column">
-                <Flex paddingRight="m">
-                    {images[activeIndex] && <Flex onClick={handleImageClick}>
+                <Flex paddingRight="m" flex={1}>
+                    {images[activeIndex] && <Flex onClick={handleImageClick} flex={1}>
                         <RevealFx
                             style={{ width: '100%' }}
                             delay={0.4}
@@ -102,7 +104,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                         </Flex>
                     )}
                 </Flex>
-                <Flex direction="column">
+                <Flex direction="column" flex={1}>
                     <Flex
                         direction="column"
                         mobileDirection="column"

@@ -186,6 +186,20 @@ export default function Home(
 			{/* Projects Section */}
 			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1, 3]} locale={locale} />
+				<Flex flex={1} justifyContent="center">
+					<Button
+						id="work"
+						data-border="rounded"
+						href={`/${locale}/work`}
+						variant="primary"
+						size="l"
+					>
+						<Flex gap="8" alignItems="center">
+							See More Projects
+							<Arrow trigger="#contact" />
+						</Flex>
+					</Button>
+				</Flex>
 			</RevealFx>
 
 			{/* Blog posts - hiding for initial launch
@@ -212,8 +226,9 @@ export default function Home(
 			{routes['/testimonials'] && (
 				<Flex
 					fillWidth gap="24"
+					direction="column"
 					mobileDirection="column">
-					<Flex flex={1} paddingLeft="l">
+					<Flex flex={1} justifyContent="center" paddingBottom='m'>
 						<Heading
 							as="h2"
 							variant="display-strong-xs"
@@ -223,7 +238,21 @@ export default function Home(
 					</Flex>
 					<Flex
 						flex={3} paddingX="20">
-						<Testimonials range={[1, 2]} columns="2" locale={locale} />
+						<Testimonials range={[1, 4]} columns="2" locale={locale} />
+					</Flex>
+					<Flex flex={1} justifyContent="center">
+						<Button
+							id="testimonials"
+							data-border="rounded"
+							href={`/${locale}/testimonials`}
+							variant="primary"
+							size="l"
+						>
+							<Flex gap="8" alignItems="center">
+								See More
+								<Arrow trigger="#contact" />
+							</Flex>
+						</Button>
 					</Flex>
 				</Flex>
 			)}
