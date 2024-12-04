@@ -51,7 +51,7 @@ export default function Work(
 
     return (
         <Flex
-            fillWidth maxWidth="m"
+            fillWidth maxWidth="s"
             direction="column">
             <script
                 type="application/ld+json"
