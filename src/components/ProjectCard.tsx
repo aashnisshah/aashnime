@@ -57,8 +57,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
     return (
         <Flex
-            fillWidth gap="m"
-            direction="column">
+            fillWidth gap="s"
+            direction="column"
+            padding="s"
+            style={{
+                borderRadius: "20px"
+            }}
+            border="neutral-medium"
+            borderStyle="solid-1">
             <Flex direction="row" mobileDirection="column">
                 <Flex paddingRight="m" flex={1}>
                     {images[activeIndex] && <Flex onClick={handleImageClick} flex={1}>
