@@ -124,7 +124,7 @@ export default function Project({ params }: WorkParams) {
 				fillWidth maxWidth="xs" gap="16"
 				direction="column">
 				<Button
-					href={`/${params.locale}/work`}
+					href={`/${params.locale}/testimonials`}
 					variant="tertiary"
 					size="s"
 					prefixIcon="chevronLeft">
@@ -153,16 +153,12 @@ export default function Project({ params }: WorkParams) {
 						gap="12" marginBottom="24"
 						alignItems="center">
 						{post.metadata.referral && (
-							<AvatarGroup
-								reverseOrder
-								avatars={avatars}
-								size="m" />
+							<SmartImage
+								aspectRatio="16 / 9"
+								radius="m"
+								alt="image"
+								src={post.metadata.referral[0].avatar} />
 						)}
-						<Text
-							variant="body-default-s"
-							onBackground="neutral-weak">
-							{formatDate(post.metadata.publishedAt)}
-						</Text>
 					</Flex>
 					<CustomMDX source={post.content} />
 				</Flex>

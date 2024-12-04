@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, Flex, Heading, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
+import { Avatar, Button, Flex, Heading, SmartImage, SmartLink, Tag, Text } from '@/once-ui/components';
 import styles from './Testimonials.module.scss';
 import { formatDate } from '@/app/utils/formatDate';
 
@@ -24,29 +24,9 @@ export default function TestimonialPosts({ post, thumbnail }: PostProps) {
                 position="relative"
                 mobileDirection="column"
                 fillWidth paddingY="12" paddingX="16" gap="32">
-                {post.metadata.referral.avatar && thumbnail && (
-                    <Flex
-                        maxWidth={20} fillWidth
-                        className={styles.image}>
-                        <SmartImage
-                            priority
-                            sizes="640px"
-                            style={{
-                                cursor: 'pointer',
-                                border: '1px solid var(--neutral-alpha-weak)'
-                            }}
-                            radius="m"
-                            src={post.metadata.avatar}
-                            alt={'Thumbnail of ' + post.metadata.title}
-                            aspectRatio="16 / 9"
-                        />
-                    </Flex>
-                )}
-                <Flex direction="row">
-                    <Flex direction="column">
-                        <Avatar
-                            size="l"
-                            src={post.metadata.avatar} />
+                <Flex direction="row" gap="16">
+                    <Flex direction="column" marginRight='m' gap="16">
+                        <img src={post.metadata.referral[0].avatar} width={"140px"} style={{ borderRadius: "24px" }} />
                     </Flex>
                     <Flex
                         position="relative"
@@ -63,6 +43,12 @@ export default function TestimonialPosts({ post, thumbnail }: PostProps) {
                             onBackground="neutral-weak">
                             {post.metadata.summary}
                         </Text>
+                        <Button
+                            variant="tertiary"
+                            size="m"
+                            prefixIcon="chevronRight">
+                            Read More
+                        </Button>
                     </Flex>
                 </Flex>
             </Flex>
