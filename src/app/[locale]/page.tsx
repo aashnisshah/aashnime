@@ -6,6 +6,7 @@ import { Projects } from '@/components/work/Projects';
 import { baseURL, routes, renderContent } from '@/app/resources';
 import { Mailchimp } from '@/components';
 import { Posts } from '@/components/blog/Posts';
+import { Testimonials } from '@/components/testimonials/Testimonials';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import styles from '@/components/Header.module.scss';
@@ -206,6 +207,26 @@ export default function Home(
 			// 		</Flex>
 			// 	</Flex>
 			// )} */}
+
+			{/* Blog posts - hiding for initial launch */}
+			{routes['/testimonials'] && (
+				<Flex
+					fillWidth gap="24"
+					mobileDirection="column">
+					<Flex flex={1} paddingLeft="l">
+						<Heading
+							as="h2"
+							variant="display-strong-xs"
+							wrap="balance">
+							Read What Others Have To Say
+						</Heading>
+					</Flex>
+					<Flex
+						flex={3} paddingX="20">
+						<Testimonials range={[1, 2]} columns="2" locale={locale} />
+					</Flex>
+				</Flex>
+			)}
 
 			{/* More Projects, from 2nd post onwards
 			<Projects range={[2]} locale={locale} /> */}

@@ -81,6 +81,11 @@
         "title": "My projects",
         "description": "Tech and product development projects by Aashni"
     },
+    "testimonials": {
+        "label": "Testimonials",
+        "title": "Testimonials",
+        "description": "Read what other people have to share about working with Aashni"
+    },
     "gallery": {
         "label": "Gallery",
         "title": "My photo gallery",

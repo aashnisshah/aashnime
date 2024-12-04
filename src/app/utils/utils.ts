@@ -9,6 +9,13 @@ type Team = {
     linkedIn: string;
 };
 
+type Referral = {
+    name: string;
+    role: string;
+    avatar: string;
+    linkedIn: string;
+}
+
 type Metadata = {
     title: string;
     publishedAt: string;
@@ -17,6 +24,7 @@ type Metadata = {
     images: string[];
     tag?: string;
     team: Team[];
+    referral: Referral[];
 };
 
 function getMDXFiles(dir: string) {
@@ -43,6 +51,7 @@ function readMDXFile(filePath: string) {
         images: data.images || [],
         tag: data.tag || [],
         team: data.team || [],
+        referral: data.referral || [],
     };
 
     return { metadata, content };

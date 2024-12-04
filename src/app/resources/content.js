@@ -172,6 +172,14 @@ const work = {
     // All projects will be listed on the /home and /work routes
 }
 
+const testimonials = {
+    label: "Testimonials",
+    title: "Testimonials",
+    description: `Read what others have to say about ${person.name}`
+    // Create new testimonials posts by adding a new .mdx file to app/testimonials/testimonials
+    // All posts will be listed on the /testimonials route
+}
+
 const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
@@ -251,4 +259,4 @@ const gallery = {
     ]
 }
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, work, gallery, testimonials };

@@ -62,13 +62,13 @@ export const Header = () => {
         startTransition(() => {
             router.replace(
                 pathname,
-                {locale: nextLocale}
+                { locale: nextLocale }
             )
         })
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery } = renderContent(t);
+    const { person, home, about, blog, work, gallery, testimonials } = renderContent(t);
 
     return (
         <>
@@ -77,7 +77,7 @@ export const Header = () => {
                 position="fixed" zIndex={9}
                 fillWidth minHeight="80" justifyContent="center">
             </Flex>
-            <Flex style={{height: 'fit-content'}}
+            <Flex style={{ height: 'fit-content' }}
                 className={styles.position}
                 as="header"
                 zIndex={9}
@@ -87,7 +87,7 @@ export const Header = () => {
                     paddingLeft="12" fillWidth
                     alignItems="center"
                     textVariant="body-default-s">
-                    { display.location && (
+                    {display.location && (
                         <Flex hide="s">
                             {person.location}
                         </Flex>
@@ -101,7 +101,7 @@ export const Header = () => {
                         <Flex
                             gap="4"
                             textVariant="body-default-s">
-                            { routes['/'] && (
+                            {routes['/'] && (
                                 <ToggleButton
                                     prefixIcon="home"
                                     href={`/${params?.locale}`}
@@ -109,7 +109,7 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{home.label}</Flex>
                                 </ToggleButton>
                             )}
-                            { routes['/about'] && (
+                            {routes['/about'] && (
                                 <ToggleButton
                                     prefixIcon="person"
                                     href={`/${params?.locale}/about`}
@@ -117,7 +117,7 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{about.label}</Flex>
                                 </ToggleButton>
                             )}
-                            { routes['/work'] && (
+                            {routes['/work'] && (
                                 <ToggleButton
                                     prefixIcon="grid"
                                     href={`/${params?.locale}/work`}
@@ -125,7 +125,7 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{work.label}</Flex>
                                 </ToggleButton>
                             )}
-                            { routes['/blog'] && (
+                            {routes['/blog'] && (
                                 <ToggleButton
                                     prefixIcon="book"
                                     href={`/${params?.locale}/blog`}
@@ -133,7 +133,15 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{blog.label}</Flex>
                                 </ToggleButton>
                             )}
-                            { routes['/gallery'] && (
+                            {routes['/testimonials'] && (
+                                <ToggleButton
+                                    prefixIcon="speechBubble"
+                                    href={`/${params?.locale}/testimonials`}
+                                    selected={pathname.startsWith('/testimonials')}>
+                                    <Flex paddingX="2" hide="s">{testimonials.label}</Flex>
+                                </ToggleButton>
+                            )}
+                            {routes['/gallery'] && (
                                 <ToggleButton
                                     prefixIcon="gallery"
                                     href={`/${params?.locale}/gallery`}
@@ -161,15 +169,15 @@ export const Header = () => {
                                         selected={params?.locale === locale}
                                         onClick={() => handleLanguageChange(locale)}
                                         className={isPending && 'pointer-events-none opacity-60' || ''}
-                                        >
+                                    >
                                         {locale.toUpperCase()}
                                     </ToggleButton>
                                 ))}
                             </Flex>
                         }
                         <Flex hide="s">
-                            { display.time && (
-                                <TimeDisplay timeZone={person.location}/>
+                            {display.time && (
+                                <TimeDisplay timeZone={person.location} />
                             )}
                         </Flex>
                     </Flex>

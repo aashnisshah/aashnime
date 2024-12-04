@@ -167,6 +167,14 @@ const createI18nContent = (t) => {
         // All projects will be listed on the /home and /work routes
     }
 
+    const testimonials = {
+        label: t("testimonials.label"),
+        title: t("testimonials.title"),
+        description: t("testimonials.description", { name: person.name })
+        // Create new testimonials posts by adding a new .mdx file to app/testimonials/testimonials
+        // All posts will be listed on the /testimonials route
+    }
+
     const gallery = {
         label: t("gallery.label"),
         title: t("gallery.title"),
@@ -253,7 +261,8 @@ const createI18nContent = (t) => {
         about,
         blog,
         work,
-        gallery
+        gallery,
+        testimonials
     }
 };
 
