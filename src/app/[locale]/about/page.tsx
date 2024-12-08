@@ -134,17 +134,9 @@ export default function About(
                                 ))}
                             </Flex>
                         )}
-                    </Flex>
-                )}
-                <Flex
-                    className={styles.blockAlign}
-                    fillWidth flex={9} maxWidth={40} direction="column">
-                    <Flex
-                        id={about.intro.title}
-                        fillWidth minHeight="160"
-                        direction="column" justifyContent="center"
-                        marginBottom="32">
-                        {about.calendar.display && (
+                        <Flex
+                            wrap
+                            gap="8">
                             <SmartLink
                                 href={about.calendar.link}
                                 style={{
@@ -185,7 +177,17 @@ export default function About(
                                         icon="chevronRight" />
                                 </Flex>
                             </SmartLink>
-                        )}
+                        </Flex>
+                    </Flex>
+                )}
+                <Flex
+                    className={styles.blockAlign}
+                    fillWidth flex={9} maxWidth={40} direction="column">
+                    <Flex
+                        id={about.intro.title}
+                        fillWidth minHeight="160"
+                        direction="column" justifyContent="center"
+                        marginBottom="32">
                         <Heading
                             className={styles.textAlign}
                             variant="display-strong-xl">

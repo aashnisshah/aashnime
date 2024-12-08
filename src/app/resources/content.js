@@ -69,35 +69,26 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Aashni is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Aashni is a tech innovator and startup strategist who excels at building impactful products and solutions.With a background spanning software engineering, entrepreneurship, and advisory roles, Aashni combines technical expertise with a passion for simplifying complex challenges through innovative strategies and scalable solutions.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
+                company: 'HypeDocs',
                 timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                role: 'Founder, CEO',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Launched an AI-powered audio journaling app that hypes you up through out your day.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: []
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Innovative Tech Labs',
+                timeframe: '2023 - Present',
+                role: 'Director',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
                 ],
                 images: []
