@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow } from '@/once-ui/components';
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Icon, Background } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 
-import { baseURL, routes, renderContent } from '@/app/resources';
+import { baseURL, routes, renderContent, mailchimp } from '@/app/resources';
 import { Mailchimp } from '@/components';
 import { Posts } from '@/components/blog/Posts';
 import { Testimonials } from '@/components/testimonials/Testimonials';
@@ -183,6 +183,72 @@ export default function Home(
 
 			</Flex>
 
+			{/* Services Section */}
+			<RevealFx translateY="12" delay={0.5} >
+				<Background
+					position="absolute"
+					mask={mailchimp.effects.mask as any}
+					gradient={mailchimp.effects.gradient as any}
+					dots={mailchimp.effects.dots as any}
+					lines={mailchimp.effects.lines as any}
+				/>
+				<Flex
+					fillWidth
+					direction="column"
+					alignItems="center"
+					paddingY="l"
+					gap="xl"
+					border="neutral-medium"
+					borderStyle="solid-1"
+				>
+					<Heading as="h2" variant="display-strong-xs" wrap="balance">
+						Work With Me
+					</Heading>
+					<Flex
+						direction="row"
+						gap="l"
+						wrap="wrap"
+						justifyContent="center"
+						fillWidth
+					>
+						{/* Service 1 */}
+						{offerings.map((offer, index) => (
+
+							<Flex
+								direction="column"
+								alignItems="center"
+								padding="l"
+								style={{
+									textAlign: "center",
+									borderRadius: "16px",
+									maxWidth: "300px",
+								}}
+								gap="m"
+							>
+								<Icon
+									onBackground="accent-weak"
+									name={offer.iconName}
+									size="xl" />
+								<Heading as="h3" variant="heading-default-m">
+									{offer.title}
+								</Heading>
+								<Text>
+									{offer.description}
+								</Text>
+								<Button
+									variant="primary"
+									href={`https://calendly.com/aashnisshah/web`}
+									size="m"
+								>
+									{offer.ctaMessage}
+								</Button>
+							</Flex>
+						))}
+
+					</Flex>
+				</Flex>
+			</RevealFx>
+
 			{/* Projects Section */}
 			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1, 3]} locale={locale} />
@@ -223,47 +289,50 @@ export default function Home(
 			// )} */}
 
 			{/* Blog posts - hiding for initial launch */}
-			{routes['/testimonials'] && (
-				<Flex
-					fillWidth gap="24"
-					direction="column"
-					mobileDirection="column">
-					<Flex flex={1} justifyContent="center" paddingBottom='m'>
-						<Heading
-							as="h2"
-							variant="display-strong-xs"
-							wrap="balance">
-							Read What Others Have To Say
-						</Heading>
-					</Flex>
+			{
+				routes['/testimonials'] && (
 					<Flex
-						flex={3} paddingX="20">
-						<Testimonials range={[1, 4]} columns="2" locale={locale} />
+						fillWidth gap="24"
+						direction="column"
+						mobileDirection="column">
+						<Flex flex={1} justifyContent="center" paddingBottom='m'>
+							<Heading
+								as="h2"
+								variant="display-strong-xs"
+								wrap="balance">
+								Read What Others Have To Say
+							</Heading>
+						</Flex>
+						<Flex
+							flex={3} paddingX="20">
+							<Testimonials range={[1, 4]} columns="2" locale={locale} />
+						</Flex>
+						<Flex flex={1} justifyContent="center">
+							<Button
+								id="testimonials"
+								data-border="rounded"
+								href={`/${locale}/testimonials`}
+								variant="primary"
+								size="l"
+							>
+								<Flex gap="8" alignItems="center">
+									See More
+									<Arrow trigger="#contact" />
+								</Flex>
+							</Button>
+						</Flex>
 					</Flex>
-					<Flex flex={1} justifyContent="center">
-						<Button
-							id="testimonials"
-							data-border="rounded"
-							href={`/${locale}/testimonials`}
-							variant="primary"
-							size="l"
-						>
-							<Flex gap="8" alignItems="center">
-								See More
-								<Arrow trigger="#contact" />
-							</Flex>
-						</Button>
-					</Flex>
-				</Flex>
-			)}
+				)
+			}
 
 			{/* More Projects, from 2nd post onwards
 			<Projects range={[2]} locale={locale} /> */}
 
 			{/* Newsletter signup */}
-			{newsletter.display &&
+			{
+				newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
 			}
-		</Flex>
+		</Flex >
 	);
 }
