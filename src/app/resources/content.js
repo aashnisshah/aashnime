@@ -156,48 +156,76 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of Toronto',
+                description: <>Bachelors in Computer Science.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Quantic MBA',
+                description: <>MBA</>,
+            },
+            {
+                name: 'International School of Kenya',
+                description: <>IB Program for High School</>,
             }
         ]
     },
     technical: {
         display: true, // set to false to hide this section
-        title: 'Technical skills',
+        title: 'Skills',
         skills: [
+            // {
+            //     title: 'Figma',
+            //     description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+            //     images: [
+            //         {
+            //             src: '/images/projects/project-01/cover-02.jpg',
+            //             alt: 'Project image',
+            //             width: 16,
+            //             height: 9
+            //         },
+            //         {
+            //             src: '/images/projects/project-01/cover-03.jpg',
+            //             alt: 'Project image',
+            //             width: 16,
+            //             height: 9
+            //         },
+            //     ]
+            // },
+            // {
+            //     title: 'Next.js',
+            //     description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+            //     images: [
+            //         {
+            //             src: '/images/projects/project-01/cover-04.jpg',
+            //             alt: 'Project image',
+            //             width: 16,
+            //             height: 9
+            //         },
+            //     ]
+            // }
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Technical Skills',
+                description: [
+                    <>Javascript - ReactJS, React Native, NextJS, NodeJS</>,
+                    <>Java</>,
+                    <>Kotlin</>,
+                    <>PHP</>,
+                    <>and more</>
+                ],
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'No-Code Technical Skills',
+                description: [
+                    <>Bubble</>,
+                    <>Webflow</>,
+                    <>Wordpress</>,
+                    <>Shopify</>,
+                    <>Zapier</>,
+                    <>Make</>,
+                    <>and more</>
+                ],
+                images: []
             }
         ]
     }

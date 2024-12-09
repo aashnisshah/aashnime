@@ -361,7 +361,10 @@ export default function About(
                                         <Text
                                             variant="body-default-m"
                                             onBackground="neutral-weak">
-                                            {skill.description}
+                                            {Array.isArray(skill.description) &&
+                                                skill.description.map((desc, index) => (
+                                                    <Flex><Text key={index}>{desc}</Text></Flex>
+                                                ))}
                                         </Text>
                                         {skill.images.length > 0 && (
                                             <Flex
