@@ -255,6 +255,41 @@ const testimonials = {
     // All posts will be listed on the /testimonials route
 }
 
+const contact = {
+    label: "Contact",
+    title: "Contact Aashni",
+    description: `Get in touch with Aashni, or follow her on other social platforms`
+    // Create new testimonials posts by adding a new .mdx file to app/testimonials/testimonials
+    // All posts will be listed on the /testimonials route
+}
+
+const offerings = {
+    offeringsList: [
+        {
+            title: "Consulting & Freelance",
+            description:
+                "I partner with startups, small businesses, and nonprofits to build impactful strategies, products, and tech solutions.",
+            iconName: "rocket",
+            ctaMessage: "Lets Build Together"
+        },
+        {
+            title: "Advisory & Board Roles",
+            description:
+                "With experience scaling teams and modernizing operations, I bring strategic value to boards and advisory teams.",
+            iconName: "compass",
+            ctaMessage: "Lets Talk Strategy"
+        },
+        {
+            title: "Speaking & Workshops",
+            description:
+                "I share insights on scaling startups, driving innovation, and building impactful products through talks and interactive sessions.",
+            iconName: "microphone",
+            ctaMessage: "Invite Me to Your Event"
+        },
+    ]
+};
+
+
 const gallery = {
     label: 'Gallery',
     title: 'My photo gallery',
@@ -334,4 +369,4 @@ const gallery = {
     ]
 }
 
-export { person, social, newsletter, home, about, blog, work, gallery, testimonials };
+export { person, social, newsletter, home, about, blog, work, gallery, testimonials, contact, offerings };

@@ -175,6 +175,32 @@ const createI18nContent = (t) => {
         // All posts will be listed on the /testimonials route
     }
 
+    const offerings = {
+        offeringsList: [
+            {
+                title: "Consulting & Freelance",
+                description:
+                    "I partner with startups, small businesses, and nonprofits to build impactful strategies, products, and tech solutions.",
+                iconName: "rocket",
+                ctaMessage: "Lets Build Together"
+            },
+            {
+                title: "Advisory & Board Roles",
+                description:
+                    "With experience scaling teams and modernizing operations, I bring strategic value to boards and advisory teams.",
+                iconName: "compass",
+                ctaMessage: "Lets Talk Strategy"
+            },
+            {
+                title: "Speaking & Workshops",
+                description:
+                    "I share insights on scaling startups, driving innovation, and building impactful products through talks and interactive sessions.",
+                iconName: "microphone",
+                ctaMessage: "Invite Me to Your Event"
+            },
+        ]
+    };
+
     const gallery = {
         label: t("gallery.label"),
         title: t("gallery.title"),
@@ -253,6 +279,13 @@ const createI18nContent = (t) => {
             },
         ]
     }
+
+    const contact = {
+        label: t("contact.label"),
+        title: t("contact.title"),
+        description: t("conact.description")
+    }
+
     return {
         person,
         social,
@@ -262,7 +295,9 @@ const createI18nContent = (t) => {
         blog,
         work,
         gallery,
-        testimonials
+        testimonials,
+        contact,
+        offerings
     }
 };
 

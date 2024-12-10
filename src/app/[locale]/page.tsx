@@ -10,6 +10,7 @@ import { Testimonials } from '@/components/testimonials/Testimonials';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import styles from '@/components/Header.module.scss';
+import Offerings from '@/components/contact/offerings';
 
 export async function generateMetadata(
 	{ params: { locale } }: { params: { locale: string } }
@@ -44,36 +45,12 @@ export async function generateMetadata(
 	};
 }
 
-const offerings = [
-	{
-		title: "Consulting & Freelance",
-		description:
-			"I partner with startups, small businesses, and nonprofits to build impactful strategies, products, and tech solutions.",
-		iconName: "rocket",
-		ctaMessage: "Lets Build Together"
-	},
-	{
-		title: "Advisory & Board Roles",
-		description:
-			"With experience scaling teams and modernizing operations, I bring strategic value to boards and advisory teams.",
-		iconName: "compass",
-		ctaMessage: "Lets Talk Strategy"
-	},
-	{
-		title: "Speaking & Workshops",
-		description:
-			"I share insights on scaling startups, driving innovation, and building impactful products through talks and interactive sessions.",
-		iconName: "microphone",
-		ctaMessage: "Invite Me to Your Event"
-	},
-];
-
 export default function Home(
 	{ params: { locale } }: { params: { locale: string } }
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person, newsletter } = renderContent(t);
+	const { home, about, person, newsletter, offerings } = renderContent(t);
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -185,68 +162,7 @@ export default function Home(
 
 			{/* Services Section */}
 			<RevealFx translateY="12" delay={0.5} >
-				<Background
-					position="absolute"
-					mask={mailchimp.effects.mask as any}
-					gradient={mailchimp.effects.gradient as any}
-					dots={mailchimp.effects.dots as any}
-					lines={mailchimp.effects.lines as any}
-				/>
-				<Flex
-					fillWidth
-					direction="column"
-					alignItems="center"
-					paddingY="l"
-					gap="xl"
-					border="neutral-medium"
-					borderStyle="solid-1"
-				>
-					<Heading as="h2" variant="display-strong-xs" wrap="balance">
-						Work With Me
-					</Heading>
-					<Flex
-						direction="row"
-						gap="l"
-						wrap="wrap"
-						justifyContent="center"
-						fillWidth
-					>
-						{/* Service 1 */}
-						{offerings.map((offer, index) => (
-
-							<Flex
-								direction="column"
-								alignItems="center"
-								padding="l"
-								style={{
-									textAlign: "center",
-									borderRadius: "16px",
-									maxWidth: "300px",
-								}}
-								gap="m"
-							>
-								<Icon
-									onBackground="accent-weak"
-									name={offer.iconName}
-									size="xl" />
-								<Heading as="h3" variant="heading-default-m">
-									{offer.title}
-								</Heading>
-								<Text>
-									{offer.description}
-								</Text>
-								<Button
-									variant="primary"
-									href={`https://calendly.com/aashnisshah/web`}
-									size="m"
-								>
-									{offer.ctaMessage}
-								</Button>
-							</Flex>
-						))}
-
-					</Flex>
-				</Flex>
+				<Offerings offeringsList={offerings.offeringsList} />
 			</RevealFx>
 
 			{/* Projects Section */}

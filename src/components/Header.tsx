@@ -68,7 +68,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery, testimonials } = renderContent(t);
+    const { person, home, about, blog, work, gallery, testimonials, contact } = renderContent(t);
 
     return (
         <>
@@ -147,6 +147,14 @@ export const Header = () => {
                                     href={`/${params?.locale}/gallery`}
                                     selected={pathname.startsWith('/gallery')}>
                                     <Flex paddingX="2" hide="s">{gallery.label}</Flex>
+                                </ToggleButton>
+                            )}
+                            {routes['/contact'] && (
+                                <ToggleButton
+                                    prefixIcon="email"
+                                    href={`/${params?.locale}/contact`}
+                                    selected={pathname.startsWith('/contact')}>
+                                    <Flex paddingX="2" hide="s">{contact.label}</Flex>
                                 </ToggleButton>
                             )}
                         </Flex>

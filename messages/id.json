@@ -91,6 +91,11 @@
         "title": "My photo gallery",
         "description": "A photo collection by Aashni"
     },
+    "contact": {
+        "label": "Contact",
+        "title": "Contact Aashni",
+        "description": "Get in touch with Aashni"
+    },
     "projectCard": {
         "label": "Read Case Study"
     }
