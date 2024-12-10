@@ -6,7 +6,7 @@ import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
 export async function generateMetadata(
-	{params: {locale}}: { params: { locale: string }}
+	{ params: { locale } }: { params: { locale: string } }
 ) {
 
 	const t = await getTranslations();
@@ -41,17 +41,17 @@ export async function generateMetadata(
 }
 
 export default function Blog(
-	{ params: {locale}}: { params: { locale: string }}
+	{ params: { locale } }: { params: { locale: string } }
 ) {
 	unstable_setRequestLocale(locale);
 
 	const t = useTranslations();
 	const { person, blog, newsletter } = renderContent(t);
-    return (
-        <Flex
+	return (
+		<Flex
 			fillWidth maxWidth="s"
 			direction="column">
-            <script
+			<script
 				type="application/ld+json"
 				suppressHydrationWarning
 				dangerouslySetInnerHTML={{
@@ -65,7 +65,7 @@ export default function Blog(
 						author: {
 							'@type': 'Person',
 							name: person.name,
-                            image: {
+							image: {
 								'@type': 'ImageObject',
 								url: `${baseURL}${person.avatar}`,
 							},
@@ -73,19 +73,18 @@ export default function Blog(
 					}),
 				}}
 			/>
-            <Heading
-                marginBottom="l"
-                variant="display-strong-s">
-                {blog.title}
-            </Heading>
+			<Heading
+				marginBottom="l"
+				variant="display-strong-s">
+				{blog.title}
+			</Heading>
 			<Flex
 				fillWidth flex={1} direction="column">
-				<Posts range={[1,3]} locale={locale} thumbnail/>
-				<Posts range={[4]} columns="2" locale={locale}/>
+				<Posts locale={locale} thumbnail />
 			</Flex>
-            {newsletter.display && (
-                <Mailchimp newsletter={newsletter} />
-            )}
-        </Flex>
-    );
+			{newsletter.display && (
+				<Mailchimp newsletter={newsletter} />
+			)}
+		</Flex>
+	);
 }
