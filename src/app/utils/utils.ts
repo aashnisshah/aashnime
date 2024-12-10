@@ -25,6 +25,7 @@ type Metadata = {
     tag?: string;
     team: Team[];
     referral: Referral[];
+    categories?: string[];
 };
 
 function getMDXFiles(dir: string) {
@@ -52,6 +53,7 @@ function readMDXFile(filePath: string) {
         tag: data.tag || [],
         team: data.team || [],
         referral: data.referral || [],
+        categories: data.categories || [],
     };
 
     return { metadata, content };

@@ -10,28 +10,28 @@ import { useTranslations } from 'next-intl';
 import { formatDate } from '@/app/utils/formatDate'
 
 interface BlogParams {
-    params: { 
-        slug: string;
+	params: {
+		slug: string;
 		locale: string;
-    };
+	};
 }
 
 export async function generateStaticParams() {
 	const locales = routing.locales;
-    
-    // Create an array to store all posts from all locales
-    const allPosts = [];
 
-    // Fetch posts for each locale
-    for (const locale of locales) {
-        const posts = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
-        allPosts.push(...posts.map(post => ({
-            slug: post.slug,
-            locale: locale,
-        })));
-    }
+	// Create an array to store all posts from all locales
+	const allPosts = [];
 
-    return allPosts;
+	// Fetch posts for each locale
+	for (const locale of locales) {
+		const posts = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
+		allPosts.push(...posts.map(post => ({
+			slug: post.slug,
+			locale: locale,
+		})));
+	}
+
+	return allPosts;
 }
 
 export function generateMetadata({ params: { slug, locale } }: BlogParams) {
@@ -46,6 +46,7 @@ export function generateMetadata({ params: { slug, locale } }: BlogParams) {
 		publishedAt: publishedTime,
 		summary: description,
 		image,
+		categories
 	} = post.metadata;
 	let ogImage = image
 		? `https://${baseURL}${image}`
@@ -66,7 +67,7 @@ export function generateMetadata({ params: { slug, locale } }: BlogParams) {
 				},
 			],
 		},
-			twitter: {
+		twitter: {
 			card: 'summary_large_image',
 			title,
 			description,
@@ -105,7 +106,7 @@ export default function Blog({ params }: BlogParams) {
 						image: post.metadata.image
 							? `https://${baseURL}${post.metadata.image}`
 							: `https://${baseURL}/og?title=${post.metadata.title}`,
-							url: `https://${baseURL}/${params.locale}/blog/${post.slug}`,
+						url: `https://${baseURL}/${params.locale}/blog/${post.slug}`,
 						author: {
 							'@type': 'Person',
 							name: person.name,
@@ -127,10 +128,10 @@ export default function Blog({ params }: BlogParams) {
 			<Flex
 				gap="12"
 				alignItems="center">
-				{ person.avatar && (
+				{person.avatar && (
 					<Avatar
 						size="s"
-						src={person.avatar}/>
+						src={person.avatar} />
 				)}
 				<Text
 					variant="body-default-s"

@@ -10,6 +10,7 @@ interface PostProps {
 }
 
 export default function Post({ post, thumbnail }: PostProps) {
+    console.log(post, null, 2);
     return (
         <SmartLink
             className={styles.hover}
@@ -57,12 +58,21 @@ export default function Post({ post, thumbnail }: PostProps) {
                         onBackground="neutral-weak">
                         {formatDate(post.metadata.publishedAt, false)}
                     </Text>
-                    { post.metadata.tag &&
-                        <Tag
-                            className="mt-8"
-                            label={post.metadata.tag}
-                            variant="neutral" />
-                    }
+
+                    <Flex
+                        gap="m" // Adjust spacing between tags
+                        direction="row" // Ensures a horizontal layout
+                        wrap="wrap" // Allows wrapping to the next line if needed
+                        className="tags-container"
+                    >
+                        {post.metadata.categories && post.metadata.categories.map((category: string, index: number) => (
+                            <Tag
+                                className="mt-8"
+                                label={category}
+                                variant="neutral" />
+                        ))
+                        }
+                    </Flex>
                 </Flex>
             </Flex>
         </SmartLink>
