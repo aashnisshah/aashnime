@@ -31,7 +31,7 @@ const Tag = forwardRef<HTMLDivElement, TagProps>(({
         <Flex
             alignItems="center"
             radius="s"
-            gap="4"
+            gap="1"
             ref={ref}
             className={classNames(styles.tag, styles[variant], styles[size], className)}
             {...props}>

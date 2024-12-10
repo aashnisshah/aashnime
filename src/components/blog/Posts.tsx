@@ -23,9 +23,9 @@ export function Posts({
 
     const displayedBlogs = range
         ? sortedBlogs.slice(
-              range[0] - 1,
-              range.length === 2 ? range[1] : sortedBlogs.length 
-          )
+            range[0] - 1,
+            range.length === 2 ? range[1] : sortedBlogs.length
+        )
         : sortedBlogs;
 
     return (

@@ -24,7 +24,10 @@ export default function Post({ post, thumbnail }: PostProps) {
             <Flex
                 position="relative"
                 mobileDirection="column"
-                fillWidth paddingY="12" paddingX="16" gap="32">
+                fillWidth paddingY="12" paddingX="16" gap="32"
+                border="neutral-medium"
+                borderStyle="solid-1"
+            >
                 {post.metadata.image && thumbnail && (
                     <Flex
                         maxWidth={20} fillWidth
@@ -60,7 +63,7 @@ export default function Post({ post, thumbnail }: PostProps) {
                     </Text>
 
                     <Flex
-                        gap="m" // Adjust spacing between tags
+                        // gap="xs" // Adjust spacing between tags
                         direction="row" // Ensures a horizontal layout
                         wrap="wrap" // Allows wrapping to the next line if needed
                         className="tags-container"
