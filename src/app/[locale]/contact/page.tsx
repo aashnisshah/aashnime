@@ -4,7 +4,7 @@ import TableOfContents from '@/components/about/TableOfContents';
 import styles from '@/components/about/about.module.scss'
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import Offerings from '@/components/contact/offerings';
+import Offerings from '@/components/contact/Offerings';
 import { offerings } from '@/app/resources/content';
 
 export async function generateMetadata(

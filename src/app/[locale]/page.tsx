@@ -10,7 +10,7 @@ import { Testimonials } from '@/components/testimonials/Testimonials';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import styles from '@/components/Header.module.scss';
-import Offerings from '@/components/contact/offerings';
+import Offerings from '@/components/contact/Offerings';
 
 export async function generateMetadata(
 	{ params: { locale } }: { params: { locale: string } }
