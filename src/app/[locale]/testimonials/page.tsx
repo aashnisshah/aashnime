@@ -1,9 +1,10 @@
 import { getPosts } from '@/app/utils/utils';
-import { Flex } from '@/once-ui/components';
+import { Flex, Heading, Text } from '@/once-ui/components';
 import { Testimonials } from '@/components/testimonials/Testimonials';
 import { baseURL, renderContent } from '@/app/resources';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
+import styles from '@/components/about/about.module.scss'
 
 export async function generateMetadata(
     { params: { locale } }: { params: { locale: string } }
@@ -23,7 +24,7 @@ export async function generateMetadata(
             title,
             description,
             type: 'website',
-            url: `https://${baseURL}/${locale}/work/`,
+            url: `https://${baseURL}/${locale}/testimonials/`,
             images: [
                 {
                     url: ogImage,
@@ -40,11 +41,11 @@ export async function generateMetadata(
     };
 }
 
-export default function Work(
+export default function TestimonialsPage(
     { params: { locale } }: { params: { locale: string } }
 ) {
     unstable_setRequestLocale(locale);
-    let allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
+    let allProjects = getPosts(['src', 'app', '[locale]', 'testimonials', 'testimonials', locale]);
 
     const t = useTranslations();
     const { person, work } = renderContent(t);
@@ -62,7 +63,7 @@ export default function Work(
                         '@type': 'CollectionPage',
                         headline: work.title,
                         description: work.description,
-                        url: `https://${baseURL}/projects`,
+                        url: `https://${baseURL}/testimonials`,
                         image: `${baseURL}/og?title=Design%20Projects`,
                         author: {
                             '@type': 'Person',
@@ -72,12 +73,25 @@ export default function Work(
                             '@type': 'CreativeWork',
                             headline: project.metadata.title,
                             description: project.metadata.summary,
-                            url: `https://${baseURL}/projects/${project.slug}`,
+                            url: `https://${baseURL}/testimonials/${project.slug}`,
                             image: `${baseURL}/${project.metadata.image}`,
                         })),
                     }),
                 }}
             />
+            <Flex direction="column" paddingBottom='m'>
+                <Heading
+                    className={styles.textAlign}
+                    variant="display-strong-xl">
+                    Testimonials
+                </Heading>
+                <Text
+                    className={styles.textAlign}
+                    variant="display-default-xs"
+                    onBackground="neutral-weak">
+                    Here from other people that I have worked with.
+                </Text>
+            </Flex>
             <Testimonials locale={locale} />
         </Flex>
     );

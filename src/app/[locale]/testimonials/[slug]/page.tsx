@@ -8,7 +8,7 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { formatDate } from '@/app/utils/formatDate';
 
-interface WorkParams {
+interface TestimonialParams {
 	params: {
 		slug: string;
 		locale: string;
@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 	// Fetch posts for each locale
 	for (const locale of locales) {
-		const posts = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
+		const posts = getPosts(['src', 'app', '[locale]', 'testimonials', 'testimonials', locale]);
 		allPosts.push(...posts.map(post => ({
 			slug: post.slug,
 			locale: locale,
@@ -33,8 +33,8 @@ export async function generateStaticParams() {
 	return allPosts;
 }
 
-export function generateMetadata({ params: { slug, locale } }: WorkParams) {
-	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).find((post) => post.slug === slug)
+export function generateMetadata({ params: { slug, locale } }: TestimonialParams) {
+	let post = getPosts(['src', 'app', '[locale]', 'testimonials', 'testimonials', locale]).find((post) => post.slug === slug)
 
 	if (!post) {
 		return
@@ -62,7 +62,7 @@ export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 			description,
 			type: 'article',
 			publishedTime,
-			url: `https://${baseURL}/${locale}/work/${post.slug}`,
+			url: `https://${baseURL}/${locale}/testimonials/${post.slug}`,
 			images: [
 				{
 					url: ogImage,
@@ -78,7 +78,7 @@ export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 	}
 }
 
-export default function Project({ params }: WorkParams) {
+export default function Project({ params }: TestimonialParams) {
 	unstable_setRequestLocale(params.locale);
 	let post = getPosts(['src', 'app', '[locale]', 'testimonials', 'testimonials', params.locale]).find((post) => post.slug === params.slug)
 
@@ -112,7 +112,7 @@ export default function Project({ params }: WorkParams) {
 						image: post.metadata.image
 							? `https://${baseURL}${post.metadata.image}`
 							: `https://${baseURL}/og?title=${post.metadata.title}`,
-						url: `https://${baseURL}/${params.locale}/work/${post.slug}`,
+						url: `https://${baseURL}/${params.locale}/testimonials/${post.slug}`,
 						author: {
 							'@type': 'Person',
 							name: person.name,
