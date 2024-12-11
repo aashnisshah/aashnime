@@ -65,7 +65,7 @@ export default function Post({ post, thumbnail }: PostProps) {
                     <Flex
                         // gap="xs" // Adjust spacing between tags
                         direction="row" // Ensures a horizontal layout
-                        wrap="wrap" // Allows wrapping to the next line if needed
+                        wrap={true} // Allows wrapping to the next line if needed
                         className="tags-container"
                     >
                         {post.metadata.categories && post.metadata.categories.map((category: string, index: number) => (

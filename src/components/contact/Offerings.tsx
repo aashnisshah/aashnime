@@ -37,7 +37,7 @@ export default function Offerings({ offeringsList }: PostProps) {
                 <Flex
                     direction="row"
                     gap="l"
-                    wrap="wrap"
+                    wrap={true}
                     justifyContent="center"
                     fillWidth
                 >
