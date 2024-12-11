@@ -160,6 +160,43 @@ export default function Home(
 
 			</Flex>
 
+			{/* Testimonials */}
+			{
+				routes['/testimonials'] && (
+					<Flex
+						fillWidth gap="24"
+						direction="column"
+						mobileDirection="column">
+						<Flex flex={1} justifyContent="center" paddingBottom='m'>
+							<Heading
+								as="h2"
+								variant="display-strong-xs"
+								wrap="balance">
+								Read What Others Have To Say
+							</Heading>
+						</Flex>
+						<Flex
+							flex={3} paddingX="20">
+							<Testimonials range={[1, 2]} columns="2" locale={locale} />
+						</Flex>
+						<Flex flex={1} justifyContent="center">
+							<Button
+								id="testimonials"
+								data-border="rounded"
+								href={`/${locale}/testimonials`}
+								variant="primary"
+								size="l"
+							>
+								<Flex gap="8" alignItems="center">
+									See More Testimonials
+									<Arrow trigger="#contact" />
+								</Flex>
+							</Button>
+						</Flex>
+					</Flex>
+				)
+			}
+
 			{/* Services Section */}
 			<RevealFx translateY="12" delay={0.5} >
 				<Offerings offeringsList={offerings.offeringsList} />
@@ -212,46 +249,6 @@ export default function Home(
 			// 		</Flex>
 			// 	</Flex>
 			// )} */}
-
-			{/* Blog posts - hiding for initial launch */}
-			{
-				routes['/testimonials'] && (
-					<Flex
-						fillWidth gap="24"
-						direction="column"
-						mobileDirection="column">
-						<Flex flex={1} justifyContent="center" paddingBottom='m'>
-							<Heading
-								as="h2"
-								variant="display-strong-xs"
-								wrap="balance">
-								Read What Others Have To Say
-							</Heading>
-						</Flex>
-						<Flex
-							flex={3} paddingX="20">
-							<Testimonials range={[1, 4]} columns="2" locale={locale} />
-						</Flex>
-						<Flex flex={1} justifyContent="center">
-							<Button
-								id="testimonials"
-								data-border="rounded"
-								href={`/${locale}/testimonials`}
-								variant="primary"
-								size="l"
-							>
-								<Flex gap="8" alignItems="center">
-									See More
-									<Arrow trigger="#contact" />
-								</Flex>
-							</Button>
-						</Flex>
-					</Flex>
-				)
-			}
-
-			{/* More Projects, from 2nd post onwards
-			<Projects range={[2]} locale={locale} /> */}
 
 			{/* Newsletter signup */}
 			{
