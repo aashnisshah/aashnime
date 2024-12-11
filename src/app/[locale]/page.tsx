@@ -167,25 +167,29 @@ export default function Home(
 
 			{/* Projects Section */}
 			<RevealFx translateY="16" delay={0.6}>
-				<Flex flex={1} justifyContent="center" paddingBottom='24'>
-					<Heading as="h2" variant="display-strong-xs" wrap="balance">
-						Recent Projects
-					</Heading>
-				</Flex>
-				<Projects range={[1, 3]} locale={locale} />
-				<Flex flex={1} justifyContent="center">
-					<Button
-						id="work"
-						data-border="rounded"
-						href={`/${locale}/work`}
-						variant="primary"
-						size="l"
-					>
-						<Flex gap="8" alignItems="center">
-							See More Projects
-							<Arrow trigger="#contact" />
-						</Flex>
-					</Button>
+				<Flex flex={1} direction='column'>
+					<Flex flex={1} justifyContent="center" paddingBottom='24'>
+						<Heading as="h2" variant="display-strong-xs" wrap="balance">
+							Recent Projects
+						</Heading>
+					</Flex>
+					<Flex flex={1}>
+						<Projects range={[1, 3]} locale={locale} />
+					</Flex>
+					<Flex flex={1} justifyContent="center">
+						<Button
+							id="work"
+							data-border="rounded"
+							href={`/${locale}/work`}
+							variant="primary"
+							size="l"
+						>
+							<Flex gap="8" alignItems="center">
+								See More Projects
+								<Arrow trigger="#contact" />
+							</Flex>
+						</Button>
+					</Flex>
 				</Flex>
 			</RevealFx>
 
