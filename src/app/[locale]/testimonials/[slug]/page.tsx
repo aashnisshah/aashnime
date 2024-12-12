@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from '@/components/mdx'
 import { getPosts } from '@/app/utils/utils'
-import { AvatarGroup, Button, Flex, Heading, SmartImage, Text } from '@/once-ui/components'
+import { AvatarGroup, Button, Flex, Heading, IconButton, SmartImage, Text } from '@/once-ui/components'
 import { baseURL, renderContent } from '@/app/resources';
 import { routing } from '@/i18n/routing';
 import { unstable_setRequestLocale } from 'next-intl/server';
@@ -134,6 +134,15 @@ export default function Project({ params }: TestimonialParams) {
 					variant="display-strong-s">
 					{post.metadata.title}
 				</Heading>
+				<Flex direction="row" gap="s">
+					<Text>{post.metadata.referral[0].role}</Text>
+					<IconButton
+						href={post.metadata.referral[0].linkedIn}
+						icon={'linkedin'}
+						tooltip={post.metadata.referral[0].name}
+						size="s"
+						variant="ghost" />
+				</Flex>
 			</Flex>
 			<Flex direction="row">
 				<Flex>
