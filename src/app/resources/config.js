@@ -19,6 +19,7 @@ const routes = {
     '/contact': true,
     '/cto-services': true,
     '/speaking': true,
+    '/advisory': true,
 }
 
 // Enable password protection on selected routes
