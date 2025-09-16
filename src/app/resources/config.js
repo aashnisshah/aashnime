@@ -17,6 +17,7 @@ const routes = {
     '/gallery': false,
     '/testimonials': true,
     '/contact': true,
+    '/cto-services': true,
 }
 
 // Enable password protection on selected routes

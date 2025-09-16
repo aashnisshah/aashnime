@@ -331,6 +331,101 @@ const contact = {
   // All posts will be listed on the /testimonials route
 };
 
+const ctoServices = {
+  label: "CTO Services",
+  title: "Fractional CTO Services",
+  description: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
+  headline: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
+  intro: "Whether you're an early-stage founder, a growing tech-enabled business, or a non-tech company looking to modernize, having the right technical leadership can make or break your success. As a Fractional CTO, I provide strategic guidance, hands-on technical direction, and leadership that helps you build the right systems, hire the right team, and make the right technical bets — at a fraction of the cost of a full-time executive.",
+  whoThisIsFor: {
+    title: "🛠 Who This Is For",
+    sections: [
+      {
+        title: "Startups & Founders",
+        description: "You have an idea or MVP and need someone to define the technical roadmap, choose a scalable architecture, and guide you through your first builds and hires."
+      },
+      {
+        title: "Growing Companies",
+        description: "You have an existing engineering team but need better processes, technical audits, or leadership to scale without burning out your team."
+      },
+      {
+        title: "Mid-to-Large Non-Tech Companies",
+        description: "You need to modernize your systems, migrate to the cloud, implement automation, or advise your board on technology strategy and risk."
+      }
+    ]
+  },
+  whatYouGet: {
+    title: "🔑 What You Get",
+    subtitle: "Strategic Technical Leadership — Without Full-Time Overhead",
+    description: "I act as your technology executive, helping you:",
+    benefits: [
+      "Set a Clear Technical Vision: Align tech with your business goals, whether that's shipping your MVP fast, improving scalability, or cutting operational costs.",
+      "Audit & Optimize Systems: Identify risks, inefficiencies, and opportunities for modernization.",
+      "Guide & Mentor Your Team: Coach engineers, establish best practices, and mentor your first technical hires or engineering managers.",
+      "Bridge the Business–Tech Gap: Translate complex technical decisions into clear, board-level recommendations.",
+      "Support Key Decisions: From vendor selection to build vs. buy choices, ensure you invest wisely."
+    ]
+  },
+  engagementModels: {
+    title: "📊 Engagement Models",
+    models: [
+      {
+        name: "Advisory Retainer",
+        bestFor: "Boards, CEOs, leadership teams needing consistent strategic input",
+        included: "Monthly check-ins, tech risk reviews, roadmap guidance, decision support"
+      },
+      {
+        name: "Part-Time CTO (4–12 hrs/week)",
+        bestFor: "Startups & growing companies needing hands-on leadership",
+        included: "Technical roadmap creation, architecture reviews, hiring support, process setup"
+      },
+      {
+        name: "Project-Based Engagements",
+        bestFor: "Companies with a defined initiative (e.g. cloud migration, system overhaul, MVP launch)",
+        included: "End-to-end project leadership, vendor selection, implementation oversight, success metrics"
+      }
+    ]
+  },
+  outcomes: {
+    title: "📈 Typical Outcomes",
+    results: [
+      "40–60% faster MVP delivery by avoiding common tech pitfalls",
+      "Reduced technical debt and lower long-term maintenance costs",
+      "Improved release cadence and engineering team performance",
+      "Increased confidence from investors, boards, and leadership teams",
+      "Clear technical visibility for decision-making at the executive level"
+    ]
+  },
+  clientFeedback: {
+    title: "💬 Client Feedback",
+    testimonials: [
+      {
+        quote: "Aashni helped us launch our MVP in 6 weeks and set up the right systems to handle early traction. Her leadership saved us months of guesswork.",
+        author: "Founder, Early-Stage SaaS Company"
+      },
+      {
+        quote: "Our board now has a clear view of our technical risks and opportunities. Aashni translated complex systems into language we could act on.",
+        author: "CEO, Mid-Market Manufacturing Business"
+      }
+    ]
+  },
+  callToAction: {
+    title: "🚀 Ready to Level Up Your Technology Leadership?",
+    actions: [
+      {
+        text: "Schedule a Fractional CTO Consultation (15-min discovery call)",
+        href: "https://calendly.com/aashnisshah/web",
+        variant: "primary"
+      },
+      {
+        text: "Download My Tech Modernization Checklist (lead magnet)",
+        href: "#",
+        variant: "secondary"
+      }
+    ]
+  }
+};
+
 const offerings = {
   offeringsList: [
     {
@@ -465,5 +560,6 @@ export {
   gallery,
   testimonials,
   contact,
+  ctoServices,
   offerings,
 };
