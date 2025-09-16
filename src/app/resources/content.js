@@ -426,6 +426,94 @@ const ctoServices = {
   }
 };
 
+const speaking = {
+  label: "Speaking",
+  title: "Speaking Engagements",
+  description: "Bring Aashni to Your Stage - Engaging speaker on technology, leadership, and entrepreneurship",
+  headline: "Bring Aashni to Your Stage",
+  intro: "Aashni is an engaging and insightful speaker who brings a unique mix of technical expertise, business acumen, and a passion for empowering others. She has spoken at conferences, startup events, and private company offsites, sharing practical advice and inspiring stories.",
+  popularTopics: {
+    title: "Popular Topics",
+    topics: [
+      {
+        title: "AI in Business",
+        description: "Practical ways to leverage AI without the hype to drive measurable outcomes."
+      },
+      {
+        title: "Technology Strategy for Non-Technical Leaders",
+        description: "How executives can make confident decisions about technology, innovation, and digital transformation."
+      },
+      {
+        title: "Scaling Beyond the MVP",
+        description: "Lessons learned from building and scaling products used by millions."
+      },
+      {
+        title: "Women in Tech & Leadership",
+        description: "Real talk about career growth, breaking barriers, and creating inclusive tech cultures."
+      },
+      {
+        title: "From Engineer to Executive",
+        description: "How to transition from building products to building companies."
+      }
+    ]
+  },
+  speakingEngagements: {
+    title: "Speaking Engagements",
+    description: "Aashni has shared her insights at events including:",
+    events: [
+      {
+        name: "SaaS North",
+        description: "Panel on AI adoption in SaaS products"
+      },
+      {
+        name: "Microsoft Alumni Network",
+        description: "Keynote on transitioning from corporate to entrepreneurship"
+      },
+      {
+        name: "Techstars Founder Talks",
+        description: "Workshop on scaling technology teams"
+      },
+      {
+        name: "Women in Product Conference",
+        description: "Fireside chat on leadership and growth"
+      }
+    ]
+  },
+  whyInvite: {
+    title: "Why Invite Aashni",
+    reasons: [
+      {
+        title: "Actionable Insights",
+        description: "Every talk leaves the audience with frameworks and next steps they can apply immediately."
+      },
+      {
+        title: "Relatable Storytelling",
+        description: "Drawing from experiences at Microsoft, Amazon, startups, and advising boards."
+      },
+      {
+        title: "Engagement",
+        description: "Aashni loves Q&A sessions and makes space for interaction."
+      }
+    ]
+  },
+  audienceFit: {
+    title: "Audience Fit",
+    audiences: [
+      "Executive teams & boards seeking to understand tech strategy",
+      "Startup founders and early-stage teams",
+      "Corporate innovation programs and accelerators",
+      "University and community events focused on leadership or entrepreneurship"
+    ]
+  },
+  booking: {
+    title: "Booking",
+    description: "Want to have Aashni speak at your next event? Fill out the form below or email speaking@aashni.me with details about your event, audience, and preferred topic.",
+    email: "speaking@aashni.me",
+    ctaText: "Book Aashni for Your Event",
+    ctaHref: "mailto:contact@aashni.me"
+  }
+};
+
 const offerings = {
   offeringsList: [
     {
@@ -561,5 +649,6 @@ export {
   testimonials,
   contact,
   ctoServices,
+  speaking,
   offerings,
 };
