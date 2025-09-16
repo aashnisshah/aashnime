@@ -1,102 +1,102 @@
 {
-    "person": {
-        "role": "Tech Leader, Mentor, and Builder"
-    },
-    "newsletter": {
-        "title": "Subscribe to Aashni's Newsletter",
-        "description": "I write about technology, entrepreneurship, and share insights from my experience in software engineering, startups, and board-level leadership.",
-        "button": "Sign up"
-    },
-    "home": {
-        "label": "Home",
-        "title": "Aashni's Portfolio",
-        "description": "Portfolio website showcasing my work as a Tech Leader, Mentor, and Builder",
-        "headline": "Tech Leader, Mentor, and Builder",
-        "subline": "Hi! I'm Aashni, a startup advisor, angel investor, and innovation leader with a passion for helping businesses scale and build impactful solutions. I create products in my free time, mentor founders, and support women in the tech ecosystem.",
-        "cta-primary": "Work With Me",
-        "cta-secondary": "See My Work",
-        "intro": "I help startups scale, build impactful products, and drive innovation. With experience at Microsoft, Amazon, and Square, I’ve led teams, created platforms like HypeDocs and Mido, and advised startups like Pawtrip and Monadd. I’m also a board member and nonprofit director, passionate about making a difference through technology and strategy."
-    },
-    "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet Aashni, Tech Leader, Mentor, and Builder from Canada and Kenya",
-        "intro": {
-            "title": "Introduction",
-            "description": "Aashni is a dual citizen of Canada and Kenya with a decade of experience in software engineering, startups, and board-level leadership. She is passionate about creating innovative products, advising businesses, and fostering inclusivity in tech. With expertise spanning Microsoft, Amazon, Square, and various startups, she combines technical excellence with a deep understanding of entrepreneurship."
-        },
-        "work": {
-            "title": "Work Experience",
-            "experiences": {
-                "Kingsway Group": {
-                    "timeframe": "2023 - Present",
-                    "role": "Board Member",
-                    "achievements": "Modernizing operations with a tech lens across industries such as hotels, malls, entertainment, and auto services."
-                },
-                "Microsoft, Amazon, Square (Block)": {
-                    "timeframe": "2013 - 2023",
-                    "role": "Software Engineer and Leader",
-                    "achievements": "Developed and launched global products impacting millions of users."
-                },
-                "Startups and Products": {
-                    "timeframe": "2023 - Present",
-                    "role": "Founder, Advisor, and Investor",
-                    "achievements": "Built HypeDocs and MIDO, advised startups like Pawtrip and Blossom, and provided angel investments to promising ventures."
-                }
-            }
-        },
-        "studies": {
-            "title": "Studies",
-            "institutions": {
-                "University Education": {
-                    "description": "Studied software engineering and gained expertise in building scalable systems."
-                },
-                "Self-Learning": {
-                    "description": "Continuously learning through courses, mentorship, and hands-on experience in product development and leadership."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "React and Nextjs": {
-                    "description": "Expert in building next-gen apps with frameworks like React and Next.js."
-                },
-                "Supabase": {
-                    "description": "Experienced in leveraging Supabase for scalable backend solutions."
-                },
-                "Product Development": {
-                    "description": "Proficient in creating and launching SaaS products that solve real-world problems."
-                }
-            }
-        }
-    },
-    "blog": {
-        "label": "Blog",
-        "title": "Writing about technology and entrepreneurship...",
-        "description": "Read what Aashni has been up to recently"
+  "person": {
+    "role": "Tech Leader, Mentor, and Builder"
+  },
+  "newsletter": {
+    "title": "Subscribe to Aashni's Newsletter",
+    "description": "I write about technology, entrepreneurship, and share insights from my experience in software engineering, startups, and board-level leadership.",
+    "button": "Sign up"
+  },
+  "home": {
+    "label": "Home",
+    "title": "Aashni's Portfolio",
+    "description": "Portfolio website showcasing my work as a Tech Leader, Mentor, and Builder",
+    "headline": "Tech Leader, Mentor, and Builder",
+    "subline": "Hi! I'm Aashni, a startup advisor, angel investor, and innovation leader with a passion for helping businesses scale and build impactful solutions. I create products in my free time, mentor founders, and support women in the tech ecosystem.",
+    "cta-primary": "Book a Strategy Call",
+    "cta-secondary": "Explore Services",
+    "intro": "I help startups scale, build impactful products, and drive innovation. With experience at Microsoft, Amazon, and Square, I’ve led teams, created platforms like HypeDocs and Mido, and advised startups like Pawtrip and Monadd. I’m also a board member and nonprofit director, passionate about making a difference through technology and strategy."
+  },
+  "about": {
+    "label": "About",
+    "title": "About me",
+    "description": "Meet Aashni, Tech Leader, Mentor, and Builder from Canada and Kenya",
+    "intro": {
+      "title": "Introduction",
+      "description": "Aashni is a dual citizen of Canada and Kenya with a decade of experience in software engineering, startups, and board-level leadership. She is passionate about creating innovative products, advising businesses, and fostering inclusivity in tech. With expertise spanning Microsoft, Amazon, Square, and various startups, she combines technical excellence with a deep understanding of entrepreneurship."
     },
     "work": {
-        "label": "Past Work",
-        "title": "My projects",
-        "description": "Tech and product projects by Aashni"
+      "title": "Work Experience",
+      "experiences": {
+        "Kingsway Group": {
+          "timeframe": "2023 - Present",
+          "role": "Board Member",
+          "achievements": "Modernizing operations with a tech lens across industries such as hotels, malls, entertainment, and auto services."
+        },
+        "Microsoft, Amazon, Square (Block)": {
+          "timeframe": "2013 - 2023",
+          "role": "Software Engineer and Leader",
+          "achievements": "Developed and launched global products impacting millions of users."
+        },
+        "Startups and Products": {
+          "timeframe": "2023 - Present",
+          "role": "Founder, Advisor, and Investor",
+          "achievements": "Built HypeDocs and MIDO, advised startups like Pawtrip and Blossom, and provided angel investments to promising ventures."
+        }
+      }
     },
-    "testimonials": {
-        "label": "Testimonials",
-        "title": "Testimonials",
-        "description": "Read what other people have to share about working with Aashni"
+    "studies": {
+      "title": "Studies",
+      "institutions": {
+        "University Education": {
+          "description": "Studied software engineering and gained expertise in building scalable systems."
+        },
+        "Self-Learning": {
+          "description": "Continuously learning through courses, mentorship, and hands-on experience in product development and leadership."
+        }
+      }
     },
-    "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by Aashni"
-    },
-    "contact": {
-        "label": "Contact",
-        "title": "Contact Aashni",
-        "description": "Get in touch with Aashni"
-    },
-    "projectCard": {
-        "label": "Read Case Study"
+    "technical": {
+      "title": "Technical skills",
+      "skills": {
+        "React and Nextjs": {
+          "description": "Expert in building next-gen apps with frameworks like React and Next.js."
+        },
+        "Supabase": {
+          "description": "Experienced in leveraging Supabase for scalable backend solutions."
+        },
+        "Product Development": {
+          "description": "Proficient in creating and launching SaaS products that solve real-world problems."
+        }
+      }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Writing about technology and entrepreneurship...",
+    "description": "Read what Aashni has been up to recently"
+  },
+  "work": {
+    "label": "Past Work",
+    "title": "My projects",
+    "description": "Tech and product projects by Aashni"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Testimonials",
+    "description": "Read what other people have to share about working with Aashni"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "My photo gallery",
+    "description": "A photo collection by Aashni"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contact Aashni",
+    "description": "Get in touch with Aashni"
+  },
+  "projectCard": {
+    "label": "Read Case Study"
+  }
 }
