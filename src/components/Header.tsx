@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 
-import { Flex, ToggleButton } from "@/once-ui/components"
+import { Flex, ToggleButton, DropdownWrapper, DropdownOptions, Icon } from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
 
 import { routes, display } from '@/app/resources'
@@ -68,7 +68,38 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery, testimonials, contact, ctoServices, speaking } = renderContent(t);
+    const { person, home, about, blog, work, gallery, testimonials, contact, ctoServices, speaking, advisory } = renderContent(t);
+
+    // Services dropdown options
+    const servicesOptions: DropdownOptions[] = [
+        {
+            label: ctoServices.label,
+            value: 'cto-services',
+            hasPrefix: (<Icon name="compass" onBackground="neutral-strong" size="m" />),
+            description: 'Fractional CTO Services'
+        },
+        {
+            label: advisory.label,
+            value: 'advisory',
+            hasPrefix: (<Icon name="compass" onBackground="neutral-strong" size="m" />),
+            description: 'Advisory & Board Engagements'
+        },
+        {
+            label: speaking.label,
+            value: 'speaking',
+            hasPrefix: (<Icon name="microphone" onBackground="neutral-strong" size="m" />),
+            description: 'Speaking Engagements'
+        }
+    ];
+
+    const handleServiceSelect = (option: DropdownOptions) => {
+        router.push(`/${params?.locale}/${option.value}`);
+    };
+
+    // Check if any service page is currently selected
+    const isServiceSelected = pathname.startsWith('/cto-services') ||
+        pathname.startsWith('/advisory') ||
+        pathname.startsWith('/speaking');
 
     return (
         <>
@@ -125,22 +156,21 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{work.label}</Flex>
                                 </ToggleButton>
                             )}
-                            {routes['/cto-services'] && (
+                            <DropdownWrapper
+                                dropdownOptions={servicesOptions}
+                                dropdownProps={{
+                                    onOptionSelect: handleServiceSelect
+                                }}
+                                openOnHover
+                                selectedOption={pathname.startsWith('/cto-services') ? 'cto-services' :
+                                    pathname.startsWith('/advisory') ? 'advisory' :
+                                        pathname.startsWith('/speaking') ? 'speaking' : undefined}>
                                 <ToggleButton
                                     prefixIcon="compass"
-                                    href={`/${params?.locale}/cto-services`}
-                                    selected={pathname.startsWith('/cto-services')}>
-                                    <Flex paddingX="2" hide="s">{ctoServices.label}</Flex>
+                                    selected={isServiceSelected}>
+                                    <Flex paddingX="2" hide="s">Services</Flex>
                                 </ToggleButton>
-                            )}
-                            {routes['/speaking'] && (
-                                <ToggleButton
-                                    prefixIcon="microphone"
-                                    href={`/${params?.locale}/speaking`}
-                                    selected={pathname.startsWith('/speaking')}>
-                                    <Flex paddingX="2" hide="s">{speaking.label}</Flex>
-                                </ToggleButton>
-                            )}
+                            </DropdownWrapper>
                             {routes['/blog'] && (
                                 <ToggleButton
                                     prefixIcon="book"

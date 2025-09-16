@@ -14,6 +14,7 @@ interface DropdownWrapperProps {
     style?: React.CSSProperties;
     className?: string;
     renderCustomDropdownContent?: () => ReactNode;
+    openOnHover?: boolean;
 }
 
 const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(({
@@ -24,10 +25,12 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(({
     style,
     className,
     renderCustomDropdownContent,
+    openOnHover = false,
 }, ref) => {
     const [isDropdownOpen, setDropdownOpen] = useState(false);
     const wrapperRef = useRef<HTMLDivElement>(null);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const hoverCloseTimeoutRef = useRef<number | null>(null);
 
     const {
         x,
@@ -64,7 +67,7 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(({
     useEffect(() => {
         if (isDropdownOpen) {
             update();
-            
+
             if (dropdownRef.current && selectedOption) {
                 const selectedElement = dropdownRef.current.querySelector(`[data-value="${selectedOption}"]`);
                 if (selectedElement) {
@@ -103,7 +106,7 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(({
     };
 
     const {
-        onOptionSelect = () => {},
+        onOptionSelect = () => { },
         ...restDropdownProps
     } = dropdownProps;
 
@@ -117,6 +120,23 @@ const DropdownWrapper = forwardRef<HTMLDivElement, DropdownWrapperProps>(({
             position="relative"
             ref={wrapperRef}
             onClick={() => setDropdownOpen(!isDropdownOpen)}
+            onMouseEnter={() => {
+                if (openOnHover) {
+                    if (hoverCloseTimeoutRef.current) {
+                        clearTimeout(hoverCloseTimeoutRef.current);
+                        hoverCloseTimeoutRef.current = null;
+                    }
+                    setDropdownOpen(true);
+                }
+            }}
+            onMouseLeave={() => {
+                if (openOnHover) {
+                    // small delay to allow moving towards the menu without flicker
+                    hoverCloseTimeoutRef.current = window.setTimeout(() => {
+                        setDropdownOpen(false);
+                    }, 100);
+                }
+            }}
             onKeyDown={handleKeyDown}
             tabIndex={0}
             role="button"

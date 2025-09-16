@@ -507,9 +507,105 @@ const speaking = {
   },
   booking: {
     title: "Booking",
-    description: "Want to have Aashni speak at your next event? Fill out the form below or email speaking@aashni.me with details about your event, audience, and preferred topic.",
-    email: "speaking@aashni.me",
+    description: "Want to have Aashni speak at your next event? Fill out the form below or email contact@aashni.me with details about your event, audience, and preferred topic.",
+    email: "contact@aashni.me",
     ctaText: "Book Aashni for Your Event",
+    ctaHref: "mailto:contact@aashni.me"
+  }
+};
+
+const advisory = {
+  label: "Advisory",
+  title: "Advisory & Board Engagements",
+  description: "Strategic Guidance for Founders, Executives, and Boards",
+  headline: "Strategic Guidance for Founders, Executives, and Boards",
+  intro: "Aashni brings a unique combination of technical expertise, business insight, and leadership experience to help organizations navigate complex technology and innovation challenges. Whether advising startups, growing companies, or mid-to-large non-tech organizations, she partners with leaders to provide actionable, board-ready guidance.",
+  advisoryServices: {
+    title: "Advisory Services",
+    services: [
+      {
+        title: "Technical Due Diligence",
+        description: "Evaluate technology risk, scalability, and product viability for investors, boards, and leadership teams."
+      },
+      {
+        title: "Digital Transformation & Modernization",
+        description: "Guide non-tech companies through system upgrades, cloud adoption, and automation projects."
+      },
+      {
+        title: "Innovation Roadmaps",
+        description: "Help organizations prioritize and plan technology investments to maximize ROI."
+      },
+      {
+        title: "Executive Mentorship",
+        description: "Coach CTOs, engineering leaders, and founders on strategic decision-making, team leadership, and scaling technical operations."
+      }
+    ]
+  },
+  boardEngagements: {
+    title: "Board Engagements",
+    description: "Serve as a trusted advisor to boards, providing insight into technology strategy, risk, and operational readiness.",
+    responsibilities: [
+      "Help boards understand technical challenges and opportunities, bridging the gap between executive teams and non-technical board members.",
+      "Support governance, cybersecurity oversight, and risk management initiatives to ensure informed board-level decision-making."
+    ]
+  },
+  outcomes: {
+    title: "Typical Outcomes",
+    results: [
+      "Clear understanding of technology risk and opportunities at the executive and board level",
+      "Structured technology strategy aligned with business objectives",
+      "Accelerated decision-making and reduced uncertainty around tech investments",
+      "Enhanced leadership and technical capability across teams"
+    ]
+  },
+  whyPartner: {
+    title: "Why Partner with Aashni",
+    reasons: [
+      {
+        title: "Strategic Insight",
+        description: "Combines hands-on technical experience with business strategy to guide smart decisions."
+      },
+      {
+        title: "Board-Level Communication",
+        description: "Explains complex technical concepts in plain language for executives and boards."
+      },
+      {
+        title: "Action-Oriented",
+        description: "Provides practical recommendations that lead to measurable outcomes."
+      }
+    ]
+  },
+  audienceFit: {
+    title: "Audience Fit",
+    audiences: [
+      "Startup founders and executive teams looking for guidance on scaling technology",
+      "CEOs and COOs of mid-to-large non-tech companies seeking digital transformation leadership",
+      "Boards seeking clear technical insight and risk management guidance",
+      "Investors and venture partners needing technical due diligence on prospective companies"
+    ]
+  },
+  engagementOptions: {
+    title: "Engagement Options",
+    options: [
+      {
+        name: "Retainer Advisory",
+        description: "Ongoing strategic guidance for leadership teams or boards"
+      },
+      {
+        name: "Project-Based Engagements",
+        description: "Defined initiatives such as tech audits, system modernization, or innovation roadmap planning"
+      },
+      {
+        name: "Mentorship & Coaching",
+        description: "Regular sessions to develop technical leaders and support executive decision-making"
+      }
+    ]
+  },
+  booking: {
+    title: "Booking",
+    description: "To engage Aashni for advisory or board services, fill out the form below or email contact@aashni.me with details about your organization, needs, and preferred engagement model.",
+    email: "contact@aashni.me",
+    ctaText: "Schedule a Consultation",
     ctaHref: "mailto:contact@aashni.me"
   }
 };
@@ -650,5 +746,6 @@ export {
   contact,
   ctoServices,
   speaking,
+  advisory,
   offerings,
 };
