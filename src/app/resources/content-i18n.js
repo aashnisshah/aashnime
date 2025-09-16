@@ -286,6 +286,28 @@ const createI18nContent = (t) => {
         description: t("conact.description")
     }
 
+    // Minimal service sections for i18n mode so TS union includes these keys
+    const ctoServices = {
+        label: 'CTO Services',
+        title: 'Fractional CTO Services',
+        description: 'Bring Executive-Level Technical Leadership — Without the Full-Time Hire',
+        headline: 'Bring Executive-Level Technical Leadership — Without the Full-Time Hire',
+    };
+
+    const speaking = {
+        label: 'Speaking',
+        title: 'Speaking Engagements',
+        description: 'Bring Aashni to Your Stage',
+        headline: 'Bring Aashni to Your Stage',
+    };
+
+    const advisory = {
+        label: 'Advisory',
+        title: 'Advisory & Board Engagements',
+        description: 'Strategic Guidance for Founders, Executives, and Boards',
+        headline: 'Strategic Guidance for Founders, Executives, and Boards',
+    };
+
     return {
         person,
         social,
@@ -297,6 +319,9 @@ const createI18nContent = (t) => {
         gallery,
         testimonials,
         contact,
+        ctoServices,
+        speaking,
+        advisory,
         offerings
     }
 };
