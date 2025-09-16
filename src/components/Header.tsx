@@ -68,7 +68,7 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, blog, work, gallery, testimonials, contact } = renderContent(t);
+    const { person, home, about, blog, work, gallery, testimonials, contact, ctoServices } = renderContent(t);
 
     return (
         <>
@@ -123,6 +123,14 @@ export const Header = () => {
                                     href={`/${params?.locale}/work`}
                                     selected={pathname.startsWith('/work')}>
                                     <Flex paddingX="2" hide="s">{work.label}</Flex>
+                                </ToggleButton>
+                            )}
+                            {routes['/cto-services'] && (
+                                <ToggleButton
+                                    prefixIcon="compass"
+                                    href={`/${params?.locale}/cto-services`}
+                                    selected={pathname.startsWith('/cto-services')}>
+                                    <Flex paddingX="2" hide="s">{ctoServices.label}</Flex>
                                 </ToggleButton>
                             )}
                             {routes['/blog'] && (

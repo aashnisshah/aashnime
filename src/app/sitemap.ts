@@ -28,7 +28,7 @@ export default async function sitemap() {
     );
 
     let routes = locales.flatMap((locale) =>
-        ['', '/blog', '/work', '/testimonials'].map((route) => ({
+        ['', '/blog', '/work', '/testimonials', '/cto-services'].map((route) => ({
             url: `${baseURL}/${locale}${route}`,
             lastModified: new Date().toISOString().split('T')[0],
         }))
