@@ -286,6 +286,285 @@ const createI18nContent = (t) => {
         description: t("conact.description")
     }
 
+    const ctoServices = {
+        label: "CTO Services",
+        title: "Fractional CTO Services",
+        description: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
+        headline: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
+        intro: "Whether you're an early-stage founder, a growing tech-enabled business, or a non-tech company looking to modernize, having the right technical leadership can make or break your success. As a Fractional CTO, I provide strategic guidance, hands-on technical direction, and leadership that helps you build the right systems, hire the right team, and make the right technical bets — at a fraction of the cost of a full-time executive.",
+        whoThisIsFor: {
+            title: "🛠 Who This Is For",
+            sections: [
+                {
+                    title: "Startups & Founders",
+                    description: "You have an idea or MVP and need someone to define the technical roadmap, choose a scalable architecture, and guide you through your first builds and hires."
+                },
+                {
+                    title: "Growing Companies",
+                    description: "You have an existing engineering team but need better processes, technical audits, or leadership to scale without burning out your team."
+                },
+                {
+                    title: "Mid-to-Large Non-Tech Companies",
+                    description: "You need to modernize your systems, migrate to the cloud, implement automation, or advise your board on technology strategy and risk."
+                }
+            ]
+        },
+        whatYouGet: {
+            title: "🔑 What You Get",
+            subtitle: "Strategic Technical Leadership — Without Full-Time Overhead",
+            description: "I act as your technology executive, helping you:",
+            benefits: [
+                "Set a Clear Technical Vision: Align tech with your business goals, whether that's shipping your MVP fast, improving scalability, or cutting operational costs.",
+                "Audit & Optimize Systems: Identify risks, inefficiencies, and opportunities for modernization.",
+                "Guide & Mentor Your Team: Coach engineers, establish best practices, and mentor your first technical hires or engineering managers.",
+                "Bridge the Business–Tech Gap: Translate complex technical decisions into clear, board-level recommendations.",
+                "Support Key Decisions: From vendor selection to build vs. buy choices, ensure you invest wisely."
+            ]
+        },
+        engagementModels: {
+            title: "📊 Engagement Models",
+            models: [
+                {
+                    name: "Advisory Retainer",
+                    bestFor: "Boards, CEOs, leadership teams needing consistent strategic input",
+                    included: "Monthly check-ins, tech risk reviews, roadmap guidance, decision support"
+                },
+                {
+                    name: "Part-Time CTO (4–12 hrs/week)",
+                    bestFor: "Startups & growing companies needing hands-on leadership",
+                    included: "Technical roadmap creation, architecture reviews, hiring support, process setup"
+                },
+                {
+                    name: "Project-Based Engagements",
+                    bestFor: "Companies with a defined initiative (e.g. cloud migration, system overhaul, MVP launch)",
+                    included: "End-to-end project leadership, vendor selection, implementation oversight, success metrics"
+                }
+            ]
+        },
+        outcomes: {
+            title: "📈 Typical Outcomes",
+            results: [
+                "40–60% faster MVP delivery by avoiding common tech pitfalls",
+                "Reduced technical debt and lower long-term maintenance costs",
+                "Improved release cadence and engineering team performance",
+                "Increased confidence from investors, boards, and leadership teams",
+                "Clear technical visibility for decision-making at the executive level"
+            ]
+        },
+        clientFeedback: {
+            title: "💬 Client Feedback",
+            testimonials: [
+                {
+                    quote: "Aashni helped us launch our MVP in 6 weeks and set up the right systems to handle early traction. Her leadership saved us months of guesswork.",
+                    author: "Founder, Early-Stage SaaS Company"
+                },
+                {
+                    quote: "Our board now has a clear view of our technical risks and opportunities. Aashni translated complex systems into language we could act on.",
+                    author: "CEO, Mid-Market Manufacturing Business"
+                }
+            ]
+        },
+        callToAction: {
+            title: "🚀 Ready to Level Up Your Technology Leadership?",
+            actions: [
+                {
+                    text: "Schedule a Fractional CTO Consultation (15-min discovery call)",
+                    href: "https://calendly.com/aashnisshah/web",
+                    variant: "primary"
+                },
+                {
+                    text: "Download My Tech Modernization Checklist (lead magnet)",
+                    href: "#",
+                    variant: "secondary"
+                }
+            ]
+        }
+    };
+
+    const speaking = {
+        label: "Speaking",
+        title: "Speaking Engagements",
+        description: "Bring Aashni to Your Stage - Engaging speaker on technology, leadership, and entrepreneurship",
+        headline: "Bring Aashni to Your Stage",
+        intro: "Aashni is an engaging and insightful speaker who brings a unique mix of technical expertise, business acumen, and a passion for empowering others. She has spoken at conferences, startup events, and private company offsites, sharing practical advice and inspiring stories.",
+        popularTopics: {
+            title: "Popular Topics",
+            topics: [
+                {
+                    title: "AI in Business",
+                    description: "Practical ways to leverage AI without the hype to drive measurable outcomes."
+                },
+                {
+                    title: "Technology Strategy for Non-Technical Leaders",
+                    description: "How executives can make confident decisions about technology, innovation, and digital transformation."
+                },
+                {
+                    title: "Scaling Beyond the MVP",
+                    description: "Lessons learned from building and scaling products used by millions."
+                },
+                {
+                    title: "Women in Tech & Leadership",
+                    description: "Real talk about career growth, breaking barriers, and creating inclusive tech cultures."
+                },
+                {
+                    title: "From Engineer to Executive",
+                    description: "How to transition from building products to building companies."
+                }
+            ]
+        },
+        speakingEngagements: {
+            title: "Speaking Engagements",
+            description: "Aashni has shared her insights at events including:",
+            events: [
+                {
+                    name: "SaaS North",
+                    description: "Panel on AI adoption in SaaS products"
+                },
+                {
+                    name: "Microsoft Alumni Network",
+                    description: "Keynote on transitioning from corporate to entrepreneurship"
+                },
+                {
+                    name: "Techstars Founder Talks",
+                    description: "Workshop on scaling technology teams"
+                },
+                {
+                    name: "Women in Product Conference",
+                    description: "Fireside chat on leadership and growth"
+                }
+            ]
+        },
+        whyInvite: {
+            title: "Why Invite Aashni",
+            reasons: [
+                {
+                    title: "Actionable Insights",
+                    description: "Every talk leaves the audience with frameworks and next steps they can apply immediately."
+                },
+                {
+                    title: "Relatable Storytelling",
+                    description: "Drawing from experiences at Microsoft, Amazon, startups, and advising boards."
+                },
+                {
+                    title: "Engagement",
+                    description: "Aashni loves Q&A sessions and makes space for interaction."
+                }
+            ]
+        },
+        audienceFit: {
+            title: "Audience Fit",
+            audiences: [
+                "Executive teams & boards seeking to understand tech strategy",
+                "Startup founders and early-stage teams",
+                "Corporate innovation programs and accelerators",
+                "University and community events focused on leadership or entrepreneurship"
+            ]
+        },
+        booking: {
+            title: "Booking",
+            description: "Want to have Aashni speak at your next event? Fill out the form below or email contact@aashni.me with details about your event, audience, and preferred topic.",
+            email: "contact@aashni.me",
+            ctaText: "Book Aashni for Your Event",
+            ctaHref: "mailto:contact@aashni.me"
+        }
+    };
+
+    const advisory = {
+        label: "Advisory",
+        title: "Advisory & Board Engagements",
+        description: "Strategic Guidance for Founders, Executives, and Boards",
+        headline: "Strategic Guidance for Founders, Executives, and Boards",
+        intro: "Aashni brings a unique combination of technical expertise, business insight, and leadership experience to help organizations navigate complex technology and innovation challenges. Whether advising startups, growing companies, or mid-to-large non-tech organizations, she partners with leaders to provide actionable, board-ready guidance.",
+        advisoryServices: {
+            title: "Advisory Services",
+            services: [
+                {
+                    title: "Technical Due Diligence",
+                    description: "Evaluate technology risk, scalability, and product viability for investors, boards, and leadership teams."
+                },
+                {
+                    title: "Digital Transformation & Modernization",
+                    description: "Guide non-tech companies through system upgrades, cloud adoption, and automation projects."
+                },
+                {
+                    title: "Innovation Roadmaps",
+                    description: "Help organizations prioritize and plan technology investments to maximize ROI."
+                },
+                {
+                    title: "Executive Mentorship",
+                    description: "Coach CTOs, engineering leaders, and founders on strategic decision-making, team leadership, and scaling technical operations."
+                }
+            ]
+        },
+        boardEngagements: {
+            title: "Board Engagements",
+            description: "Serve as a trusted advisor to boards, providing insight into technology strategy, risk, and operational readiness.",
+            responsibilities: [
+                "Help boards understand technical challenges and opportunities, bridging the gap between executive teams and non-technical board members.",
+                "Support governance, cybersecurity oversight, and risk management initiatives to ensure informed board-level decision-making."
+            ]
+        },
+        outcomes: {
+            title: "Typical Outcomes",
+            results: [
+                "Clear understanding of technology risk and opportunities at the executive and board level",
+                "Structured technology strategy aligned with business objectives",
+                "Accelerated decision-making and reduced uncertainty around tech investments",
+                "Enhanced leadership and technical capability across teams"
+            ]
+        },
+        whyPartner: {
+            title: "Why Partner with Aashni",
+            reasons: [
+                {
+                    title: "Strategic Insight",
+                    description: "Combines hands-on technical experience with business strategy to guide smart decisions."
+                },
+                {
+                    title: "Board-Level Communication",
+                    description: "Explains complex technical concepts in plain language for executives and boards."
+                },
+                {
+                    title: "Action-Oriented",
+                    description: "Provides practical recommendations that lead to measurable outcomes."
+                }
+            ]
+        },
+        audienceFit: {
+            title: "Audience Fit",
+            audiences: [
+                "Startup founders and executive teams looking for guidance on scaling technology",
+                "CEOs and COOs of mid-to-large non-tech companies seeking digital transformation leadership",
+                "Boards seeking clear technical insight and risk management guidance",
+                "Investors and venture partners needing technical due diligence on prospective companies"
+            ]
+        },
+        engagementOptions: {
+            title: "Engagement Options",
+            options: [
+                {
+                    name: "Retainer Advisory",
+                    description: "Ongoing strategic guidance for leadership teams or boards"
+                },
+                {
+                    name: "Project-Based Engagements",
+                    description: "Defined initiatives such as tech audits, system modernization, or innovation roadmap planning"
+                },
+                {
+                    name: "Mentorship & Coaching",
+                    description: "Regular sessions to develop technical leaders and support executive decision-making"
+                }
+            ]
+        },
+        booking: {
+            title: "Booking",
+            description: "To engage Aashni for advisory or board services, fill out the form below or email contact@aashni.me with details about your organization, needs, and preferred engagement model.",
+            email: "contact@aashni.me",
+            ctaText: "Schedule a Consultation",
+            ctaHref: "mailto:contact@aashni.me"
+        }
+    };
+
     return {
         person,
         social,
@@ -297,6 +576,9 @@ const createI18nContent = (t) => {
         gallery,
         testimonials,
         contact,
+        ctoServices,
+        speaking,
+        advisory,
         offerings
     }
 };

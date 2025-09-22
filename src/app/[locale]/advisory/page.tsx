@@ -89,7 +89,6 @@ export default function Advisory({
                 gap="xl"
                 alignItems="center"
                 direction="column"
-                textAlign="center"
             >
                 <RevealFx translateY="4">
                     <Heading wrap="balance" variant="display-strong-l">
@@ -130,7 +129,7 @@ export default function Advisory({
                                 gap="m"
                             >
                                 <Flex gap="m" alignItems="center">
-                                    <Badge variant="primary" size="m">
+                                    <Badge>
                                         {service.title}
                                     </Badge>
                                 </Flex>
@@ -159,7 +158,7 @@ export default function Advisory({
                     {advisory.boardEngagements.responsibilities.map((responsibility, index) => (
                         <RevealFx key={index} translateY="12" delay={1.0 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     ✓
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -182,7 +181,7 @@ export default function Advisory({
                     {advisory.outcomes.results.map((result, index) => (
                         <RevealFx key={index} translateY="12" delay={1.3 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     📈
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -205,7 +204,7 @@ export default function Advisory({
                     {advisory.whyPartner.reasons.map((reason, index) => (
                         <RevealFx key={index} translateY="12" delay={1.8 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     ✓
                                 </Badge>
                                 <Flex direction="column" gap="xs">
@@ -233,7 +232,7 @@ export default function Advisory({
                     {advisory.audienceFit.audiences.map((audience, index) => (
                         <RevealFx key={index} translateY="12" delay={2.2 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     🎯
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -266,7 +265,7 @@ export default function Advisory({
                                 gap="m"
                             >
                                 <Flex gap="m" alignItems="center">
-                                    <Badge variant="primary" size="m">
+                                    <Badge>
                                         {option.name}
                                     </Badge>
                                 </Flex>
@@ -282,12 +281,12 @@ export default function Advisory({
             {/* Booking Section */}
             <Flex fillWidth gap="l" direction="column" alignItems="center" paddingY="l">
                 <RevealFx translateY="12" delay={3.0}>
-                    <Heading as="h2" variant="display-strong-xs" wrap="balance" textAlign="center">
+                    <Heading as="h2" variant="display-strong-xs" wrap="balance">
                         {advisory.booking.title}
                     </Heading>
                 </RevealFx>
                 <RevealFx translateY="12" delay={3.1}>
-                    <Flex fillWidth maxWidth="m" textAlign="center">
+                    <Flex fillWidth maxWidth="m">
                         <Text onBackground="neutral-weak" variant="body-default-l">
                             {advisory.booking.description}
                         </Text>
@@ -302,7 +301,7 @@ export default function Advisory({
                     >
                         <Flex gap="8" alignItems="center">
                             {advisory.booking.ctaText}
-                            <Arrow />
+                            <Arrow trigger="#badge" />
                         </Flex>
                     </Button>
                 </RevealFx>
