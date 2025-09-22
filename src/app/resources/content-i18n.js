@@ -373,7 +373,7 @@ const createI18nContent = (t) => {
                     variant: "primary"
                 },
                 {
-                    text: "Download My Tech Modernization Checklist (lead magnet)",
+                    text: "Download My Tech Modernization Checklist",
                     href: "#",
                     variant: "secondary"
                 }
