@@ -35,8 +35,6 @@ export default function Offerings({ offeringsList }: PostProps) {
         alignItems="center"
         paddingY="l"
         gap="xl"
-        border="neutral-medium"
-        borderStyle="solid-1"
       >
         <Heading as="h2" variant="display-strong-xs" wrap="balance">
           My Services
@@ -48,7 +46,6 @@ export default function Offerings({ offeringsList }: PostProps) {
           justifyContent="center"
           fillWidth
         >
-          {/* Service 1 */}
           {offeringsList.map((offer: any, index: number) => (
             <Flex
               direction="column"
@@ -57,7 +54,7 @@ export default function Offerings({ offeringsList }: PostProps) {
               style={{
                 textAlign: "center",
                 borderRadius: "16px",
-                maxWidth: "300px",
+                border: "1px solid white",
               }}
               gap="m"
             >
@@ -66,7 +63,7 @@ export default function Offerings({ offeringsList }: PostProps) {
                 name={offer.iconName}
                 size="xl"
               />
-              <Heading as="h2" variant="heading-default-l">
+              <Heading as="h1" variant="heading-default-l">
                 {offer.title}
               </Heading>
               <Text variant="body-default-l">{offer.subtitle}</Text>

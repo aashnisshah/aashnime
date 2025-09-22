@@ -78,8 +78,13 @@
     },
     "work": {
         "label": "Work",
-        "title": "My projects",
+        "title": "Consulting Projects",
         "description": "Tech and product development projects by Aashni"
+    },
+    "services": {
+        "label": "Services",
+        "title": "My Services",
+        "description": "Service offerings by Aashni"
     },
     "testimonials": {
         "label": "Testimonials",

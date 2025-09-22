@@ -89,6 +89,12 @@ export const Header = () => {
             value: 'speaking',
             hasPrefix: (<Icon name="microphone" onBackground="neutral-strong" size="m" />),
             description: 'Speaking Engagements'
+        },
+        {
+            label: work.label,
+            value: 'work',
+            hasPrefix: (<Icon name="grid" onBackground="neutral-strong" size="m" />),
+            description: 'Consulting Work'
         }
     ];
 
@@ -99,7 +105,7 @@ export const Header = () => {
     // Check if any service page is currently selected
     const isServiceSelected = pathname.startsWith('/cto-services') ||
         pathname.startsWith('/advisory') ||
-        pathname.startsWith('/speaking');
+        pathname.startsWith('/speaking') || pathname.startsWith('/work');
 
     return (
         <>
@@ -148,14 +154,14 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{about.label}</Flex>
                                 </ToggleButton>
                             )}
-                            {routes['/work'] && (
+                            {/* {routes['/work'] && (
                                 <ToggleButton
                                     prefixIcon="grid"
                                     href={`/${params?.locale}/work`}
                                     selected={pathname.startsWith('/work')}>
                                     <Flex paddingX="2" hide="s">{work.label}</Flex>
                                 </ToggleButton>
-                            )}
+                            )} */}
                             <DropdownWrapper
                                 dropdownOptions={servicesOptions}
                                 dropdownProps={{
@@ -167,7 +173,9 @@ export const Header = () => {
                                         pathname.startsWith('/speaking') ? 'speaking' : undefined}>
                                 <ToggleButton
                                     prefixIcon="compass"
-                                    selected={isServiceSelected}>
+                                    selected={isServiceSelected}
+                                    onClick={() => router.push(`/${params?.locale}/services`)}
+                                >
                                     <Flex paddingX="2" hide="s">Services</Flex>
                                 </ToggleButton>
                             </DropdownWrapper>

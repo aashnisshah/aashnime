@@ -167,6 +167,14 @@ const createI18nContent = (t) => {
         // All projects will be listed on the /home and /work routes
     }
 
+    const services = {
+        label: t("services.label"),
+        title: t("services.title"),
+        description: t("services.description", { name: person.name })
+        // Create new project pages by adding a new .mdx file to app/blog/posts
+        // All projects will be listed on the /home and /work routes
+    }
+
     const testimonials = {
         label: t("testimonials.label"),
         title: t("testimonials.title"),
@@ -289,8 +297,8 @@ const createI18nContent = (t) => {
     const ctoServices = {
         label: "CTO Services",
         title: "Fractional CTO Services",
-        description: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
-        headline: "Bring Executive-Level Technical Leadership — Without the Full-Time Hire",
+        description: "Bring Executive-Level Technical Leadership Right When You Need It",
+        headline: "Bring Executive-Level Technical Leadership Right When You Need It",
         intro: "Whether you're an early-stage founder, a growing tech-enabled business, or a non-tech company looking to modernize, having the right technical leadership can make or break your success. As a Fractional CTO, I provide strategic guidance, hands-on technical direction, and leadership that helps you build the right systems, hire the right team, and make the right technical bets — at a fraction of the cost of a full-time executive.",
         whoThisIsFor: {
             title: "🛠 Who This Is For",
@@ -573,6 +581,7 @@ const createI18nContent = (t) => {
         about,
         blog,
         work,
+        services,
         gallery,
         testimonials,
         contact,

@@ -144,13 +144,13 @@ export default function Home({
               <Button
                 id="about"
                 data-border="rounded"
-                href={`/${locale}/work`}
+                href={`/${locale}/services`}
                 variant="secondary"
                 size="l"
               >
                 <Flex gap="8" alignItems="center">
                   {t("home.cta-secondary")}
-                  <Arrow trigger="#work" />
+                  <Arrow trigger="#services" />
                 </Flex>
               </Button>
             </Flex>
