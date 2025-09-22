@@ -88,7 +88,6 @@ export default function CTOServices({
                 gap="xl"
                 alignItems="center"
                 direction="column"
-                textAlign="center"
             >
                 <RevealFx translateY="4">
                     <Heading wrap="balance" variant="display-strong-l">
@@ -161,7 +160,7 @@ export default function CTOServices({
                     {ctoServices.whatYouGet.benefits.map((benefit, index) => (
                         <RevealFx key={index} translateY="12" delay={0.9 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     ✓
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -194,7 +193,7 @@ export default function CTOServices({
                                 gap="m"
                             >
                                 <Flex gap="m" alignItems="center">
-                                    <Badge variant="primary" size="m">
+                                    <Badge>
                                         {model.name}
                                     </Badge>
                                 </Flex>
@@ -227,7 +226,7 @@ export default function CTOServices({
                     {ctoServices.outcomes.results.map((result, index) => (
                         <RevealFx key={index} translateY="12" delay={1.7 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     📈
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -262,7 +261,7 @@ export default function CTOServices({
                                 <Text onBackground="neutral-weak" variant="body-default-l" style={{ fontStyle: 'italic' }}>
                                     "{testimonial.quote}"
                                 </Text>
-                                <Text onBackground="neutral-medium" variant="body-default-s" textAlign="right">
+                                <Text onBackground="neutral-medium" variant="body-default-s">
                                     — {testimonial.author}
                                 </Text>
                             </Flex>
@@ -274,11 +273,11 @@ export default function CTOServices({
             {/* Call to Action Section */}
             <Flex fillWidth gap="l" direction="column" alignItems="center" paddingY="l">
                 <RevealFx translateY="12" delay={2.4}>
-                    <Heading as="h2" variant="display-strong-xs" wrap="balance" textAlign="center">
+                    <Heading as="h2" variant="display-strong-xs" wrap="balance">
                         {ctoServices.callToAction.title}
                     </Heading>
                 </RevealFx>
-                <Flex fillWidth gap="m" justifyContent="center" flexWrap="wrap">
+                <Flex fillWidth gap="m" justifyContent="center">
                     {ctoServices.callToAction.actions.map((action, index) => (
                         <RevealFx key={index} translateY="12" delay={2.5 + index * 0.1}>
                             <Button
@@ -289,7 +288,7 @@ export default function CTOServices({
                             >
                                 <Flex gap="8" alignItems="center">
                                     {action.text}
-                                    <Arrow />
+                                    <Arrow trigger="#badge" />
                                 </Flex>
                             </Button>
                         </RevealFx>

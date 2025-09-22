@@ -86,7 +86,6 @@ export default function Speaking({
                 gap="xl"
                 alignItems="center"
                 direction="column"
-                textAlign="center"
             >
                 <RevealFx translateY="4">
                     <Heading wrap="balance" variant="display-strong-l">
@@ -127,7 +126,7 @@ export default function Speaking({
                                 gap="m"
                             >
                                 <Flex gap="m" alignItems="center">
-                                    <Badge variant="primary" size="m">
+                                    <Badge>
                                         {topic.title}
                                     </Badge>
                                 </Flex>
@@ -188,7 +187,7 @@ export default function Speaking({
                     {speaking.whyInvite.reasons.map((reason, index) => (
                         <RevealFx key={index} translateY="12" delay={1.5 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     ✓
                                 </Badge>
                                 <Flex direction="column" gap="xs">
@@ -216,7 +215,7 @@ export default function Speaking({
                     {speaking.audienceFit.audiences.map((audience, index) => (
                         <RevealFx key={index} translateY="12" delay={1.9 + index * 0.1}>
                             <Flex gap="m" alignItems="flex-start">
-                                <Badge variant="success" size="s">
+                                <Badge>
                                     🎯
                                 </Badge>
                                 <Text onBackground="neutral-weak" variant="body-default-l">
@@ -231,12 +230,12 @@ export default function Speaking({
             {/* Booking Section */}
             <Flex fillWidth gap="l" direction="column" alignItems="center" paddingY="l">
                 <RevealFx translateY="12" delay={2.2}>
-                    <Heading as="h2" variant="display-strong-xs" wrap="balance" textAlign="center">
+                    <Heading as="h2" variant="display-strong-xs" wrap="balance">
                         {speaking.booking.title}
                     </Heading>
                 </RevealFx>
                 <RevealFx translateY="12" delay={2.3}>
-                    <Flex fillWidth maxWidth="m" textAlign="center">
+                    <Flex fillWidth maxWidth="m">
                         <Text onBackground="neutral-weak" variant="body-default-l">
                             {speaking.booking.description}
                         </Text>
@@ -251,7 +250,7 @@ export default function Speaking({
                     >
                         <Flex gap="8" alignItems="center">
                             {speaking.booking.ctaText}
-                            <Arrow />
+                            <Arrow trigger="#badge" />
                         </Flex>
                     </Button>
                 </RevealFx>
